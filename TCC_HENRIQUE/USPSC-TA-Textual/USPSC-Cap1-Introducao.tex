@@ -1,0 +1,17 @@
+%% USPSC-Introducao.tex
+
+% ----------------------------------------------------------
+% Introdução (exemplo de capítulo sem numeração, mas presente no Sumário)
+% ----------------------------------------------------------
+\chapter[Introdução]{Introdução}\label{Introdução}
+
+Um meio poroso é um material caracterizado por sua habilidade de armazenar fluidos, sendo encontrado em diversos contextos, como em rochas sedimentares para extração de petróleo, aquíferos subterrâneos, tecidos biológicos, células de combustível, entre outros. A simulação de meios porosos -- em aquíferos, por exemplo -- requer um entendimento tanto da geologia do terreno como da hidráulica desse fluxo, assim como do controle de métodos numéricos capazes de estimar as soluções das equações que governam o meio.
+
+No contexto do transporte de contaminantes (ou poluentes) em um aquífero, muitas vezes as descrições do regime de fluxo de água, que são adequadas para responder as questões hidráulicas, podem não ter a resolução necessária para corroborar na análise deste transporte. Dessa forma, as simulações numéricas podem integrar, pelo menos de forma aproximada, os vários efeitos de diversos processos químicos, físicos e de escoamento do fluxo. Indagações quanto à concentração de um contaminante em certo local, quando certa concentração será atingida em um ponto, ou ainda se certo projeto corretivo atingirá a redução necessária de concentração em certo tempo são colocadas de forma quantitativa, onde o raciocínio qualitativo, somente, não poderia responder.
+
+Mesmo assim, o uso mais importante de simulações não está em seu poderio preditivo de cálculo, mas no processo investigativo em si. Idealmente, o estudo de transporte de contaminantes deveria representar o esforço contínuo para identificar os processos controladores de todos os tipos e suas interações, e então sintetizá-los em um modelo conceitual. A simulação numérica, portanto, dá a oportunidade de lançar à prova este modelo em termos quantitativos, testando sua consistência com as hipóteses teóricas e os dados observados. Em suma, simulações computacionais são instrumentos para entender estes processos, assim complementando as observações de campo, testes em laboratórios e modelos analíticos \cite{tsang2005}.
+
+Diante desse cenário, este trabalho de conclusão de curso pretende introduzir os conceitos, as teorias e as aplicações deste campo de pesquisa, atendo-se à leitura do material teórico sobre \emph{Métodos Numéricos para Equações Diferenciais} e suas aplicações no contexto de \emph{Meios Porosos} e \emph{Mecânica dos Fluidos Computacional}. Em específico, serão estudados métodos para simulações numéricas com equações elípticas e hiperbólicas.
+
+\section{Nota técnica}\label{nota_tecnica}
+Todos os experimentos numéricos foram executados em um sistema com processador Intel Core i7-7700HQ (4 núcleos, 8 threads; 2.8–3.8 GHz), 16 GB de RAM e Debian GNU/Linux 12 (kernel 6.1.0-37-amd64), compilados com GCC 12.2.0 e utilizando Python 3.11.2 para visualização de dados. Rotinas aceleradas por GPU utilizaram uma NVIDIA GTX 1050 Ti (4 GB GDDR5) quando indicado. Os códigos usados neste trabalho podem ser acessados em: \url{https://github.com/hcasellato/tcc_code}.

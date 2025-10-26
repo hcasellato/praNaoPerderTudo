@@ -1,0 +1,183 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Beamer Presentation - LaTeX Template
+% Version 2.0 (March 8, 2022)
+% Original Template: https://www.LaTeXTemplates.com
+% Author: Vel (vel@latextemplates.com)
+% License: CC BY-NC-SA 4.0
+
+% Este modelo de apresentação foi 
+% criado a partir do modelo de Giovanni Spadaro.
+% Disponível em: https://github.com/Giovo17/presentation-template-unict-lm-data
+%
+% Adaptado por Lucas Amaral Taylor para criar uma versão especial 
+% para os alunos de Matemática e Estatística da USP (IME-USP).
+% Disponível em: https://github.com/lucasamtaylor01/IME-template
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+% CLASSE DO DOCUMENTO E CONFIGURAÇÕES BÁSICAS
+%----------------------------------------------------------------------------------------
+\documentclass[
+    11pt,               % Tamanho padrão da fonte
+    % t,                % Alinhar verticalmente ao topo
+    %aspectratio=169,   % Defirannir proporção 16:9
+]{beamer}
+\graphicspath{{img/}}         % Define o diretório das imagens
+
+\usepackage{mathptmx}
+\usepackage[uprightGreek, libertine]{newtxmath}
+%\usepackage{helvet}
+\renewcommand{\familydefault}{\rmdefault}
+
+\theoremstyle{plain} % Estilo padrão para teoremas, proposições, etc.
+\newtheorem{teorema}{Teorema}[section] % Numeração por seção
+\newtheorem{proposicao}[teorema]{Proposição} % Mesma numeração que teoremas
+\newtheorem{lema}[teorema]{Lema}
+\newtheorem{corolario}[teorema]{Corolário}
+
+\theoremstyle{definition} % Estilo para definições, exemplos
+\newtheorem{definicao}{Definição}[section]
+\newtheorem{exemplo}{Exemplo}[section]
+\newtheorem{exercicio}{Exercício}[section]
+
+\theoremstyle{remark} % Estilo para observações
+\newtheorem*{observacao}{Observação} % Asterisco remove numeração
+\newtheorem*{notacao}{Notação}
+
+%----------------------------------------------------------------------------------------
+% PACOTES NECESSÁRIOS
+%----------------------------------------------------------------------------------------
+\usepackage{
+    booktabs,     % Melhora a aparência das linhas em tabelas
+    subcaption    % Suporte para subfiguras
+}
+\usepackage{times}
+\input{config/code_langs}       % Importa configurações para highlight de código
+
+%----------------------------------------------------------------------------------------
+% CONFIGURAÇÃO DO TEMA
+%----------------------------------------------------------------------------------------
+\usetheme{Madrid}
+\useinnertheme{circles}
+\useoutertheme{miniframes} 
+\setbeamertemplate{headline}[default]
+\setbeamertemplate{navigation symbols}{}
+\usefonttheme{serif}
+
+% === DEEP INDIGO MONOCHROMATIC THEME ===
+% Elegant, academic, and modern — perfect for lectures or defenses.
+
+% --- COLOR DEFINITIONS ---
+\definecolor{primaryColor}{RGB}{35, 40, 90}        % Deep indigo (main)
+\definecolor{secondaryColor}{RGB}{60, 70, 130}     % Medium indigo (headers)
+\definecolor{accentColor}{RGB}{120, 130, 190}      % Light indigo (accents)
+\definecolor{backgroundLight}{RGB}{247, 247, 250}  % Soft off-white background
+
+% --- TEXT AND STRUCTURE ---
+\setbeamercolor{normal text}{fg=black!90, bg=backgroundLight}
+\setbeamercolor{structure}{fg=primaryColor} % affects bullets, section titles, etc.
+
+% --- TITLE AND PALETTES ---
+\setbeamercolor{palette primary}{bg=primaryColor, fg=white}
+\setbeamercolor{palette secondary}{bg=secondaryColor, fg=white}
+\setbeamercolor{palette tertiary}{bg=accentColor!80, fg=black}
+\setbeamercolor{title}{bg=secondaryColor, fg=white}
+\setbeamercolor{background canvas}{bg=backgroundLight}
+
+% --- HEADER AND FOOTER ---
+\setbeamercolor{headline}{bg=primaryColor!95, fg=white}
+\setbeamercolor{section in head/foot}{bg=secondaryColor, fg=white}
+\setbeamercolor{subsection in head/foot}{bg=primaryColor!90, fg=white}
+\setbeamercolor{author in head/foot}{bg=primaryColor!85, fg=white}
+\setbeamercolor{title in head/foot}{bg=secondaryColor!90, fg=white}
+\setbeamercolor{date in head/foot}{bg=primaryColor!80, fg=white}
+\setbeamercolor{page number in head/foot}{bg=secondaryColor!85, fg=white}
+
+% --- BLOCKS ---
+\setbeamercolor{block title}{bg=secondaryColor!95, fg=white}
+\setbeamercolor{block body}{bg=accentColor!15!white, fg=black!90}
+\setbeamercolor{alerted text}{fg=primaryColor!85!black}
+\setbeamercolor{example text}{fg=secondaryColor!70!black}
+
+% --- OPTIONAL ---
+\setbeamercolor{background canvas}{bg=backgroundLight!98!white}
+
+
+
+%----------------------------------------------------------------------------------------
+% BIBLIOGRAFIA
+%----------------------------------------------------------------------------------------
+\usepackage[
+    style=abnt,
+    giveninits=true,
+    repeatfields=true,
+    justify=raggedright,
+    backref=true,
+    backrefstyle=three+
+]{biblatex}
+\renewcommand*{\bibfont}{\small}
+\addbibresource{bibliografia.bib}
+
+%----------------------------------------------------------------------------------------
+% INFORMAÇÕES DA APRESENTAÇÃO
+%----------------------------------------------------------------------------------------
+\title[Equações em Meios Porosos]{Estudo Numérico de Equações \\ em Meios Porosos}          % [Versão curta]{Versão completa}
+\author[Henrique Casellato V. R. C.]{Henrique Casellato Vitorio Rodrigues da Costa}            % [Versão curta]{Nome completo}
+\institute[FFCLRP-USP]{Departamento de Computação e Matemática \\ (DCM/FFCLRP-USP)}
+\date[2025]{Dezembro / 2025}
+
+%----------------------------------------------------------------------------------------
+% INÍCIO DO DOCUMENTO
+%----------------------------------------------------------------------------------------
+
+\usepackage{ragged2e}
+\justifying
+
+\AtBeginSection[]
+{
+  \begin{frame}
+    \frametitle{Estrutura da apresentação}
+    \tableofcontents[currentsection] 
+  \end{frame}
+}
+
+\begin{document}
+% Slide de título com logo
+\begin{frame}
+  \begin{figure}[H]
+    \centering
+    \begin{subfigure}[c]{0.35\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{img/logo-dcm.png}
+    \end{subfigure}
+    \hspace{.05\textwidth}
+    \begin{subfigure}[c]{0.35\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{img/logo-ffclrp.png}
+    \end{subfigure}
+  \end{figure}
+  \titlepage
+\end{frame}
+
+
+% Sumário
+\begin{frame}
+    \frametitle{Estrutura da apresentação}
+    \tableofcontents
+\end{frame}
+
+% Inclusão das seções
+\include{sections/definicoesGerais}
+\include{sections/modelagemEscoamento}
+\include{sections/elipticas}
+\include{sections/hiperbolicas}
+\include{sections/referencias}
+
+% Slide final
+\begin{frame}
+    \begin{center}
+        {\Huge Fim da apresentação!}
+    \end{center}
+\end{frame}
+
+\end{document}

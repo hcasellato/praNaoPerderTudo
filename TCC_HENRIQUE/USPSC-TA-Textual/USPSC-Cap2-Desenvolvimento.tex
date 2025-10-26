@@ -1,0 +1,2136 @@
+%% USPSC-Cap2-Desenvolvimento.tex 
+
+% ---
+% Este capítulo, utilizado por diferentes exemplos do abnTeX2, ilustra o uso de
+% comandos do abnTeX2 e de LaTeX.
+% ---
+
+% Comandos base
+\theoremstyle{plain} % Estilo padrão para teoremas, proposições, etc.
+\newtheorem{teorema}{Teorema}[section] % Numeração por seção
+\newtheorem{proposicao}[teorema]{Proposição} % Mesma numeração que teoremas
+\newtheorem{lema}[teorema]{Lema}
+\newtheorem{corolario}[teorema]{Corolário}
+
+\theoremstyle{definition} % Estilo para definições, exemplos
+\newtheorem{definicao}{Definição}[section]
+\newtheorem{exemplo}{Exemplo}[section]
+\newtheorem{exercicio}{Exercício}[section]
+
+\theoremstyle{remark} % Estilo para observações
+\newtheorem*{observacao}{Observação} % Asterisco remove numeração
+\newtheorem*{notacao}{Notação}
+
+\chapter{Desenvolvimento}\label{cha:desenvolvimento}
+
+O desenvolvimento deste trabalho se deu três fases principais, compreendendo o estudo de livros teóricos acompanhados da implementação de métodos numéricos. A primeira parte tem como foco os Problemas de Valores de Contorno e de Equações Diferenciais Parciais, usando como referência principal o livro \cite{burden2016analise}. Como referências teóricas suplementares, serão usados os livros \cite{zill2017first}, \cite{thomas1995numerical} e \cite{strauss2008}.
+
+A segunda e terceira fases terão foco nos métodos de Volumes Finitos para Equações Elípticas e Hiperbólicas, usando como referências os livros \cite{isaacson1966analysis} e \cite{sousa2022metodos}, bem como os livros complementares \cite{strauss2008} e \cite{Eymard2000}, e as notas de texto de \cite{mishra2009numerical}. Por fim, o trabalho pretende se debruçar, como aplicação final, sobre a simulação de problemas de transporte passivo em meios porosos.
+
+\section{Conceitos iniciais}
+
+Uma \textit{equação diferencial} é uma equação contendo as derivadas de uma ou mais variáveis dependentes, com respeito a uma ou mais variáveis independentes, classificadas quanto ao tipo, ordem e linearidade. Quanto ao tipo, têm-se as \textit{equações diferenciais ordinárias} (EDO) onde somente existem derivadas ordinárias de uma ou mais variáveis dependentes com respeito a somente uma variável independente, como por exemplo tendo $y = y(x)$:
+
+\begin{equation}
+    \frac{d^2y}{dx^2} - \frac{dy}{dx} + 6y = 0.
+\end{equation}
+Há também as \textit{equações diferenciais parciais} (EDP) que envolvem as derivadas parciais de uma ou mais variáveis dependentes de duas ou mais variáveis independentes, como por exemplo (tendo $u = u(x,y)$)
+
+\begin{equation}
+    \frac{\partial u}{\partial y} = -\frac{\partial u}{\partial x}.
+\end{equation}
+
+\subsection{Detalhes para Equações Diferenciais Ordinárias}
+
+Para ambos os tipos de equações diferenciais, a \textit{ordem} da equação diferencial é justamente a ordem da maior derivada, por exemplo a seguinte equação diferencial
+\begin{equation}
+    \frac{d^2 y}{dx^2} + 5\frac{dy}{dx} - 4y = e^x
+\end{equation}
+é de segunda ordem. Para facilitar a representação de uma equação diferencial ordinária de enésima ordem em uma variável dependente, é introduzida uma notação com símbolos na forma geral: 
+
+\begin{equation}\label{formageralODE}
+    F(x,y,y',...,y^{(n)}) = 0,
+\end{equation}
+onde $F$ é uma função de valores reais com $n+2$ variáveis. Também, existe \textit{forma normal}, em que $f$ é uma função contínua de fatores reais, por
+
+\begin{equation}
+    \frac{d^n y}{dx^n} = f(x,y,y',...,y^{(n-1)}),
+\end{equation}
+onde, por exemplo, a forma normal da equação $4xy' + y = x$ é $y' = (x-y)/4x$. Dada essa explicação, quanto à \textit{linearidade}, uma equação de enésima ordem é dita \textit{linear} quando $F$ é linear em $y,y',...,y^{(n)}$, ou seja, a EDO de enésima ordem quando \eqref{formageralODE} é
+
+\begin{equation}
+    a_n(x)\frac{d^ny}{dx^n} + a_{n-1}(x)\frac{d^{n-1}y}{dx^{n-1}} + ... + a_1(x)\frac{dy}{dx} + a_0(x)y = g(x).
+\end{equation}
+Logo, uma EDO é \textit{não linear} quando simplesmente não é linear, tal como
+
+\begin{equation}
+    \frac{d^2y}{dx^2} + \sin{y} = 0.
+\end{equation}
+
+\subsection{Detalhes para Equações Diferenciais Parciais}
+Será importante, para o seguimento do trabalho, classificar as EDPs de segunda ordem em três tipos: \textit{elípticas}, \textit{hiperbólicas} e \textit{parabólicas}, onde as duas primeiras serão o foco. Em geral, toma-se a EDP
+
+\begin{equation}
+  Au_{xx} + 2Bu_{xy} + Cu_{yy} + Du_x + Eu_y + Fu = 0,
+\end{equation}
+uma equação linear de ordem dois em duas variáveis, com seis coeficientes constantes reais.
+
+\begin{teorema}
+  \cite[pp.~28-29]{strauss2008} A equação (\theequation)\ de variáveis independentes, pode ser reduzida a uma das três seguintes formas:
+  \begin{enumerate}[label=\roman*.]
+     \item \textit{Elíptica}, caso $B^2 < AC$, ela é reduzível à
+     \[
+       u_{xx} + u_{yy} + \cdots = 0
+     \]
+     (onde $\cdots$ denota os termos de ordem $1$ ou $0$).
+     \item \textit{Hiperbólica}, caso $B^2 > AC$, ela é reduzível à
+     \[
+       u_{xx} - u_{yy} + \cdots = 0.
+     \]
+     \item \textit{Parabólica}, caso $B^2 = AC$, ela é reduzível à
+     \[
+       u_{xx} + \cdots = 0,
+     \] 
+     a não ser que $A = B = C = 0$.
+   \end{enumerate} 
+\end{teorema}
+
+Um exemplo de equação elíptica é a equação de Poisson
+\[
+  \frac{\partial^2 u}{\partial x^2}(x,y) + \frac{\partial^2 u}{\partial y^2}(x,y) = f(x,y),
+\]
+que surge em diversos problemas da física que independem do tempo, como a distribuição de calor estacionária em uma região plana ou a energia potencial de um ponto em um plano submetido a forças gravitacionais.
+
+Agora, a equação
+\[
+  \alpha^2\frac{\partial^2 u}{\partial x^2}(x,t) - \frac{\partial^2 u}{\partial t^2}(x,t) = 0,
+\]
+que modela a vibração de uma corda em um plano vertical (onde $u(x,t)$, com $x \in (0,l)$ e $t>0$, é o deslocamento vertical) é um exemplo de equação hiperbólica.
+
+\section{Problemas de Valores de Contorno}\label{sec:problemas_de_valores_de_contorno}
+
+Quando se tem uma equação linear de ordem maior que um, em que as variáveis dependentes $y$, ou suas derivadas, são especificadas em pontos diferentes, têm-se um \textit{problema de valores de contorno}, tal qual
+
+\begin{equation}
+    \left\{
+      \begin{aligned}
+        &a_2(x)\frac{d^2y}{dx^2} + a_1(x)\frac{dy}{dx} + a_0(x)y = g(x) \\
+        &y(a) = y_0 \\
+        &y(b) = y_1
+      \end{aligned}
+    \right.
+\end{equation}
+com $y = y(x)$, onde os valores $y(a) = y_0$ e $y(b) = y_1$ são as \textit{condições de contorno}. Para efeitos deste trabalho, serão considerados os problemas da forma
+
+\begin{equation}
+  \left\{
+    \begin{aligned}
+        y''  &= f(x,y,y'), && \text{para $x \in [a,b]$} \\
+        y(a) &= \alpha \\
+        y(b) &= \beta
+    \end{aligned}
+  \right.
+\end{equation}
+em que suas as soluções analíticas não serão o foco, mas sim as provenientes dos métodos numéricos a serem descritos. Dando seguimento, os próximos teoremas fornecem condições para gerais para garantir a existência e unicidade da solução para o problema de contorno de segunda ordem:
+
+\begin{teorema}\label{teorema11p1}
+    \cite[p.~752]{burden2016analise} Supondo uma função $f$ no problema de contorno
+    
+    \[
+      \begin{aligned}
+        y'' = f(x,y,y'), && \text{para $x \in [a,b]$, com $y(a) = \alpha$ e $y(b) = \beta$},
+      \end{aligned}
+    \]
+    contínua no conjunto
+    
+    \[
+        D = \{(x,y,y'')\ |\ \text{para $x \in [a,b]$, com $y \in (-\infty,\infty)$ e $y' \in (-\infty,\infty)$}\}
+    \]
+    e que as derivadas parciais $f_y$ e $f_{y'}$ também sejam contínuas em $D$. Se
+
+    \begin{enumerate}[label=\roman*.]
+        \item $f_y(x,y,y') > 0, \quad \forall (x,y,y'') \in D$, e
+        \item existir uma constante $M$ tal que
+        \[
+            |f_{y'}(x,y,y')| \leq M,  \quad \forall (x,y,y'') \in D, 
+        \]
+    \end{enumerate}
+    então o problema de contorno tem uma solução única.
+
+\end{teorema}
+
+Por exemplo, o problema
+\[
+  \begin{aligned}
+    y'' + e^{-xy} + \sin{y'} = 0, && \text{para $x \in [1,2]$, com $y(1) = y(2) = 0$}
+  \end{aligned}
+\]
+tem solução única, pois
+\[
+  \begin{aligned}
+    f_y(x,y,y') = xe^{-xy} > 0 && \text{ e } && |f_{y'}(x,y,y')| = |-\cos{y'}| \leq 1.
+  \end{aligned}
+\]
+Porém, quando se tem equação diferencial linear, o teorema \ref{teorema11p1} pode ser simplificado para:
+
+\begin{corolario}
+    \cite[p. ~735]{burden2016analise} Supondo o problema de contorno linear
+    \begin{equation}\label{eq1114}
+      \begin{aligned}
+        y'' = p(x)y' + q(x)y + r(x), && \text{para $x \in [a,b]$, com $y(a) = \alpha$ e $y(b) = \beta$},
+      \end{aligned}
+    \end{equation}
+    que satisfaça
+    \begin{enumerate}[label=\roman*.]
+        \item $p(x)$, $q(x)$ e $r(x)$ contínuas em $[a,b]$, e
+        \item $q(x) > 0$ em $[a,b]$.
+    \end{enumerate}
+    Então, o problema de contorno tem solução única.
+\end{corolario}
+
+\subsection{Método das diferenças finitas para problemas lineares} 
+
+Para ilustrar como é o funcionamento do \textit{método de diferenças finitas}, primeiramente discretiza-se o domínio espacial para colocar sobre ele uma malha que, por conveniência, será uniforme com espaçamento $h = \Delta x = 1/(N+1)$ como é mostrado a seguir
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[scale=1.8]
+    % Eixo x
+    \draw[->] (-0.1,0) -- (7.2,0) node[right]{$x$};
+    
+    % Linhas da malha (5 linhas verticais, de x=0 a x=1)
+    \foreach \x in {1,2,3,4,5,6} {
+        \draw[dashed, gray] (\x,-0.1) -- (\x,0.1);
+    }
+    
+    \draw[black] (0,-0.1) -- (0,0.1);
+    \draw[black] (7,-0.1) -- (7,0.1);
+
+    \node[below, font=\small] at (0,-0.1) {$x_{0} = 0$};
+    \node[below, font=\small] at (1,-0.1) {$x_{1}$};
+
+    \node[below, font=\small] at (6,-0.1) {$x_{N}$};
+    \node[below, font=\small] at (7,-0.1) {$x_{N+1} = 1$};
+
+    \node[above, font=\small] at (3.5,0.1) {$\Delta x$};
+    
+\end{tikzpicture}
+\caption{Malha uniforme no intervalo $[0,1]$.}
+\label{fig:malha}
+\end{figure}
+
+É possível acessar qualquer ponto $x_k$ desta malha calculando $x_k = k\Delta x$ com $k = 0, 1, ..., N+1$. Então, pode-se notar que, para a função
+
+\begin{equation}
+    y'(x) = \lim_{\Delta x \rightarrow 0} \frac{y(x + \Delta x) - y(x)}{\Delta x},
+\end{equation}
+é uma aproximação razoável, a expressão
+
+\begin{equation}
+    y'(x_k) \approx \frac{y(x_{k+1}) - y(x_{k-1})}{2\Delta x},
+\end{equation}
+e, de forma similar, é possível aproximar $y''$ com
+
+\begin{equation}
+    y''(x_k) \approx \frac{y(x_{k+1}) - 2y(x_k) + y(x_{k-1})}{\Delta x^2}.
+\end{equation}
+É possível chegar nesses resultados usando a expansão em polinômios de Taylor. É comum escrever essa fórmula de \textit{diferenças centradas} usando a notação \textit{big O} da forma
+
+\[
+\begin{aligned}
+y'(x_k)  &= \frac{y(x_{k+1}) - y(x_{k-1})}{2\Delta x} + O(\Delta x^2)\\
+y''(x_k) &= \frac{y(x_{k+1}) - 2y(x_k) + y(x_{k-1})}{\Delta x^2} + O(\Delta x^2),    
+\end{aligned}
+\]
+onde este $O(\Delta x^2)$ representa a ordem do \textit{erro de truncamento}.
+
+\begin{definicao}
+    Dado uma função $f(s)$, $f(s) = O(\phi(s))$ para $s \in S$ se existe uma constante $A$ tal que $|f(s)| \leq A |\phi(s)|$ para todo $s \in S$. Diz-se que $f(x)$ é a \textit{big O} de $\phi(s)$ ou que $f(x)$ é da ordem de $\phi(s)$.
+\end{definicao}
+
+Usando estas definições, a mais das condições de contorno $y(a) = \alpha$ e $y(b) = \beta$, defini-se então um sistema de equações lineares com $w_0 = \alpha, w_{N+1} = \beta$ e, considerando $w_i = y(x_i)$,
+
+\begin{equation}
+    \frac{-w_{i+1} + 2w_i - w_{i-1}}{h^2} + p(x_i)\frac{w_{i+1} - w_{i-1}}{2h} + q(x_i)w_i = -r(x_i) \quad \forall i \in \{1, 2, ..., N\}.
+\end{equation}
+Esta equação (\theequation)\ pode ser reescrita como
+
+\[
+  -\left(1 + \frac{h}{2}p(x_i)\right)w_{i-1} + (2 + h^2q(x_i))w_i - \left(1 - \frac{h}{2}p(x_i)\right)w_{i+1} = -h^2r(x_i) \quad \forall i \in \{1, 2, ..., N\}
+\]
+e então esta pode ser expressa na forma de uma matriz tridiagonal $N\times N$, $Aw = b$, tal que
+
+\[
+    A = 
+    \begin{bmatrix}
+        2 + h^2q(x_1) && -1 + \frac{h}{2}p(x_1) && 0 && \cdots && 0 \\ 
+        -1 - \frac{h}{2}p(x_1) && 2 + h^2q(x_2) && -1 + \frac{h}{2}p(x_2) && \cdots && \vdots \\
+        0 && \cdots && \cdots && \cdots && \vdots \\ 
+        \vdots && \ddots && \ddots && \cdots && -1 + \frac{h}{2}p(x_{N-1}) \\ 
+        0 && \cdots && 0 && -1 - \frac{h}{2}p(x_N) && 2 + h^2q(x_N)
+    \end{bmatrix},
+\]
+\[
+    w = 
+    \begin{bmatrix}
+        w_1 \\ w_2 \\ \vdots \\ w_{N-1} \\ w_N
+    \end{bmatrix}
+    \quad e \quad
+    b =
+    \begin{bmatrix}
+        -r(x_1) + \left(1 + \frac{h}{2}p(x_1)\right)w_{0}
+        -r(x_2) \\
+        \vdots \\ 
+        -r(x_{N-1}) \\ 
+        -r(x_N) + \left(1 - \frac{h}{2}p(x_N)\right)w_{N+1}
+    \end{bmatrix}.
+\]
+O teorema a seguir fornecerá as condições sob as quais o sistema linear tridiagonal em questão tem uma solução única:
+
+\begin{teorema}\label{t113}
+  \cite[p. ~769]{burden2016analise} Supondo que $p$, $q$ e $r$ sejam contínuas em $[a,b]$. Se $q(x) \geq 0$ em $[a,b]$, então o sistema tridiagonal descrito anteriormente tem uma solução única, contanto que $h < 2/L$, em que $L = \max_{a \leq x \leq b}|p(x)|$.
+\end{teorema}
+
+Para garantir que o erro de truncamento seja de ordem $O(h^2)$, é preciso assegurar que $y^{(4)}$ é contínua em $[a,b]$. Nota-se que, apesar das hipóteses do teorema \ref{t113} garantirem uma solução única para o problema de contorno \eqref{eq1114}, este não garante que $y \in C^4[a,b]$.
+
+\subsection{Implementação do método das diferenças finitas linear}\label{sub:diferencas_finitas_linear}
+
+Para implementar o método descrito na seção anterior, será usada uma especialização da \textit{Fatoração de Crout}\footnotemark\ usando a vantagem da matriz $A$ ser tridiagonal. De forma sucinta, o algoritmo fatora a matriz $A$ em duas matrizes $L$ e $U$, matrizes triangulares inferior e superior respectivamente, com a diagonal de $U$ igual a $1$ (o que o difere da fatoração de Doolitle, onde a diagonal de $L$ é igual a $1$), da forma que $Aw = LUw = b$, então
+
+\footnotetext{As condições que garantem a aplicação da fatoração de Crout, bem como notas e definições importantes usadas para o estudo desta seção, podem ser encontradas no apêndice \ref{notas_sobre_fatora_o_de_matrizes}.}
+
+\[
+    A = 
+    % \begin{bmatrix}
+    %     a_{11} && a_{12} && 0      && \cdots && 0 \\ 
+    %     a_{21} && a_{22} && a_{23} &&        && 0 \\ 
+    %     \vdots && && && \ddots && a_{N-1,N} \\
+    %     0 && \cdots && 0 && a_{N,N-1} && a_{N,N}
+    % \end{bmatrix}
+    % = 
+    LU =
+    \begin{bmatrix}
+        l_{11} && 0 && 0      && \cdots && 0 \\ 
+        l_{21} && l_{22} && &&          && 0 \\ 
+        \vdots && && \ddots &&          && \vdots \\
+        \vdots && && && \ddots          && \vdots \\
+        0 && \cdots && 0 && l_{N,N-1}   && l_{N,N}
+    \end{bmatrix}
+    \begin{bmatrix}
+        1 && u_{12} && 0      && \cdots && 0 \\ 
+        0 && 1 && u_{23} &&             && 0 \\ 
+        \vdots && && \ddots &&          && \vdots \\
+        \vdots && && && \ddots          && u_{N-1,N} \\
+        0 && \cdots && 0 && 0           && 1
+    \end{bmatrix}.
+\]
+Tomando $Uw = x$, resolve-se $Lx = b$ e então descobre-se $w$. O método, pela vantagem de $A$ ser tridiagonal, resolve o sistema $N\times N$ realizando somente $(5N - 4)$ multiplicações/divisões e $(3N-3)$ adições/subtrações. O seguinte algoritmo implementa esta fatoração, bem como resolve o problema de contorno (\ref{eq1114}):
+
+\begin{algobox}[Solução para o problema de contorno]
+  \begin{enumerate}[label=\textbf{Passo \arabic*)}, leftmargin=*, align=parleft, nosep]
+    \item Calcular $h = \frac{B - A}{N + 1}$ e $x_1 = A + h$. Inicializar os coeficientes:
+    \begin{align*}
+      a_{11} &= 2.0 + h^2 \cdot q(x_1) \\
+      a_{12} &= \frac{h}{2} \cdot p(x_1) - 1.0 \\
+      d_1 &= -h^2 \cdot r(x_1) + \left(1 + \frac{h}{2} \cdot p(x_1)\right) \cdot \alpha
+    \end{align*}
+    \item Para cada $i = 2,\ldots,N-1$:
+      \begin{align*}
+        x_i &= A + i \cdot h \\
+        a_{ii} &= 2.0 + h^2 \cdot q(x_i) \\
+        a_{i,i+1} &= \frac{h}{2} \p(x_i) - 1 \\
+        a_{i,i-1} &= -\frac{h}{2} \p(x_i) - 1 \\
+        d_i &= -h^2 \cdot r(x_i)
+      \end{align*}
+
+    \item Para o ponto $x_N = B - h$:
+      \begin{align*}
+        a_{NN} &= 2.0 + h^2 \cdot q(x_N) \\
+        a_{N,N+1} &= \frac{h}{2} \cdot p(x_N) - 1.0 \\
+        a_{N,N-1} &= -\frac{h}{2} \cdot p(x_N) - 1.0 \\
+        d_N &= -h^2 \cdot r(x_N) + \left(1.0 - \frac{h}{2} \cdot p(x_N)\right) \cdot \beta
+      \end{align*}
+    \item Fatoração LU inicial:
+      \begin{align*}
+        l_{11} = a_{11},\ 
+        u_{12} = \frac{a_{12}}{l_{11}} \text{ e }
+        z_1 = \frac{d_1}{l_{11}}
+      \end{align*}
+
+    \item Para cada $i = 2,\ldots,N-1$:
+      \begin{align*}
+        l_{ii} &= a_{ii} - a_{i,i-1} \cdot u_{i-1,i} \\
+        u_{i,i+1} &= \frac{a_{i,i+1}}{l_{ii}} \\
+        z_i &= \frac{d_i - a_{i,i-1} \cdot z_{i-1}}{l_{ii}}
+      \end{align*}
+
+    \item Completar a fatoração:
+      \begin{align*}
+        l_{NN} &= a_{NN} - a_{N,N-1} \cdot u_{N-1,N} \\
+        z_N &= \frac{d_N - a_{N,N-1} \cdot z_{N-1}}{l_{NN}}
+      \end{align*}
+
+    \item Atribuir condições de contorno:
+      \begin{align*}
+        w_0 = \alpha,\ 
+        w_N = z_N\text{ e }
+        w_{N+1} = \beta
+      \end{align*}
+
+    \item Resolver o sistema triangular superior (chamado de substituição regressiva) para $i = N-1,\ldots,1$:
+      \begin{align*}
+        w_i &= z_i - u_{i,i+1} \cdot w_{i+1}
+      \end{align*}
+
+    \item \textbf{Saída:} As aproximações $w_i$ para $i = 0,\ldots,N+1$.
+  \end{enumerate}
+\end{algobox}
+
+\begin{exemplo}\label{ex221}
+Para ilustrar essa implementação, dado o problema de valor de contorno:
+\[
+    y'' = -\frac{2}{x}y' + \frac{2}{x^2}y + \frac{\sin{(\ln{x})}}{x^2}, \text{para $x \in [1,2]$, com $y(1) = 1$ e $y(2) = 2$},
+\]
+com $y = y(x)$, $N = 19$ e, portanto, $h = 0,01$. Também, com a solução exata:
+\[
+    y = c_1x + \frac{c_2}{x^2}-\frac{3}{10}\sin{(\ln{x})}-\frac{1}{10}\cos{\ln{x}},
+\]
+em que
+\[
+    c_2 = \frac{1}{70}(8-12\sin{(\ln{2})} - 4\cos{(\ln{2})}) \approx -0.03921
+\]
+e
+\[
+    c_1 = \frac{11}{10} - c_2 \approx 1.13921.
+\]
+O método de fatoração de Crout para matrizes tridiagonais aproxima a solução com erro médio de $0,6809\times 10^{-5}$. A comparação entre a solução exata e a solução do algoritmo pode ser visualizada pelo gráfico:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{imagens/desenvolvimento_PVC_comparacao.jpeg}
+    \caption{Comparação $y_i$ e $w_i$ para o exemplo \ref{ex221}.}
+    \label{fig:comparacao_pvc}
+\end{figure}
+\end{exemplo}
+
+\section{Definições gerais e propriedades de meios porosos e de fluidos}
+
+Esta seção procura apresentar as definições teóricas das propriedades tanto dos meios porosos, quanto dos fluidos que escoam por eles.
+
+\subsection{Meios porosos}
+Um meio poroso é caracterizado por sua \textit{porosidade} $\phi$, a fração entre o volume dos espaços vazios $V_p$ e o total $V_t$, portanto sendo uma grandeza adimensional entre zero e um. Como exemplo, o arenito e calcário possuem porosidade entre $0.05$ e $0.5$.
+
+Um meio \textit{incompressível} tem porosidade estática, enquanto que os \textit{compressíveis} têm porosidade dinâmica. Tomando o caso compressível, no contexto de rochas em reservatórios, a porosidade delas depende da pressão $p$ do reservatório devido à compressibilidade $c_r$:
+\begin{equation}
+    c_r = \frac{1}{\phi}\frac{d\phi}{dp} = \frac{d\ln\phi}{dp}.
+\end{equation}
+Considerando $c_r$ constante e integrando a equação (\theequation):
+\begin{equation}
+    \phi(p) = \phi_0 e^{c_r(p - p_0)},
+\end{equation}
+onde $p_0$ é a pressão de referência quando $\phi_0$. Normalmente, assume-se uma aproximação linear e usando expansão em séries de Taylor, é possível aproximar $\phi(p)$ por:
+\begin{equation}
+    \phi(p) \approx \phi_0 (1 + c_r(p - p_0)).
+\end{equation}
+A \textit{permeabilidade} $K$ representa a habilidade do meio poroso em transmitir um fluido através dos seus poros interconectados, sendo um parâmetro que mede a capacidade de transmissão do fluido quando o meio poroso está completamente saturado do mesmo. Quando somente dá um único fluido no meio poroso, esta propriedade recebe o nome de \textit{permeabilidade absoluta}. A permeabilidade é dada por um tensor simétrico positivo definido, caso ela seja isotrópica, $K$ é um escalar. Quando $K$ é espacialmente constante o meio se denomina \textit{homogêneo} e caso contrário, \textit{heterogêneo}.
+
+\subsection{Compressibilidade}
+
+A compressibilidade $c_f$ relacionada à variação do volume $V$ ou massa específica $\rho$ com a variação de pressão $p$:
+\begin{equation}
+  c_f = \left.\frac{1}{V}\frac{dV}{dp}\right|_T = \left.\frac{1}{\rho}\frac{\partial\rho}{\partial p}\right|_T,
+\end{equation}
+onde pela mesma lógica usada para $c_r$, obtém-se
+\begin{equation}
+  \rho \approx \rho_0(1 + c_f(p - p_0)).
+\end{equation}
+
+\subsection{Lei de Darcy}
+
+Para entender a \textit{Lei de Darcy}, imagina-se um filtro vertical de areia preenchido com água, de largura $A$ e altura $L$, sendo as taxas de fluxo de entrada e saída iguais e os parâmetros hidráulicos medidos com manômetros de coluna de mercúrio. Sua \textit{altura hidráulica} $h$ (com $h_t$ no topo e $h_b$ na base) em relação a um ponto fixo $z$ dada por
+\[
+  h = -\frac{p}{\rho g} + z,
+\]
+onde $g$ é a magnitude da aceleração da gravidade, $p$ é a pressão de água e $\rho$ é a massa específica da água. A taxa de fluxo $Q$ pode ser equacionada por
+\[
+  \frac{Q}{A} = \mathbf{k}\frac{h_t - h_b}{L}\check{e},
+\]
+onde $\check{e}$ é o vetor direção do escoamento e $\mathbf{k}$ a condutividade hidráulica, que (nesse contexto) é dada por
+\[
+  \mathbf{k} = \frac{\rho g K}{\mu},
+\]
+sendo $\mu$ é a viscosidade do fluido. Este fluxo representa o volume total do fluido pela área total por tempo, sendo também conhecido como \textit{velocidade de Darcy} dada por:
+\begin{equation}\label{leiDeDarcy}
+  u = \frac{Q}{A} = \mathbf{k}\frac{h_t - h_b}{L}\check{e} = \frac{\rho g K}{\mu}\nabla h = \frac{\rho g K}{\mu}\nabla \left(-\frac{p}{\rho g} + z\right) = -\frac{K}{\mu} (\nabla p - \rho g \nabla z),
+\end{equation}
+sendo $z$ a profundidade. Esta equação (\theequation)\ é conhecida como \textit{Lei de Darcy} e representa a conservação de quantidade de movimento, na qual duas forças governam o fluxo: a pressão e a gravidade.
+
+\subsection{Viscosidade}
+A \textit{viscosidade} é a medida da resistência de um ﬂuido ao próprio escoamento. Os gases, que possuem moléculas distanciadas, apresentam baixa resistência ao escoamento e portanto, baixa viscosidade. Por outro lado, fluidos mais densos apresentam alta resistência ao escoamento, e consequentemente alta viscosidade. Ainda, é possível medir a variação da viscosidade em relação à pressão do reservatório, considerando o efeito da pressão nas massas específicas dos fluidos.
+
+Como este trabalho se propôe a estudar o caso de escoamentos incompressíveis (como a água), conforme será visto logo mais, vale notar que neste caso a viscosidade não varia quando a pressão aumenta, o que não ocorre nos compressíveis (como o gás). Já no caso do óleo, a variação da viscosidade ocorre, pois o óleo pode transferir parte de sua massa para a forma de gás, porém como não faz parte do escopo deste trabalho, não será elucidado.
+
+\subsection{Volumes elementares representativos}
+
+Os Volumes Elementares Representativos, do inglês \textit{Representative Elementary Volumes} (REVs), são os menores volumes sobre os quais uma medida pode ser feita para representar o todo. Tais volumes encontram-se entre a escala dos poros da rocha (de $10^{-6}$ à $10^{-3}$ metros) e a \textit{escala de Darcy} (tipicamente entre $10^{-2}$ e $10{1}$ metros). Isso signiﬁca que o tamanho de um REV varia entre milímetros cúbicos e centímetros cúbicos.
+
+\section{Modelagem de escoamentos monofásicos}
+
+Quando se aplica uma pressão (ou fluxo) em um domínio saturado por apenas \textit{um fluido}, é induzido o que se chama de \textit{escoamento monofásico}. O escoamento de um fluido em um meio poroso é o fluxo que ocorre nos espaços vazios interconectados do meio, onde dado um volume $V$, a conservação de massa do fluido implica que a massa acumulada em $V$ deve ser igual a taxa de fluido pelas bordas, mais a injeção de massa:
+
+\begin{equation}
+    \frac{\partial}{\partial t}\int_V \phi\rho\ dx + \int_{\partial V}\rho (u \cdot n)\ ds = \int_V q\ dx.
+\end{equation}
+Aplicando-se o teorema da divergência\footnotemark,
+
+\footnotetext{Vale lembrar que o teorema da divergência afirma que: o fluxo de um campo vetorial $F$ pela superfície de fronteira de uma região sólida simples $E$ é igual à integral tripla do divergente de $F$ ($\nabla \cdot F$) em $E$.}
+
+\begin{equation}
+    \frac{\partial}{\partial t}\int_V \phi\rho\ dx + \int_{V}\nabla \cdot (\rho u)\ dx = \int_V q\ dx
+\end{equation}
+e alternando $\partial_t$ com a integração espacial, pode-se escrever
+\begin{equation}
+    \int_V\left(\frac{\partial}{\partial t}(\phi\rho) + \nabla \cdot (\rho u)\right) = \int_V q\ dx.
+\end{equation}
+Como a equação (\theequation)\ vale para qualquer volume elementar $V$, obtém-se a EDP
+\begin{equation}
+  \frac{\partial}{\partial t}(\phi\rho) + \nabla \cdot (\rho u) = q.
+\end{equation}
+Utilizando a Lei de Darcy em (\theequation)\ e desenvolvendo-a, obtém-se a equação diferencial parcial de incógnitas $p$ e $\rho$:
+\begin{equation}
+  \rho \phi c_t \frac{\partial p}{\partial t} - \nabla \cdot \left(\frac{\rho K}{\mu}(\nabla p - \rho g \nabla z)\right) = q,
+\end{equation}
+onde $c_t = c_f + c_r$ representa a compressibilidade total. Para o escopo deste trabalho, será considerado um \textit{escoamento incompressível}, ou seja, quando a rocha e o fluido são incompressíveis. Com isso, $\rho$ e $\phi$ são independentes de $p$ e, portanto, $c_t = 0$. A equação (\theequation)\ torna-se uma equação elíptica com coeficientes variáveis:
+\begin{equation}\label{eq246}
+    - \nabla \cdot \left(\frac{\rho K}{\mu}(\nabla p - \rho g \nabla z)\right) = q.
+\end{equation}
+
+\subsection{Condições auxiliares}
+
+Além das equações que, de fato, modelam escoamentos monofásicos, faz-se necessário ainda condições de contorno. Estas condições podem ser classificadas principalmente em três tipos:
+
+\begin{enumerate}[label=\roman*.]
+    \item \textit{Dirichlet}, onde se dá pressão $p(x)$;
+    \item \textit{Neumann}, onde o fluxo $\nabla u \cdot n$ é dado; e
+    \item \textit{Robin} ou mista, onde é especificado $\alpha u + \beta (\nabla u \cdot n)$;
+\end{enumerate}
+
+onde $u$ é uma função escalar, como por exemplo a temperatura. Estas condições podem ser \textit{homogêneas}, quando o contorno é igual a zero, ou \textit{heterogêneas}, quando são iguais a uma função $g$. Tomando exemplos dessas condições de contorno, além de meios porosos, têm-se:
+
+\begin{exemplo}[Dirichlet]
+  Em um berimbau, instrumento de percussão com origem angolana e muito tradicional na cultura afro-brasileira da capoeira, o som é produzido ao percutir uma corda fixa nas duas extremidades de uma vara de madeira (ou verga). Portanto, toma-se $0$ e $l$ como extremidades dessa corda, com a percussão simplificada no desenho abaixo:
+  \begin{figure}[H]
+    \centering
+    \begin{tikzpicture}[scale=2]
+      % Eixo x
+      \draw[black, thin] (0,0) -- (4,0);
+      \draw[domain=0:4, smooth, thick] plot (\x, {sin(pi*\x r)/3});
+
+      \node[left, font=\small]  at (0, 0) {$0$};
+      \node[right, font=\small] at (4, 0) {$l$};
+
+      \filldraw[black] (2.7, {sin(pi*2.7 r)/3}) circle (1pt);
+      \draw[black, dashed] (2.7, {sin(pi*2.7 r)/3}) -- (3.5, {sin(pi*2.7 r)/3});
+      \draw[|-|] (3.5, {sin(pi*2.7 r)/3}) -- (3.5, 0);
+      \node[right, font=\scriptsize] at (3.5, {sin(pi*2.7 r)/6}) {$\Delta v$};
+
+    \end{tikzpicture}
+    \caption{Simplificação da vibração de uma corda em um berimbau.}
+    \label{fig:berimbau}
+    \end{figure}
+  Se for considerado $v = v(x,t)$ a distância da corda com o eixo central em uma posição de $x \in (0,l)$ em um determinado tempo $t$, é possível interpretar que há uma condição de Dirichlet homogênea haja vista que $v(0,t) = v(l,t) = 0$.
+\end{exemplo}
+
+\begin{exemplo}[Neumann]
+    Uma garrafa de água hermeticamente fechada $G$, perfeitamente insulada, não possui fluxo de calor entre o líquido e o ambiente externo. Dessa forma, é possível entender que $G$ tem uma condição de Neumann homogênea $\nabla v \cdot n = 0$ nas bordas $\partial G$, onde $v$ é a temperatura e $n$ é a normal à $\partial G$.
+\end{exemplo}
+
+\begin{exemplo}[Robin]
+  Supondo uma barra insulada nas bordas no intervalo $0 \leq x \leq l$ (isto é, não há fluxo de calor através da superfície lateral) e que sua extremidade $x = l$ foi imersa em um reservatório com temperatura $T(t)$. O calor é trocado entre a extremidade da barra e o reservatório por convecção, então pela conservação de energia na interface, o fluxo de calor por condução (dentro da barra) deve igualar o fluxo de calor por convecção (para o reservatório). Utilizando a lei de Fourier para condução e a lei de resfriamento de Newton para convecção em $x = l$, obtém-se:
+  \[
+      -k \frac{\partial v}{\partial x}(l, t) = h \left( v(l,t) - T(t) \right),
+  \]
+  onde $k$ é a condutividade térmica da barra, $h$ é o coeficiente de transferência de calor por convecção, $v(l,t)$ é a temperatura na extremidade da barra. Rearranjando, têm-se a condição de Robin não homogênea:
+  \[
+      v(l,t) + \frac{1}{\beta} \frac{\partial v}{\partial x}(l, t) = T(t),\footnotemark
+  \]
+  onde $\beta = h / k > 0$.
+\end{exemplo}
+
+\begin{observacao}
+  Para uma função $v$ qualquer que, por exemplo, determina a posição $x$ em um determinado tempo, a condição de contorno de Neumann dá sua derivada normal
+  \[
+    \frac{\partial v}{\partial n} = \nabla v \cdot n,
+  \]
+  por isso aparece a condição de Robin como
+  \begin{equation}
+    \alpha v + \beta \frac{\partial v}{\partial n}.  
+  \end{equation}
+  Sendo esta uma generalização da condição de contorno de Robin para uma dimensão. Como, no contexto deste trabalho, $u$ é a velocidade de Darcy \eqref{leiDeDarcy}, pode-se escrever o contorno de Robin tal como no início desta subseção.
+\end{observacao}
+
+\subsection{Meios homogêneos e heterogêneos}
+
+Para classificar meios como homogêneos ou heterogêneos, considera-se uma simplificação de \eqref{eq246}\ para o escoamento monofásico, com as hipóteses do escoamento ser incompressível, isotérmico e sem efeito gravitacional, da forma que:
+
+\begin{equation}\label{escoamento_base}
+\left\{
+  \begin{aligned}
+    \nabla \cdot u &= \frac{q}{\rho} && \text{em } \Omega \\
+    u &= -\frac{K}{\mu} \nabla p && \text{em } \Omega \\
+    p &= p_b && \text{em } \partial\Omega_p \\
+    u \cdot n &= u_b && \text{em } \partial\Omega_u
+  \end{aligned}
+\right.
+,
+\end{equation}
+onde a viscosidade $\mu$ e massa específica $\rho$ são uniformes no caso incompressível e consideradas unitárias aqui. Também, onde $\partial \Omega = \partial \Omega_p \cup \partial \Omega_u$ é a fronteira do domínio $\Omega \subset \mathbb{R}^d$ com $d = \{1,2,3\}$.
+
+\begin{figure}[H]
+  \centering
+  \begin{subfigure}[b]{0.48\textwidth}
+    \centering
+    \begin{tikzpicture}[scale=2.2]
+      \fill[fill=orange!40] (-1,-1) rectangle (1,1);
+      \node[font=\Large] at (0,0) {$\Omega$};
+      
+      \node[left, above, font=\small] at (-1,1) {$\partial \Omega$};
+      \fill[pattern=north east lines, pattern color=gray!80] (1,-1.1) rectangle (1.1,1.1);
+      \draw[thick] (1,-1.1) -- (1,1.1);
+      \draw[black] (-1,-1) rectangle (1,1);
+
+      \node[rotate = 90, right, anchor=center] at (1.3,0) {$p(x,y) = 0$};
+    \end{tikzpicture}
+    \caption{Contorno Dirichlet homogêneo na borda leste de $\Omega$.}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[b]{0.48\textwidth}
+    \centering
+    \begin{tikzpicture}[scale=2.2]
+      \fill[fill=orange!40] (-1,-1) rectangle (1,1);
+      \node[font=\Large] at (0,0) {$\Omega$};
+      
+      \node[left, above, font=\small] at (-1,1) {$\partial \Omega$};
+      \fill[pattern=north east lines, pattern color=gray!80] (-1.1,-1) rectangle (1.1,-1.1);
+      \draw[thick] (-1.1,-1) -- (1.1,-1);
+      \draw[black] (-1,-1) rectangle (1,1);
+
+      \foreach \y in {-0.8,-0.4,0.0,0.4,0.8}
+      {
+        \draw[->, thick, black!60] (\y,-.9) -- (\y,-1.1);
+      }
+
+      \node[below, anchor=center] at (0,-1.3) {$-K\frac{\partial p}{\partial n} = g(x,y)$};
+    \end{tikzpicture}
+    \caption{Contorno Neumann não homogêneo na borda sul de $\Omega$.}
+  \end{subfigure}
+  \caption{Exemplificação de tipos de contorno.}
+\end{figure}
+
+Um meio dito \textit{homogêneo}, governado pelo sistema de escoamentos monofásicos (\theequation), ocorre quando a permeabilidade absoluta $K$ é constante e uniforme, logo não dependendo de $x$. Quando o meio é \textit{heterogêneo}, a permeabilidade absoluta $K$ varia com $x$ e então o escoamento tende a passar pelas regiões de alta permeabilidade e evitar as de baixa permeabilidade.
+
+Também, é possível usar um modelo do projeto \textit{SPE10} fornecido pela \textit{Sociedade de Engenheiros de Petróleo}, utilizado como referência em simulações de reservatórios de petróleo. Estes modelos, porém, não serão utilizados neste trabalho, mas podem ser acessados no site da \citeonline{spe_csp_dataset}: \url{https://www.spe.org/web/csp/datasets/set02.htm}.
+
+\section{Uma breve introdução ao método de volumes finitos}
+
+O \textit{método de volumes finitos} é um método de discretização útil para simulações numéricas de leis de conservação de vários tipos: elípticas, hiperbólicas ou parabólicas, por exemplo. Este método tem alguns pontos importantes, como poder ser usado em geometrias arbitrárias, em malhas estruturadas ou não, além de conservar localmente os fluxos numéricos; o que o faz particularmente interessante para problemas de mecânica dos fluidos.
+
+Isso pode ser obtido, pois é baseado em uma abordagem "balanceada":
+\begin{enumerate}[label=\roman*.]
+  \item Um balanço local é escrito em cada célula de discretização, que é frequentemente chamada de \textit{volume de controle};
+  \item Pela fórmula de divergência, uma formulação da integral dos fluxos sobre a fronteira do volume de controle é obtida.
+\end{enumerate}
+Os fluxos nas fronteiras são discretizados com respeito aos discretos ''desconhecidos''. Comparativamente, o método de volumes finitos é um tanto diferente (mas ainda relacionado) dos métodos de diferenças finitas (já explorado, em parte, na subseção \ref{sub:diferencas_finitas_linear}) e de elementos finitos\footnotemark.
+
+\footnotetext{O método de elementos finitos não será explorado neste trabalho ademais da comparação com o de volumes finitos e uma introdução muito simples.}
+
+A princípio, no \textit{método de diferenças finitas}, em cada ponto da discretização, as derivadas do que não é conhecido são trocadas pelas diferenças finitas obtidas por expansões de Taylor. Isto se torna problemático quando os coeficientes envolvidos na equação são descontínuos (como em um meio heterogêneo), o que não ocorre no método de volumes finitos contanto que a malha seja escolhida tal que essas descontinuidades estejam no contorno dos volumes de controle. 
+
+O \textit{método de elementos finitos} é baseado em uma formulação variacional\footnotemark, que pode ser escrita para ambos os casos contínuos e discretos, obtida por multiplicar a equação original por uma "função de teste".
+\footnotetext{Este termo advém do método variacional do \textit{Cálculo de Variações}, que, neste contexto, é usado para aproximar uma solução por minimizar uma função de erro associada.}
+O desconhecido contínuo é então aproximado por uma combinação linear de "funções de forma", que são as funções de teste para uma formulação variacional discreta (também chamada de expansão de Galerkin), e então o resultado é integrado sobre o domínio.\footnotemark
+
+
+\footnotetext{Vale ressaltar que também há métodos mistos com volumes finitos e elementos finitos.}
+
+Por um ponto de vista industrial, o método de volumes finitos é um método robusto para discretização de leis de conservação, no sentido que o esquema se comporta bem até em equações especialmente difíceis (como em sistemas hiperbólicos não lineares). Ademais, é um esquema barato, pois tem uma programação curta e confiável para problemas complexos. Entretanto, o método de elementos finitos pode ser mais preciso que o de volumes finitos quando se usa polinômios de ordens mais altas, mas precisa de uma estrutura funcional apropriada que não é sempre disponível nos problemas industriais.\footnotemark
+
+\footnotetext{Existem métodos mais precisos, como os métodos de partículas ou os espectrais, mas podem ser muito mais caros e menos robustos que o de volumes finitos.}
+
+\section{Método de volumes finitos para equações elípticas}
+
+Nesta seção, usando como referência o livro de \citeonline{sousa2022metodos}, serão explorados os esquemas de volumes finitos para equações elípticas, com o objetivo de aproximar numericamente a solução do sistema \eqref{eq246} com simplificações:
+\begin{equation}\label{escoamento_base}
+\left\{
+  \begin{aligned}
+    - \nabla \cdot (K \nabla p) &= q && \text{em } \Omega \\
+    p &= p_b && \text{em } \partial\Omega_p \\
+    (-K \nabla p) \cdot n &= u_b && \text{em } \partial\Omega_u
+  \end{aligned}
+\right.,
+\end{equation}
+no caso de um escoamento monofásico, com as hipóteses de ser incompressível, isotérmico e sem efeito gravitacional, de viscosidade $\mu$ e massa específica $\rho$ constantes e unitárias. Ademais, tem pressão relacionada a velocidade de Darcy
+\begin{equation}
+  u = - K \nabla p.
+\end{equation}
+Para obter uma discretização de volumes finitos, integra-se $- \nabla \cdot u = q$ sobre um volume de controle genérico $V_k$
+\begin{equation}
+  - \int_{V_k}\nabla \cdot (K \nabla p)\ dx = \int_{V_k} q\ dx
+\end{equation}
+e com o teorema da divergência,
+\begin{equation}\label{eq:eq44}
+  - \int_{\partial V_k}(K \nabla p) \cdot n_k\ ds = \int_{V_k} q\ dx,
+\end{equation}
+em que $n_k$ é o vetor normal à $V_k$. A discretização de $K$ deve ser tratada adequadamente, tendo grande impacto na solução aproximada\footnote{Consultar o apêndice \ref{cha:notas_sobre_mvf} para maiores detalhes quanto ao tratamento da discretização de $K$.}.
+
+\subsection{Malha centrada em células}\label{subsec_malhacentrada}
+Durante o restante desse trabalho, será usada uma discretização \textit{centrada em células} (como descrita em \citeonline[pp.~32-34]{thomas1995numerical}), onde é considerado que o valor aproximado da função, ou da média dos valores da célula, está justamente no centro dela. Para visualizar melhor como esses intervalos são construídos, toma-se o intervalo $I = [0,1]$ com três subintervalos de espaçamento uniforme:
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}[scale=2]
+    % Eixo x
+    \draw[black, dashed, <->] (-.5,0) -- (6.5,0);
+    \draw[black,thick] (0,0) -- (6,0);
+    
+    % Linhas da malha
+    \filldraw[black] (1,0) circle (1pt);
+    \filldraw[black] (3,0) circle (1pt);
+    \filldraw[black] (5,0) circle (1pt);
+
+    \node[above, font=\large] at (1,0.1) {$a_{1}$};
+    \node[above, font=\large] at (3,0.1) {$a_{2}$};
+    \node[above, font=\large] at (5,0.1) {$a_{3}$};
+
+    \draw[black]     (0,-0.1) -- (0,0.1);
+    \draw[black]     (2,-0.1) -- (2,0.1);
+    \draw[black]     (4,-0.1) -- (4,0.1);
+    \draw[black]     (6,-0.1) -- (6,0.1);
+
+    \node[below, font=\large] at (0,-0.1) {$a_{\frac{1}{2}} = 0$};
+    \node[below, font=\large] at (2,-0.1) {$a_{\frac{3}{2}}$};
+    \node[below, font=\large] at (4,-0.1) {$a_{\frac{5}{2}}$};
+    \node[below, font=\large] at (6,-0.1) {$a_{\frac{7}{2}} = 1$};
+
+    \node[right, font=\large] at (6.5,0) {$x$};
+
+  \end{tikzpicture}
+  \caption{Visualização do intervalo $I$ com discretização no centro da célula e contorno de Neumann.}
+  \label{fig:viz_CCG_N}
+\end{figure}
+Os valores dos nós $a_i$ são vistos como os \textit{centros} das células, então $a_{i-1/2}$ e $a_{i+1/2}$ seriam suas faces à esquerda e à direita respectivamente. No que tange o tratamento das condições de contorno, observa-se que a extremidade do intervalo não é um ponto da malha. No caso de contornos de Neumann, o procedimento é simples: na primeira célula (por exemplo), durante a integração de $[a_{\frac{1}{2}},a_{\frac{3}{2}}]$, o fluxo vindo de $a_{\frac{1}{2}}$ seria a imposição de fluxo da interface esquerda do contorno de Neumann. 
+
+Não é tão claro como nas condições de Neumann, tratar dos contornos de Dirichlet neste tipo de discretização centrado em células. Geralmente, inclui-se uma \textit{célula fantasma}, assumindo que a condição de Dirichlet é descrita nessa célula, como na figura abaixo:
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}[scale=1.3]
+    % Eixo x
+    \draw[black, dashed, <->] (-2.5,0) -- (7.5,0);
+    \draw[black]              (-2,  0) -- (0,  0);
+    \draw[black,thick]        ( 0,  0) -- (6,  0);
+    % Linhas da malha
+    \filldraw[black] (-1,0) circle (1pt);
+    
+    \filldraw[black] (1,0) circle (1pt);
+    \filldraw[black] (3,0) circle (1pt);
+    \filldraw[black] (5,0) circle (1pt);
+
+    \node[above, font=\large] at (-1,0.15) {$a_{0}$};
+
+    \node[above, font=\large] at (1,0.1) {$a_{1}$};
+    \node[above, font=\large] at (3,0.1) {$a_{2}$};
+    \node[above, font=\large] at (5,0.1) {$a_{3}$};
+
+    \draw[black] (-2,-0.1) -- (-2,0.1);
+
+    \draw[black] ( 0,-0.15) -- ( 0,0.15);
+    \draw[black] ( 2,-0.1) -- ( 2,0.1);
+    \draw[black] ( 4,-0.1) -- ( 4,0.1);
+    \draw[black] ( 6,-0.15) -- ( 6,0.15);
+
+    \node[below, font=\large] at (-2,-0.1) {$a_{-\frac{1}{2}}$};
+
+    \node[below, font=\large] at (0,-0.15)  {$a_{\frac{1}{2}}$};
+    \node[below, font=\large] at (2,-0.1)  {$a_{\frac{3}{2}}$};
+    \node[below, font=\large] at (4,-0.1)  {$a_{\frac{5}{2}}$};
+    \node[below, font=\large] at (6,-0.15)  {$a_{\frac{7}{2}}$};
+
+    \node[right, font=\large] at (7.5,0) {$x$};
+
+  \end{tikzpicture}
+  \caption{Intervalo $I$ com discretização no centro da célula, contorno de Dirichlet à esquerda usando célula fantasma.}
+  \label{fig:viz_CCG_D}
+\end{figure}
+
+No exemplo do intervalo $I$ descrito, a célula fantasma seria a célula com centro em $a_0$, então se utilizando desse valor na integração em $[a_{\frac{1}{2}},a_{\frac{3}{2}}]$. Por simplicidade, o contorno à direita se manteve de Neumann. Vale notar que, caso o a solução dependa fortemente da distância com a condição de contorno, resultados com essa abordagem podem não ser adequadas. Também, é possível usar meia célula no final do intervalo, como em:
+
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}[scale=1.5]
+    % Eixo x
+    \draw[black, dashed, <->] (-2.0,0) -- (7.5,0);
+    \draw[black]              (-1,  0) -- (0,  0);
+    \draw[black,thick]        ( 0,  0) -- (6,  0);
+    % Linhas da malha
+    \filldraw[black] (-1,0) circle (1pt);
+    
+    \filldraw[black] (1,0) circle (1pt);
+    \filldraw[black] (3,0) circle (1pt);
+    \filldraw[black] (5,0) circle (1pt);
+
+    \node[above, font=\large] at (-1,0.15) {$a_{0} = 0$};
+
+    \node[above, font=\large] at (1,0.1) {$a_{1}$};
+    \node[above, font=\large] at (3,0.1) {$a_{2}$};
+    \node[above, font=\large] at (5,0.1) {$a_{3}$};
+
+    \draw[black] (-1,-0.1) -- (-1,0.1);
+
+    \draw[black] ( 0,-0.15) -- ( 0,0.15);
+    \draw[black] ( 2,-0.1) -- ( 2,0.1);
+    \draw[black] ( 4,-0.1) -- ( 4,0.1);
+    \draw[black] ( 6,-0.15) -- ( 6,0.15);
+
+    \node[below, font=\large] at (0,-0.15) {$a_{\frac{1}{2}}$};
+    \node[below, font=\large] at (2,-0.1 ) {$a_{\frac{3}{2}}$};
+    \node[below, font=\large] at (4,-0.1 ) {$a_{\frac{5}{2}}$};
+    \node[below, font=\large] at (6,-0.15) {$a_{\frac{7}{2}} = 1$};
+
+    \node[right, font=\large] at (7.5,0) {$x$};
+
+  \end{tikzpicture}
+  \caption{Intervalo $I$ com discretização no centro da célula, contorno de Dirichlet à esquerda usando meia célula.}
+  \label{fig:viz_CCG_Dh}
+\end{figure}
+
+Além da discretização no centro das células, exite a \textit{discretização centrada em vértices}, que segue uma ideia parecida, porém avaliando a função nos próprios nós. Este tipo de discretização não será explorado neste trabalho, mas pode ser estudado na própria referência \citeonline{thomas1995numerical}.
+
+\subsection{Caso unidimensional}
+Considerando um domínio unidimensional $\Omega = [a,b]$ onde a primeira equação de \eqref{escoamento_base} é escrita como
+\begin{equation}\label{eq45}
+  \frac{d}{dx}\left(K\frac{dp}{dx}\right) = q
+\end{equation}
+Aplicando uma discretização por volumes finitos, têm-se uma partição do domínio em $N$ intervalos $V_i = [x_{i-1/2},x_{i+1/2}]$ e integrando a equação em qualquer $V_i$,
+\begin{equation}\label{eq_1DfullequationVF}
+  -\int_{x_{i-1/2}}^{x_{i+1/2}}q\ dx = \int_{x_{i-1/2}}^{x_{i+1/2}}\frac{d}{dx}\left(K\frac{dp}{dx}\right)\ dx = \left.K\frac{dp}{dx}\right|_{x_{i+1/2}} - \left.K\frac{dp}{dx}\right|_{x_{i-1/2}}.
+\end{equation}
+Considerando que a permeabilidade absoluta é constante em cada volume de controle, têm-se uma situação como abaixo
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[scale=2]
+    % Eixo x
+    \draw[black] (0,0) -- (4,0);
+    
+    % Linhas da malha
+    \foreach \x in {0,2,4} {
+      \draw[dashed, gray] (\x,-0.1) -- (\x,1);
+      \draw[black] (\x,-0.1) -- (\x,0.1);
+    }
+    
+    % x
+    \node[below, font=\large] at (0,-0.1) {$x_{i-\frac{1}{2}}$};
+    \node[below, font=\large] at (2,-0.1) {$x_{i+\frac{1}{2}}$};
+    \node[below, font=\large] at (4,-0.1) {$x_{i+\frac{3}{2}}$};
+
+    % V
+    \node[below, font=\large] at (1,-0.1) {$V_{i}$};
+    \node[below, font=\large] at (3,-0.1) {$V_{i+1}$};
+
+    % K
+    \draw[red] (0,.7) -- (2,.7);
+    \draw[red] (2,.5) -- (4,.5);
+    \node[red, above, font=\large] at (1,.7) {$K_{i}$};
+    \node[red, above, font=\large] at (3,.5) {$K_{i+1}$};
+
+    % pressaum
+    \node[above, font=\large] at (1, 0) {$p_{i}$};
+    \node[above, font=\large] at (3, 0) {$p_{i+1}$};
+\end{tikzpicture}
+\caption{Esquema de volumes finitos unidimensional.}
+\label{fig:esq_VF1D}
+\end{figure}
+
+No método de volumes finitas, a pressão é interpretada como sendo uma aproximação para a média da solução exata no volume de controle $V_i$, 
+\[
+  p_i \simeq \frac{1}{|V_i|}\int_{V_i}p(x)\ dx,
+\]
+que pode ser constante na célula (como na figura \ref{fig:esq_VF1D}). Supondo a existência de um valor intermediário $p_{i+1/2}$ em $x_{i+1/2}$, pode-se fazer a discretização do fluxo em cada lado de $x_{i+1/2}$ para encontrar um valor de $p_{i+1/2}$ que preserve o fluxo entre os volumes de controle. Portanto,
+\[
+  \lim_{x \rightarrow x_{i+1/2}^{-}}K\frac{dp}{dx} \simeq K_i\frac{p_{i+1/2} - p_i}{\Delta x_i/2}
+  \quad \text{e} \quad
+  \lim_{x \rightarrow x_{i+1/2}^{+}}K\frac{dp}{dx} \simeq K_{i+1}\frac{p_{i+1} - p_{i+1/2}}{\Delta x_{i+1}/2}.
+\]
+Impondo a continuidade de fluxo nas interfaces,
+\[
+  \lim_{x \rightarrow x_{i+1/2}^{-}}K\frac{dp}{dx} = \lim_{x \rightarrow x_{i+1/2}^{+}}K\frac{dp}{dx},
+\]
+ou seja, os fluxos discretos devem satisfazer 
+\[
+  K_i\frac{p_{i+1/2} - p_i}{\Delta x_i} = K_{i+1}\frac{p_{i+1} - p_{i+1/2}}{\Delta x_{i+1}}.
+\]
+Desenvolvendo a equação e considerando que $\Delta x_{i+1} = \Delta x_{i} = \Delta x$,
+\begin{equation}
+  \left.K\frac{dp}{dx}\right|_{x_{i+1/2}} = \frac{2K_iK_{i+1}}{K_i + K_{i+1}}\left(\frac{p_{i+1} - p_{i}}{\Delta x}\right).
+\end{equation}
+Logo, o coeficiente que torna o método \textit{conservativo}, isto é, que preserva a quantidade de fluxo que passa através de uma fronteira entre células, é a média harmônica entre $K_i$ e $K_{i+1}$ e que define o valor adequado de $K$ em $x_{i+1/2}$. Voltando para \eqref{eq_1DfullequationVF}, resta aproximar a integral do lado esquerdo em
+\[
+  \int_{x_{i-1/2}}^{x_{i+1/2}}q\ dx = \Delta x q_i,
+\]
+onde $q_i$ é o valor médio do termo fonte em $V_i$ e, portanto, constante por partes. Tomando
+\begin{equation}
+  K_{i+1/2} = \frac{2K_iK_{i+1}}{K_i + K_{i+1}},
+\end{equation}
+a equação \eqref{eq_1DfullequationVF} em cada volume $V_i$ é dada por
+\begin{equation}\label{esquemaNum420}
+  -\frac{1}{\Delta x^2}\left(K_{i+1/2}(p_{i+1} - p_{i}) - K_{i-1/2}(p_{i} - p_{i-1})\right) = q_i.
+\end{equation}
+
+\subsubsection{Implementação}
+
+Para implementar o método de volumes finitos, considera-se o esquema numérico \eqref{esquemaNum420} escrito em forma matricial, com $N$ células
+\begin{equation}\label{forma_matricial_1d}
+  Aw = d,
+\end{equation}
+com $w$ e $d$ representando os vetores de valores aproximados para a pressão e os de injeção $q$. Por fim, $A$ é uma matriz tridiagonal definida por
+\begin{equation}
+  (Aw)_i = \frac{1}{\Delta x^2}\left(-K_{i-\frac{1}{2}}p_{i-1}+\left(K_{i-\frac{1}{2}}+K_{i+\frac{1}{2}}\right)p_i-K_{i+\frac{1}{2}}p_{i+1}\right),
+\end{equation}
+para $i = 2,...,N-1$. Supondo o contexto de uma malha centrada em células como discutido na subseção \ref{subsec_malhacentrada}, as linhas $i=1$ e $i=N$ da matriz são usadas para impor condições de contornos que, neste seguinte exemplo explicativo, são de Neumann à esquerda e de Dirichlet à direita. Para obter os valores nas fronteiras, segue o desenvolvimento das condições:
+
+\begin{enumerate}[label=\roman*.]
+  \item de Neumann, quando $i = 1$, a condição de contorno à esquerda estaria na célula $x_{i-1/2} = x_{1/2}$. Então, com
+  \[
+    - \left.K\frac{dp}{dx}\right|_{x_{\frac{1}{2}}} = u_b,
+  \]
+  para a primeira equação do sistema \eqref{forma_matricial_1d},
+  \[
+  \begin{aligned}
+    - \left(\left.K\frac{dp}{dx}\right|_{x_{\frac{3}{2}}} - \left.K\frac{dp}{dx}\right|_{x_{\frac{1}{2}}}\right) &= \Delta x q_1 \\
+    \frac{2K_1K_{2}}{K_1 + K_{2}}\left(\frac{p_2 - p_1}{\Delta x}\right) &= \Delta xq_1 + u_b
+  \end{aligned}
+  \]
+  ou ainda:
+  \[
+    \frac{1}{\Delta x^2}\left(-K_{\frac{3}{2}}(p_2-p_1)\right) = q_1 + \frac{u_b}{\Delta x}
+  \]
+  e poderia ser feito na extremidade oposta de forma similar, caso necessário.
+  \item de Dirichlet, quando $i = N$, a face $x_{N+1/2}$, tem pressão imposta
+  \[
+    \left.p\right|_{x_{N+1/2}} = p_b
+  \]
+  e então a última equação do sistema \eqref{forma_matricial_1d} seria, portanto,
+  \begin{equation}\label{eq428}
+    - \left(\left.K\frac{dp}{dx}\right|_{x_{N+\frac{1}{2}}} - \left.K\frac{dp}{dx}\right|_{x_{N-\frac{1}{2}}}\right) = \Delta x q_N.
+  \end{equation}
+  Para este exemplo de contorno Dirichlet, será usada uma discretização com meio volume de controle:
+  \[
+    \left.K\frac{dp}{dx}\right|_{x_{N+\frac{1}{2}}} = K_N\left(\frac{p_b - p_N}{\Delta x/2}\right) = 2K_N\left(\frac{p_b - p_N}{\Delta x}\right)
+  \]
+  Dessa forma, em \eqref{eq428}:
+  \[
+    - 2K_N\left(\frac{p_b - p_N}{\Delta x}\right) + K_{N-\frac{1}{2}}\left(\frac{p_N - p_{N-1}}{\Delta x}\right) = \Delta x q_N,
+  \]
+  ou equivalentemente,
+  \[
+    \frac{1}{\Delta x^2}\left(2K_{N}p_N + K_{N-\frac{1}{2}}(p_N-p_{N-1})\right) = q_1 + \frac{2K_{N}p_b}{\Delta x^2}
+  \]
+  e poderia ser feito na extremidade oposta de forma similar, caso necessário.
+\end{enumerate}
+Portanto, a matriz $A$ do sistema, considerando as duas condições de contorno (de Neumann pela esquerda e de Dirichlet pela direita) é dada por
+\[
+  A = \frac{1}{\Delta x^2}
+  \begin{bmatrix}
+    K_{\frac{3}{2}}  & -K_{\frac{3}{2}} & & & &  \\
+    -K_{\frac{3}{2}} & \left(K_{\frac{3}{2}} + K_{\frac{5}{2}}\right) & -K_{\frac{5}{2}}   & & & \\
+    & \ddots & \ddots & \ddots & & \\
+    & & -K_{N-\frac{3}{2}} & \left(K_{N-\frac{3}{2}} + K_{N-\frac{1}{2}}\right) & -K_{N-\frac{1}{2}} \\
+    & & & -K_{N-\frac{1}{2}} & \left(K_{N-\frac{1}{2}} + 2 K_{N}\right)
+  \end{bmatrix}
+\]
+e
+\[
+  d^t = 
+  \left(
+    q_1 + \frac{u_b}{\Delta x},\ q_2,\ \cdots,\ q_{N-1},\ q_N + \frac{2K_{N}p_b}{\Delta x^2}
+  \right).
+\]
+Nota-se que a matriz $A$ é diagonal dominante e pelo teorema \ref{diagdom}, possui fatoração $LU$ única. Além de fatoração $LU$, pode-se explorar a simetria de $A$, utilizar as fatorações de Cholesky e $LDL^T$, e especializá-las para matrizes tridiagonais. Em específico, a implementação da solução do problema \eqref{escoamento_base} unidimensional, com condições de contorno de Neumann, pela fatoração $LDL^t$ pode ser escrita como:
+
+\begin{algobox}[Solução para o problema de escoamento unidimensional com condições de Neumann]
+  \begin{enumerate}[label=\textbf{Passo \arabic*)}, leftmargin=*, align=parleft, nosep]
+  \item Calcular $h = \frac{B - A}{N + 1}$ e inicializar:
+  \begin{align*}
+  a_{11} &= \frac{K_{1/2} + K_{3/2}}{h^2}
+  \end{align*}
+    
+\item Para cada \( i = 2,\ldots,N-1 \):
+    \begin{align*}
+        a_{i,i-1} &= -\frac{K_{i-1/2}}{h^2} \\
+        a_{ii} &= \frac{K_{i-1/2} + K_{i+1/2}}{h^2} \\
+        d_i &= q\left(A + \left(i - \frac{1}{2}\right) h\right)
+    \end{align*}
+    
+\item Calcular último elemento e ajustar condições de Neumann:
+    \begin{align*}
+        a_{N,N-1} &= -\frac{K_{N-1/2}}{h^2} \\
+        a_{NN} &= \frac{K_{N-1/2} + K_{N+1/2}}{h^2} \\
+        d_1 &= q\left(A + \frac{h}{2}\right) + \frac{K_{1/2} \alpha}{h^2} \\
+        d_N &= q\left(A + \left(N - \frac{1}{2}\right) h\right) + \frac{K_{N+1/2} \beta}{h^2}
+    \end{align*}
+    
+\item Fatoração LDL$^T$ inicial:
+    \begin{align*}
+        D_1 = a_{11},\ 
+        l_{2} = \frac{a_{21}}{D_1} \text{ e }
+        z_1 = d_1
+    \end{align*}
+    
+\item Para cada \( i = 2,\ldots,N-1 \):
+    \begin{align*}
+        D_i &= a_{ii} - l_{i}^2 D_{i-1} \\
+        l_{i+1} &= \frac{a_{i+1,i}}{D_i} \\
+        z_i &= \frac{d_i - l_{i} z_{i-1}}{D_i}
+    \end{align*}
+    
+\item Completar fatoração:
+    \begin{align*}
+        D_N = a_{NN} - l_{N}^2 D_{N-1} \text{ e }
+        z_N = \frac{d_N - l_{N} z_{N-1}}{D_N}
+    \end{align*}
+    
+\item Atribuir condições de contorno:
+    \begin{align*}
+        w_0 = \alpha,\  
+        w_N = \frac{z_N}{D_N} \text{ e }w_{N+1} = \beta
+    \end{align*}
+    
+\item Resolver sistema regressivamente para \( i = N-1,\ldots,1 \):
+    \begin{align*}
+        w_i &= \frac{z_i}{D_i} - l_{i+1} w_{i+1}
+    \end{align*}
+    
+\item \textbf{Saída:} \( w_i \) para \( i = 0,\ldots,N+1 \)
+\end{enumerate}
+\end{algobox}
+Foram realizados testes para aferir o tempo de execução médio entre os três algoritmos de fatoração, nomeadamente, $LDL^t$, de Crout e de Cholesky. Os testes se deram no computador pessoal descrito na ficha técnica \ref{nota_tecnica}, onde cada algoritmo foi executado mil vezes para diferentes números de subintervalos. Pode-se ver na tabela \ref{table:1} que, realmente, o algoritmo $LDL^t$ performou (ligeiramente) melhor que a fatoração de Crout (pensando no problema do exemplo \ref{exemplo-vfcontinuo}).
+
+\begin{table}[h]
+  \centering
+  \begin{tabular}{|c|c|c|c|}
+    \hline
+    \textbf{Subintervalos} & $\mathbf{LDL^t}$ & \textbf{Crout} & \textbf{Cholesky} \\
+    \hline\hline
+    $10^2$ & $0.18247 \times 10^{-4}\ s$ & $0.18758 \times 10^{-4}\ s$ & $0.20147 \times 10^{-4}\ s$ \\
+    $10^3$ & $0.86234 \times 10^{-4}\ s$ & $0.95469 \times 10^{-4}\ s$ & $0.98242 \times 10^{-4}\ s$ \\
+    $10^4$ & $0.82834 \times 10^{-3}\ s$ & $0.92428 \times 10^{-3}\ s$ & $0.94293 \times 10^{-3}\ s$ \\
+    $10^5$ & $0.72082 \times 10^{-2}\ s$ & $0.79367 \times 10^{-2}\ s$ & $0.83214 \times 10^{-2}\ s$ \\
+    \hline
+  \end{tabular}
+  \caption{Tempos médios de métodos de fatoração diferentes para o problema unidimensional.}
+  \label{table:1}
+\end{table}
+
+Vale notar que os três algoritmos possuem a mesma ordem de erro de truncamento $O(h^2)$. Para ilustrar esse método, tomam-se dois exemplos:
+
+\begin{exemplo}\label{exemplo-vfcontinuo}
+  Dado um problema de valor de contorno unidimensional
+  \begin{equation*}
+    \left\{
+      \begin{aligned}
+      -\frac{d}{dx}\left(K\frac{dp}{dx}\right) &= -25\cos(25x) && \text{em $\Omega = [0,1]$} \\
+      p &= x && \text{sobre $\partial\Omega$}
+      \end{aligned}
+    \right.
+  \end{equation*}
+  onde a permeabilidade absoluta do meio é $K(x) = 2 + \sin(25x)$ e solução exata $p(x) = x$. As fatorações produziram resultados próximos à solução exata, com erro de truncamento $\epsilon \approx 0.355\times 10^{-2}$, e gráficos:
+
+  \begin{figure}[H]
+    \centering
+    \begin{subfigure}[b]{0.48\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{imagens/desenvolvimento_CF.jpeg}
+      \label{fig:img1}
+    \end{subfigure}
+    %\hfill % Adds horizontal space
+    \begin{subfigure}[b]{0.48\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{imagens/desenvolvimento_LDL.jpeg}
+      \label{fig:img2}
+    \end{subfigure}
+    \caption{Solução por diferentes métodos de fatoração (Crout e $LDL^t$)}
+    \label{comparacaoEx1CFLDL}
+  \end{figure}
+\end{exemplo}
+
+\begin{exemplo}
+  Dado um problema de valor de contorno unidimensional $-\frac{d}{dx}\left(K\frac{dp}{dx}\right) = 0$ em $\Omega = [0,1]$, e contorno de Dirichlet $p(0) = 0$ e $p(1) = 1$. A permeabilidade absoluta do meio é descontínua dada por
+  \[
+    K(x) = 
+    \left\{
+      \begin{aligned}
+      \kappa&, && \text{em $x \in [0,x^*]$} \\
+      1&, && \text{em $x \in (x^*,1]$}
+      \end{aligned}
+    \right.
+  \]
+  e solução exata
+  \[
+    p(x) = 
+    \left\{
+      \begin{aligned}
+      &\frac{x}{x^*-\kappa x^* + \kappa}, && \text{em $x \in [0,x^*)$} \\
+      &\frac{\kappa(x-1)}{x^*-\kappa x^* + \kappa}+1, && \text{em $x \in (x^*,1]$}
+      \end{aligned}
+    \right.
+    .
+  \]
+  Usando o método da fatoração de Crout (mas podendo testado com os outros métodos descritos), foi possível chegar perto da solução exata com erro de truncamento $\epsilon \approx 0.124\times 10^{-1}$, maior do que no problema contínuo, e gráfico:
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=.6\textwidth]{imagens/desenvolvimento_CF_ex2.jpeg}
+    \caption{Solução pelo método de fatoração de Crout}
+    \label{Ex2DescontCF}
+  \end{figure}
+\end{exemplo}
+
+\subsection{Caso bidimensional}
+A generalização do método de volumes finitos para uma dimensão maior segue um procedimento análogo ao da subseção anterior: obter uma discretização de \eqref{eq:eq44} em $\Omega \subset \mathbb{R}^2$. Primeiro, integra-se
+\[
+  \int_{V_{i,j}}q\ dx = |V_{i,j}|q_{i,j} = \Delta x \Delta y\ q_{i,j},
+\]
+onde $\Delta x \Delta y$ é o volume da célula $V_{i,j}$ e $q_{i,j}$ é o termo fonte/sumidouro constante por célula. Após, decompõe-se a borda $\partial V_{i,j}$ em componentes \textit{norte}, \textit{sul}, \textit{leste} e \textit{oeste}, respectivamente, $\partial V_{i,j} = N + S + L + O$, como ilustrado na figura \ref{nsloEmPartialV} abaixo.
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[scale=2]
+    \fill[fill=orange!20] (-0.8,-0.8) rectangle (0.8,0.8);
+
+    \draw[black] (-0.8,-0.8) -- (-0.8, 0.8);
+    \draw[black] (-0.8,-0.8) -- ( 0.8,-0.8);
+    \draw[black] ( 0.8, 0.8) -- ( 0.8,-0.8);
+    \draw[black] ( 0.8, 0.8) -- (-0.8, 0.8);
+    
+    \node[font=\small] at (0,0) {$V_{i,j}$};
+
+    \node[above, font=\small] at (0, 0.8) {$N$};
+    \node[below, font=\small] at (0,-0.8) {$S$};
+    \node[right, font=\small] at ( 0.8,0) {$L$};
+    \node[left,  font=\small] at (-0.8,0) {$O$};
+    
+    \node[right, font=\small] at (.8,.9) {$\partial V_{i,j}$};
+
+\end{tikzpicture}
+\caption{Componentes norte, sul, leste e oeste em $\partial V_{i,j}$.}
+\label{nsloEmPartialV}
+\end{figure}
+
+Com isso, têm-se
+\begin{equation}\label{integracaoDasFaces}
+  \int_{\partial V_{i,j}}u \cdot n\ ds = \int_{N}u \cdot n_N\ ds + \int_{S}u \cdot n_S\ ds + \int_{L}u \cdot n_L\ ds + \int_{O}u \cdot n_O\ ds,
+\end{equation}
+em que $n_N$, $n_S$, $n_L$ e $n_O$ são os vetores normais a cada aresta de $\partial V_{i,j}$, apontando para fora do volume. Usando a discretização conservativa, pode-se aproximar cada integral separadamente, como por exemplo:
+\begin{align}
+  \int_{S}u \cdot n_S\ ds &= \int_{x_{i-1/2}}^{x_{i+1/2}} K\left.\frac{\partial p}{\partial y}\right|_{(x,y_{j-1/2})}\ dx \\
+  &\simeq \int_{x_{i-1/2}}^{x_{i+1/2}} -\frac{2K_{i,j-1}K_{i,j}}{K_{i,j-1}K_{i,j}}\left(\frac{p_{i,j} - p_{i,j-1}}{\Delta y}\right)\ dx \\
+  &= \frac{\Delta x}{\Delta y} K_{i,j-\frac{1}{2}}(p_{i,j-1} - p_{i,j}),
+\end{align} 
+com $n_S = (0,-1)$, e similarmente para as outras faces. Portanto, a forma discreta de \eqref{eq:eq44}\ para um problema bidimensional é
+
+\begin{equation}\label{eq436}
+  \begin{aligned}
+  q_{i,j} = &- \frac{1}{\Delta y^2} K_{i,j+\frac{1}{2}}p_{i,j+1} - \frac{1}{\Delta y^2} K_{i,j-\frac{1}{2}}p_{i,j-1} \\
+  &- \frac{1}{\Delta x^2} K_{i+\frac{1}{2},j}p_{i+1,j} - \frac{1}{\Delta x^2} K_{i-\frac{1}{2},j}p_{i-1,j} \\
+  &+ \left(\frac{1}{\Delta y^2} K_{i,j+\frac{1}{2}} + \frac{1}{\Delta y^2} K_{i,j-\frac{1}{2}} + \frac{1}{\Delta x^2} K_{i+\frac{1}{2},j} + \frac{1}{\Delta x^2} K_{i-\frac{1}{2},j}\right)p_{i,j},
+  \end{aligned}
+\end{equation}
+onde se usam as médias harmônicas $K_{i,j\pm 1/2}$ e $K_{i\pm 1/2,j}$. Após a pressão ser calculada, o campo de velocidades pode ser calculado usando a mesma estratégia de aproximação dos fluxos nas integrais em $\partial V_{i,j}$. Pela definição da velocidade de Darcy \eqref{leiDeDarcy}:
+\[
+  \mathsf{u} = 
+  \begin{bmatrix}
+    u \\ v
+  \end{bmatrix} =
+  \begin{bmatrix}
+    -K\partial_xp \\ -K \partial_yp
+  \end{bmatrix}.
+\]
+Usando-se a discretização dos fluxos discutida anteriormente, mantendo-se a aproximação conservativa de volumes finitos, consegue-se:
+\begin{equation*}
+  \begin{aligned}
+    u_L \simeq -K_{i+\frac{1}{2},j}\frac{p_{i+1,j} - p_{i,j}}{\Delta x}, && u_O \simeq -K_{i-\frac{1}{2},j}\frac{p_{i,j} - p_{i-1,j}}{\Delta x} \\
+    v_N \simeq -K_{i,j+\frac{1}{2}}\frac{p_{i,j+1} - p_{i,j}}{\Delta y}, && v_S \simeq -K_{i,j-\frac{1}{2}}\frac{p_{i,j} - p_{i,j-1}}{\Delta y}.
+  \end{aligned}
+\end{equation*}
+Para fins de visualização, o campo vetorial pode ser calculado no centro das células, fornecendo um campo discreto mais conveniente para a maioria das situações. Isso pode ser calculado por médias simples, da forma
+\begin{equation}
+  \begin{aligned}
+    u_{i,j} = \frac{u_L + u_O}{2} && \text{e} && v_{i,j} = \frac{v_N + v_S}{2}.
+  \end{aligned}
+\end{equation}
+
+\subsubsection{Condição de contorno de Neumann}
+
+Quando se impõe uma condição de contorno do tipo \textit{Neumann}, significa impor um fluxo naquela fronteira, ou seja,
+\[
+  \begin{aligned}
+    -K\frac{\partial p}{\partial n} = -(K\nabla p) \cdot n = g(x,y) && \text{em $\zeta \subset \partial V_{i,j}$,}
+  \end{aligned}
+\]
+onde $g$ é uma função conhecida. Se $g$ é nula, têm-se um contorno do tipo \textit{homogênea} e para explicar a discretização do contorno, toma-se o exemplo da face leste, que teria, então:
+\[
+  \int_{L}(K\nabla p) \cdot n_L\ ds = 0.
+\]
+Portanto, sua contribuição na equação \eqref{integracaoDasFaces}\ será eliminada. Caso $g$ não seja nula, têm-se uma condição de contorno do tipo \textit{não homogênea}, e a integral será alterada para:
+\[
+  \int_{L}(K\nabla p) \cdot n_L\ ds = \int_{y_{j-1/2}}^{y_{j+1/2}}(K\nabla p) \cdot n_L\ dy = -\int_{y_{j-1/2}}^{y_{j+1/2}}g(x_{\frac{1}{2}},y)\ dy.
+\]
+Desse modo, seria preciso integrar numericamente $g$, por exemplo, pela regra do trapézio:
+\[
+  G_j = \int_{y_{j-1/2}}^{y_{j+1/2}}g(x_{\frac{1}{2}},y)\ dy \simeq \frac{\Delta y}{2}\left(g(x_{\frac{1}{2}},y_{i-\frac{1}{2}}) + g(x_{\frac{1}{2}},y_{i+\frac{1}{2}})\right),
+\]
+da forma que a equação \eqref{eq436}\ será modificada (no exemplo de quando $i = M$) para
+\[
+  \begin{aligned}
+  q_{M,j}  - \frac{G_j}{\Delta x \Delta y} =
+  &- \frac{1}{\Delta y^2} K_{M,j+\frac{1}{2}}p_{M,j+1} - \frac{1}{\Delta y^2} K_{M,j-\frac{1}{2}}p_{M,j-1} - \frac{1}{\Delta x^2} K_{M-\frac{1}{2},j}p_{M-1,j} \\
+  &+ \left(\frac{1}{\Delta y^2} K_{M,j+\frac{1}{2}} + \frac{1}{\Delta y^2} K_{M,j-\frac{1}{2}} + \frac{1}{\Delta x^2} K_{M-\frac{1}{2},j}\right)p_{M,j}.
+  \end{aligned}
+\]
+
+\subsubsection{Condição de contorno de Dirichlet}
+
+Quando o contorno é do tipo \textit{Dirichlet}, significa que foi imposta uma pressão em alguma fronteira, ou seja,
+\[
+  \begin{aligned}
+  p = g(x,y) && \text{em $\zeta \subset \partial V_{i,j}$,}
+  \end{aligned}
+\]
+onde $g$ é uma função conhecida para a pressão na borda. Por exemplo, a face sul do volume $V_{i,1}$ está em $\zeta$, então a contribuição da integral deve ser recalculada para:
+\[
+  \begin{aligned}
+      \int_{S}(K\nabla p)\cdot n_S\ ds 
+      &= \int_{x_{i-1/2}}^{x_{i+1/2}}-K\frac{\partial p}{\partial y}(x,y_{\frac{1}{2}})\ dx \\
+      &\simeq \int_{x_{i-1/2}}^{x_{i+1/2}}-K\left(\frac{p_{i,1} - g\left(x,y_{\frac{1}{2}}\right)}{y_1 - y_{\frac{1}{2}}}\right)\ dx \\
+      &= -2\frac{\Delta x}{\Delta y}K_{i,\frac{1}{2}}p_{i,1} + \frac{2}{\Delta y}K_{i,\frac{1}{2}}\int_{x_{i-1/2}}^{x_{i+1/2}}g(x,y_{\frac{1}{2}})\ dx.
+  \end{aligned}
+\]
+E novamente, integra-se $g$ em $G_i$:
+\[
+  G_i = \int_{x_{j-1/2}}^{x_{j+1/2}}g(x,y_{\frac{1}{2}})\ dx \simeq \frac{\Delta x}{2}\left(g(x_{i-\frac{1}{2}},y_{\frac{1}{2}}) + g(x_{i+\frac{1}{2}},y_{\frac{1}{2}})\right),
+\]
+e portanto, a equação \eqref{eq436}\ será modificada (no exemplo de quando $j = 1$) para 
+\[
+  \begin{aligned}
+  q_{M,j}  - \frac{2}{\Delta y^2 \Delta x}G_iK_{i,\frac{1}{2}} =
+  &- \frac{1}{\Delta y^2} K_{i,\frac{3}{2}}p_{i,2} - \frac{1}{\Delta x^2} K_{i+\frac{1}{2},1}p_{i+1,1} - \frac{1}{\Delta x^2} K_{i-\frac{1}{2},1}p_{i-1,j} \\
+  &+ \left(\frac{1}{\Delta y^2} K_{i,\frac{3}{2}} + \frac{2}{\Delta y^2} K_{i,\frac{1}{2}} + \frac{1}{\Delta x^2} K_{i+\frac{1}{2},1} + \frac{1}{\Delta x^2} K_{i-\frac{1}{2},1}\right)p_{i,1},
+  \end{aligned}
+\]
+com $K_{i,\frac{1}{2}} = K_{i,1}$. Da mesma forma como no contorno de Neumann, quando $g \neq 0$, a condição de contorno de Dirichlet é do tipo \textit{não homogêneo} e, caso contrário, \textit{homogêneo}.
+
+\subsubsection{Implementação}\label{ssub:impl_2D_volfinelip}
+
+Considerando uma discretização $M \times N$ células computacionais, o esquema \eqref{eq436} pode ser escrito na forma matricial
+\[
+  Aw = d
+\]
+com $w = (p_1,...,p_{MN})^t$ e $b = (q_1,...,q_{MN})^t$. Cada linha da matriz $A$ está relacionada com uma célula $(i,j)$ e leva em consideração as contribuições de seus quatro vizinhos $(i-1,j)$, $(i+1,j)$, $(i,j-1)$ e $(i,j+1)$. Para ordenar as células no caso bidimensional, pode-se escolher (dentre as triviais) ordenar por colunas ou por linhas; por exemplo, em uma malha $3 \times 3$, as células podem ser ordenadas (por linhas) da esquerda para direita, de cima para baixo, como a figura \ref{fig:ord_comp}.
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[scale=2.6]
+  \fill[fill=orange!20] (-0.4,1.2) rectangle (0.4,-1.2);
+  \fill[fill=orange!20] (-1.2,0.4) rectangle (1.2,-0.4);
+  \fill[fill=orange!40] (-0.4,0.4) rectangle (0.4,-0.4);
+
+  \draw[black] (-1.2,-1.2) rectangle (1.2,1.2); % Desenha o quadrado
+
+  % Linhas verticais (dividindo em 3 colunas)
+  \draw[black] (-0.4,-1.2) -- (-0.4,1.2); % 1ª linha vertical
+  \draw[black] ( 0.4,-1.2) -- ( 0.4,1.2);   % 2ª linha vertical
+
+  % Linhas horizontais (dividindo em 3 linhas)
+  \draw[black] (-1.2,-0.4) -- (1.2,-0.4); % 1ª linha horizontal
+  \draw[black] (-1.2,0.4) -- (1.2,0.4);   % 2ª linha horizontal
+  
+  \node[below, font=\small, blue] at (-0.8,-0.8) {$1$};
+  \node[below, font=\small, blue] at ( 0.0,-0.8) {$2$};
+  \node[below, font=\small, blue] at ( 0.8,-0.8) {$3$};
+  \node[below, font=\small, blue] at (-0.8, 0.0) {$4$};
+  \node[below, font=\small, blue] at ( 0.0, 0.0) {$5$};
+  \node[below, font=\small, blue] at ( 0.8, 0.0) {$6$};
+  \node[below, font=\small, blue] at (-0.8, 0.8) {$7$};
+  \node[below, font=\small, blue] at ( 0.0, 0.8) {$8$};
+  \node[below, font=\small, blue] at ( 0.8, 0.8) {$9$};
+
+  \node[above, font=\small, black] at (-0.8,-0.8) {$i-1,j-1$};
+  \node[above, font=\small, black] at ( 0.0,-0.8) {$i  ,j  $};
+  \node[above, font=\small, black] at ( 0.8,-0.8) {$i+1,j+1$};
+  \node[above, font=\small, black] at (-0.8, 0.0) {$i-1,j-1$};
+  \node[above, font=\small, black] at ( 0.0, 0.0) {$i  ,j  $};
+  \node[above, font=\small, black] at ( 0.8, 0.0) {$i+1,j+1$};
+  \node[above, font=\small, black] at (-0.8, 0.8) {$i-1,j-1$};
+  \node[above, font=\small, black] at ( 0.0, 0.8) {$i  ,j  $};
+  \node[above, font=\small, black] at ( 0.8, 0.8) {$i+1,j+1$};
+\end{tikzpicture}
+\caption{Exemplo de ordenação das células computacionais para um problema bidimensional.}
+\label{fig:ord_comp}
+\end{figure}
+
+Ainda nesse exemplo, a linha 5 da matriz $\mathbf{A}_{9\times 9}$ que está relacionada à célula $(i,j)$ tem contribuições nas colunas 4, 5, 6, 2 e 8, além de receber contribuições do fator que a multiplica $p_{i,j}$; e por sua vez, as colunas 4, 6, 2 e 8 recebem, respectivamente, $p_{i-1,j}$, $p_{i+1,j}$, $p_{i,j-1}$ e $p_{i,j+1}$. Dessa forma, com essa ordenação, a matriz terá uma estrutura pentadiagonal, três diagonais sucessivas e duas a uma distância $M$ da diagonal principal. A estrutura seria como a representação da matriz abaixo:
+\[
+A_{9\times 9} = 
+\begin{bmatrix}
+  \mathsf{x} & \mathsf{x} &            & \mathsf{x} &            &            &            &            &            \\
+  \mathsf{x} & \mathsf{x} & \mathsf{x} &            & \mathsf{x} &            &            &            &            \\
+             & \mathsf{x} & \mathsf{x} &            &            & \mathsf{x} &            &            &            \\
+  \mathsf{x} &            &            & \mathsf{x} & \mathsf{x} &            & \mathsf{x} &            &            \\
+             & \mathsf{x} &            & \mathsf{x} & \mathsf{x} & \mathsf{x} &            & \mathsf{x} &            \\
+             &            & \mathsf{x} &            & \mathsf{x} & \mathsf{x} &            &            & \mathsf{x} \\
+             &            &            & \mathsf{x} &            &            & \mathsf{x} & \mathsf{x} &            \\
+             &            &            &            & \mathsf{x} &            & \mathsf{x} & \mathsf{x} & \mathsf{x} \\
+             &            &            &            &            & \mathsf{x} &            & \mathsf{x} & \mathsf{x}   
+\end{bmatrix}.
+\]
+Essa ordenação pode ser calculada por uma relação algébrica dada por
+\[
+  k = i + (j - 1)M,
+\]
+onde $k$ é o número da incógnita e correspondente linha da matriz, $M$ o número de células em cada linha da malha, $i = 1,2,..., M$ e $j = 1,2,..., M$. Nota-se que a matriz em questão é quadrada e pode ser descrita por blocos, haja vista
+\[
+  \mathbf{A}_{9\times 9} = 
+  \begin{bmatrix}
+    A & C &         \\
+    B & A & C \\
+            & B & A
+  \end{bmatrix},
+\]
+% \[
+%   \bar{A} = 
+%   \begin{bmatrix}
+%     \mathsf{x} & \mathsf{x} &            \\
+%     \mathsf{x} & \mathsf{x} & \mathsf{x} \\
+%                & \mathsf{x} & \mathsf{x} 
+%   \end{bmatrix},\ 
+%   \bar{B} = 
+%   \begin{bmatrix}
+%     \mathsf{x} &            &            \\
+%                & \mathsf{x} &            \\
+%                &            & \mathsf{x}
+%   \end{bmatrix}
+%   \text{ e }
+%   \bar{C} = 
+%   \begin{bmatrix}
+%     \mathsf{x} &            &            \\
+%                & \mathsf{x} &            \\
+%                &            & \mathsf{x}
+%   \end{bmatrix}
+% \]
+e portanto, dadas certas propriedades\footnotemark, é possível fatorá-la em duas matrizes (diagonais inferior $L$ e superior $U$) da forma
+\footnotetext{Ver apêndice \ref{notas_sobre_fatora_o_de_matrizes}.}
+\[
+  \mathbf{A}_{9\times 9} = LU =
+  \begin{bmatrix}
+    \bar{A}_1 &     &     \\
+    \bar{B}_2 & \bar{A}_2 &     \\
+        & \bar{B}_3 & \bar{A}_3
+  \end{bmatrix}
+  \begin{bmatrix}
+    I_1 & \Gamma_1 & \\ 
+        & I_2      & \Gamma_2 \\
+        &          & I_3
+  \end{bmatrix}.
+\]
+Pensando em matrizes mais gerais, com $Q = M \times N$, o sistema $Aw = d$, então, teria também $w$ e $d$ em blocos
+\begin{equation}
+  w = (w^{(1)}, \cdots, w^{(Q)})^t \text{ e } d = (d^{(1)}, \cdots, d^{(Q)})^t,
+\end{equation}
+e algoritmo de resolução:
+
+\begin{algobox}[Solução usando fatoração $\mathbf{LU}$ em bloco]
+  \begin{enumerate}[label=\textbf{Passo \arabic*)}, leftmargin=*, align=parleft, nosep]
+    \item Colocar $\bar{A}_1 = A_1$ e resolver (para $\Gamma_1$):
+    \begin{align}
+      \bar{A}_1\Gamma_1 = C_1;
+    \end{align}
+    \item Para $i = 2, 3, ..., Q-1$, calcular
+    \[
+      \bar{A}_i = A_i - B_i\Gamma_{i-1}
+    \]
+    e resolver (para $\Gamma_i$)
+    \[
+      \bar{A}_i\Gamma_i = C_i;
+    \]
+    \item Calcular $\bar{A}_N = A_N - B_N\Gamma_{Q-1}$;
+    \item Pensando em $Lz = d$, resolver $\bar{A}_1z^{(1)} = d^{(1)}$ e, para $i = 2, 3, ..., Q$,
+    \[
+      \bar{A}_iz^{(i)} = d^{(i)} - B_iw^{(i-1)};
+    \]
+    \item Calcular, com $w^{(Q)} = z^{(Q)}$, para $i = N-1, N-2, ..., 1$,
+    \[
+      w^{(i)} = z^{(i)} - \Gamma_iw^{(i+1)};
+    \]
+    \item \textbf{Saída:} As aproximações $w_i$ para $i = 1,\ldots,Q$.
+  \end{enumerate}
+\end{algobox}
+
+Este algoritmo usa a estratégia de trocar os cálculos das inversas de $\bar{A}$ por uma resolução de sistema, o que reduz a ordem de operações\footnotemark\ de $O(3NM^3)$ para $O(\frac{5}{3}NM^3)$, tendo como referência os estudos presentes em \citeonline[pp.~58-61]{isaacson1966analysis}.
+\footnotetext{Para comparar, o método de eliminação Gaussiana tem quantidade de operações na ordem, para matrizes $m \times m$, de $O(\frac{1}{3}m^6)$. A economia na fatoração $LU$ em bloco surge por levar em conta os vários zeros na matriz original.}
+\begin{exemplo}\label{exemplobicos}
+  Dado um problema elíptico bidimensional simplificado como \eqref{escoamento_base}, de contorno Neumann homogêneo 
+  \[
+    \left\{
+      \begin{aligned}
+      \nabla \cdot u &= -8\pi^2\cos(2\pi x)\cos(2\pi y) && \text{em $\Omega = [0,1]\times [0,1]$} \\
+      u\cdot n &= 0 && \text{sobre $\partial\Omega$}
+      \end{aligned}
+    \right.
+  \]
+  com velocidade de Darcy $u = -K \nabla p$, onde a permeabilidade absoluta do meio é $K = 1$ e solução exata $p(x) = \cos(2\pi x)\cos(2\pi y)$. Usando o método de volumes finitos descrito anteriormente, foi possível obter resultados próximos à solução exata, com erro de truncamento $\epsilon \approx 0.5198\times 10^{-2}$ e tempo de execução da ordem de $10^{-1}$ segundos.
+
+  Para resolver com exatidão o problema, foi usado um recurso de \textit{contorno Dirichlet local}, onde se impõe uma pressão em um ponto específico da matriz, nesse caso, o ponto $(1,1)$ por simplicidade. O gráfico do campo de pressões com vetores normalizados pode ser visualizado na figura \ref{Ex2Deliptica}a abaixo.
+\end{exemplo}
+
+\begin{definicao}\label{qot5}
+  Em um reservatório, quando se secciona uma porção deste lugar em um domínio $\Omega$ com exatamente poço de injeção e outro de produção (onde se é extraído um fluido), esta porção é denominada como \textit{a quarter of the five spot}. A injeção e produção são induzidas por um termo fonte $q$
+  \[
+    q = 
+    \left\{
+      \begin{aligned}
+      \tilde{q} && &\text{no poço de injeção} \\
+      -\tilde{q} && &\text{no poço de produção} \\
+      0 && &\text{no restante do domínio}
+      \end{aligned},
+    \right.
+  \]
+  aplicado em células localizadas em extremos de $\Omega$, geralmente a injeção no extremo inferior esquerdo e a produção no superior direito.
+\end{definicao}
+
+\begin{exemplo}\label{exemplobiqof5}
+  Dado um problema elíptico bidimensional simplificado como \eqref{escoamento_base}, uma configuração \textit{a quarter of the five spot} como na definição \ref{qot5} e condições de contorno homogêneas de Neumann:
+  \[
+    \left\{
+      \begin{aligned}
+      \nabla \cdot u &= q && \text{em $\Omega = [0,1]\times [0,1]$} \\
+      u\cdot n &= 0 && \text{sobre $\partial\Omega$} \\
+      -K \nabla p &= u && \text{(Velocidade de Darcy)}
+      \end{aligned}
+    \right..
+  \] 
+  Com uma permeabilidade absoluta $K(x) = 1$ constante, termo fonte $\tilde{q} = 1$, poço de injeção na célula $(1,1)$ e poço de produção em $(N,M)$. O gráfico do campo de pressões com vetores normalizados pode ser visualizado na figura \ref{Ex2Deliptica}b abaixo. Para este problema, assim como no exemplo anterior, é preciso especificar a pressão para evitar a indeterminação.
+\end{exemplo}
+
+\begin{figure}[ht]
+  \centering
+  \begin{subfigure}[c]{0.4\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{imagens/desenvolvimento_2Deliptica_ex1.png}
+    \caption{Exemplo \ref{exemplobicos}}
+    \label{fig:Ex2Delipticaimg1}
+  \end{subfigure}
+  \hfill % Adds horizontal space
+  \begin{subfigure}[c]{0.4\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{imagens/desenvolvimento_2Deliptica_ex2.png}
+    \caption{Exemplo \ref{exemplobiqof5}}
+    \label{fig:Ex2Delipticaimg2}
+  \end{subfigure}
+  \caption{Campo de pressões e vetores dos exemplos.}
+  \label{Ex2Deliptica}
+\end{figure}
+
+\section{Introdução a problemas de transporte passivo em meios porosos}
+
+O movimento de um fluido em escoamento monofásico em meios porosos é descrito por um problema de \textit{transporte passivo}, onde o fluido marcado\footnote{Também pode ser interpretado como problema de transporte de \textit{contaminantes}, \textit{poluentes}, traçadores passivos, etc.} segue o escoamento sem alterar suas propriedades. Com a velocidade do fluido $u$, obtida através da solução do problema elíptico dado por \eqref{escoamento_base}\ e \eqref{leiDeDarcy}, esse deslocamento pode ser estimado pela seguinte equação hiperbólica:
+
+\begin{equation}\label{transpPassivCompleto}
+\left\{
+  \begin{aligned}
+    \frac{\partial}{\partial t}(\phi c) + \nabla \cdot (uc) &= q && \text{em $\Omega$} \\
+    c(x,t=0) &= c_0 && \text{em $\Omega$} \\
+    c(x,t) &= c_b(x,t) && \text{em $\partial\Omega^-$}
+  \end{aligned},
+\right.
+\end{equation}
+onde $\phi$ é a porosidade, $q$ é o termo fonte, $c(x,t)$ é a concentração do contaminante, $c_0$ é a condição inicial e $c_b$ é a concentração nas bordas de entrada $\partial\Omega^- = \{x \in \partial\Omega; u \cdot n < 0\}$, onde $n$ é a normal exterior à fronteira $\partial\Omega$. Em simulações numéricas, geralmente o termo fonte da equação \eqref{transpPassivCompleto}\ leva em conta os poços de injeção e produção, os quais podem ser convertidos em condições de contorno adequadas, gerando a equação:
+
+\begin{equation}
+\left\{
+  \begin{aligned}
+   \phi \frac{\partial c}{\partial t} + \nabla \cdot (uc) &= 0 && \text{em $\Omega$} \\
+    c(x,t=0) &= c_0 && \text{em $\Omega$} \\
+    c(x,t) &= c_b(x,t) && \text{em $\partial\Omega^-$}
+  \end{aligned},
+\right.
+\end{equation}
+onde a porosidade $\phi = \phi(x)$ é constante no tempo. Caso a porosidade seja uniforme e constante no tempo, é possível escalonar a primeira equação de (\theequation) para
+\begin{equation}\label{eq53}
+  \frac{\partial c}{\partial \tau} + \nabla \cdot (uc) = 0,
+\end{equation}
+onde $\tau = t/\phi$. Admitindo que a velocidade $u$ é conhecida e não depende da concentração (considerando que $K$ é constante), têm-se uma \textit{lei de conservação hiperbólica linear}.
+
+\subsection{Derivação de leis de conservação hiperbólicas}
+
+Para entender como surge uma EDP hiperbólica, fisicamente, deriva-se uma \textit{lei de balanço} para determinar a conservação de \textit{concentração} $c(x,t)$ em um domínio $\Omega \subset \mathbb{R}^n$. Essa lei de balanço estabelece que a variação temporal da quantidade $c$ em um domínio $\Omega$ é igual a taxa de fluxo de $c$ por $\partial \Omega$ mais o total de $c$ injetado ou retirado de $\Omega$. Matematicamente, pode ser expresso por:
+\begin{equation}
+  \frac{\partial}{\partial t}\int_\Omega\phi c(x,t)\ dx = - \int_{\partial\Omega}f(c(x,t))\cdot n\ ds + \int_\Omega q\ dx,
+\end{equation}
+onde $n$ é o vetor normal ao exterior de $\Omega$ (ou seja, $\partial\Omega$), $f(c)$ é a função de fluxo dependendo de $c$ (não necessariamente linear) e $q$ o termo fonte. Com o teorema da divergência:
+\[
+  \frac{\partial}{\partial t}\int_\Omega\phi c(x,t)\ dx = - \int_{\Omega}\nabla \cdot f(c(x,t))\ dx + \int_\Omega q\ dx,
+\]
+ou seja,
+\begin{equation}
+  \int_\Omega\left(\frac{\partial}{\partial t}(\phi c(x,t)) + \nabla \cdot f(c(x,t))- q\right)\ dx = 0.
+\end{equation}
+Como a equação (\theequation) vale para qualquer domínio arbitrário $\Omega$ e a porosidade $\phi = \phi(x)$ é constante no tempo, então é possível obter a forma diferencial:
+\begin{equation}\label{EDPH}
+  \phi \frac{\partial c}{\partial t} + \nabla \cdot f(c) = q
+\end{equation}
+chamada, então, de \textit{equação diferencial parcial hiperbólica}, ou lei de conservação quando $q = 0$.
+
+\subsection{Equação de transporte linear}
+
+Um exemplo simples e clássico da lei de conservação hiperbólica é a \textit{equação de transporte linear}, ou também chamada de \textit{equação de advecção linear}, onde dada a equação \eqref{EDPH}\ com $f(c) = uc$ e $u$ a velocidade constante, se tem a equação 
+\begin{equation}\label{eq517}
+  \frac{\partial c}{\partial t} + u\frac{\partial c}{\partial x} = 0,
+\end{equation}
+equivalente à equação \eqref{eq53} em uma dimensão. O problema de valor inicial para (\theequation) consiste em achar uma solução para a equação que satisfaça a condição inicial $c(x,0) = c_0(x)$ para todo $x$ em $\mathbb{R}$. Isso pode ser construído pelo \textit{método das características}, que busca reduzir a EDP (\theequation) em uma EDO pela própria estrutura da equação.
+
+Portanto, seja $x(t)$ uma característica, sendo solução do sistema:
+\[
+  \left\{
+  \begin{aligned}
+      x'(t) &= u(x(t), t) && \text{para $t>0$} \\
+      x(0)  &= x_0
+  \end{aligned}
+  \right.
+\]
+assumindo uma curva $x(t)$ em que a solução $c$ é constante, significa que
+\[
+  \frac{d}{dt}c(x(t),t) = c_t(x(t),t) + c_x(x(t),t)x'(t) = 0.
+\]
+Considerando o caso mais simples, onde a velocidade $u$ é constante, as trajetórias
+\[
+  x(t) = x_0 + ut,
+\]
+chamadas de \textit{curvas características}, são soluções para a equação \eqref{eq517}, podendo ser vistas em \ref{fig:curvas_caract}a e \ref{fig:curvas_caract}b. No caso de \ref{fig:curvas_caract}c:
+\[
+  x(t) = \frac{x^2}{2} + x_0.
+\]
+
+\begin{figure}[H]
+  \centering
+    \begin{subfigure}[c]{0.329\textwidth}
+      \centering
+        \begin{tikzpicture}[scale=1.5] % Opcional: escala do gráfico
+          \draw[->] (0,0) -- (3,0) node[right] {$x$}; % Eixo x
+          \draw[->] (0,0) -- (0,2.2) node[above] {$t$}; % Eixo y
+          
+          % Aqui virá o plot da função
+          \draw[->, domain=0:2, smooth, thick, blue] plot (.5*\x+1*.4, {\x});
+          \draw[->, domain=0:2, smooth, thick, blue] plot (.5*\x+2*.4, {\x});
+          \draw[->, domain=0:2, smooth, thick, blue] plot (.5*\x+3*.4, {\x});
+          \draw[->, domain=0:2, smooth, thick, blue] plot (.5*\x+4*.4, {\x});
+        \end{tikzpicture}
+      \label{fig:curvasCaract1}
+      \caption{$u > 0$ constante.}
+    \end{subfigure}
+    \begin{subfigure}[c]{0.329\textwidth}
+      \centering
+        \begin{tikzpicture}[scale=1.5] % Opcional: escala do gráfico
+          \draw[->] (0,0) -- (3,0) node[right] {$x$}; % Eixo x
+          \draw[->] (0,0) -- (0,2.2) node[above] {$t$}; % Eixo y
+          
+          % Aqui virá o plot da função
+          \draw[->, domain=0:2, smooth, thick, blue] plot (1-.5*\x+1*.4, {\x});
+          \draw[->, domain=0:2, smooth, thick, blue] plot (1-.5*\x+2*.4, {\x});
+          \draw[->, domain=0:2, smooth, thick, blue] plot (1-.5*\x+3*.4, {\x});
+          \draw[->, domain=0:2, smooth, thick, blue] plot (1-.5*\x+4*.4, {\x});
+        \end{tikzpicture}
+      \label{fig:curvasCaract2}
+      \caption{$u < 0$ constante.}
+    \end{subfigure}
+    \begin{subfigure}[c]{0.329\textwidth}
+      \centering
+        \begin{tikzpicture}[scale=1.5] % Opcional: escala do gráfico
+          \draw[->] (0,0) -- (3,0) node[right] {$x$}; % Eixo x
+          \draw[->] (0,0) -- (0,2.2) node[above] {$t$}; % Eixo y
+          
+          % Aqui virá o plot da função
+          \draw[->, domain=0:1.5, smooth, thick, blue] plot (1+ 1*.4 -.5*\x*\x, {\x});
+          \draw[->, domain=0:1.5, smooth, thick, blue] plot (1+ 2*.4 -.5*\x*\x, {\x});
+          \draw[->, domain=0:1.5, smooth, thick, blue] plot (1+ 3*.4 -.5*\x*\x, {\x});
+          \draw[->, domain=0:1.5, smooth, thick, blue] plot (1+ 4*.4 -.5*\x*\x, {\x});
+        \end{tikzpicture}
+      \label{fig:curvasCaract3}
+      \caption{$u  = u(t) = -t$.}
+    \end{subfigure}
+  \caption{Diferentes curvas características.}
+  \label{fig:curvas_caract}
+\end{figure}
+
+\section{Método de volumes finitos para equações hiperbólicas}
+
+O método de discretização por volumes finitos é amplamente usado para solucionar equações hiperbólicas, pois trata adequadamente de descontinuidades presentes nas soluções, além de levar em conta as velocidades e direções de propagação da informação. Considerando uma lei de conservação hiperbólica da forma \eqref{EDPH}\ com $\phi = 1$ e $q = 0$, têm-se a forma unidimensional
+\begin{equation}\label{LeideConsevacaoMVF}
+  \frac{\partial c}{\partial t} + \frac{\partial}{\partial x}f(c) = 0.
+\end{equation}
+Por simplicidade, a discretização será uniforme e centrada nos pontos: $x_i$, $i = 1,...,N$, de forma que as interfaces entre dois volumes de controle $V_{i-1}$ e $V_i$ são dadas por
+\[
+  x_{i\pm \frac{1}{2}} = x_i \pm \frac{\Delta x}{2}.
+\]
+Com isso, cada volume de controle é dado por
+\[
+  V_i = [x_{i-\frac{1}{2}},x_{i+\frac{1}{2}}).
+\]
+A discretização temporal também será considerada uniforme, com cada passo de tempo de tamanho $\Delta t$, sendo cada nível denotado por $t^n = n\Delta t$. A representação pode ser dada por uma malha tal como:
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[scale=2]
+
+  \draw[black] (-0.3,-1.0) -- (3.3,-1.0);
+  \draw[black] (-0.3, 0.0) -- (3.3, 0.0);
+  \draw[black] (-0.3, 1.0) -- (3.3, 1.0);
+
+  \draw[black] (0.0,-1.3) -- (0.0,1.3);
+  \draw[black] (1.0,-1.3) -- (1.0,1.3);
+  \draw[black] (2.0,-1.3) -- (2.0,1.3);
+  \draw[black] (3.0,-1.3) -- (3.0,1.3);
+
+  \draw[black, font=\large] (1.0,-1.3) node[below] {${x_{i-1/2}}$};
+  \draw[black, font=\large] (2.0,-1.3) node[below] {${x_{i+1/2}}$};
+  \draw[black, font=\large] (3.3,-1.0) node[right] {${t^{n}}$};
+  \draw[black, font=\large] (3.3, 0.0) node[right] {${t^{n+1}}$};
+
+  \draw[black, font=\Large] (0.5,-0.5) node {$\mathbf{C_{i-1}^{n}}$};
+  \draw[black, font=\Large] (1.5,-0.5) node {$\mathbf{C_{i}^{n}}$};
+  \draw[black, font=\Large] (2.5,-0.5) node {$\mathbf{C_{i+1}^{n}}$};
+  \draw[black, font=\Large] (1.5,0.5) node {$\mathbf{C_{i}^{n+1}}$};
+
+
+\end{tikzpicture}
+\caption{Uma discretização de volumes finitos para leis de conservação hiperbólicas.}
+\label{fig:discrLCH}
+\end{figure}
+
+Em cada passo de tempo $t^n$, a aproximação da solução no volume de controle é dada pelo valor médio de concentração nessa célula:
+\[
+  C_i^n = \frac{1}{\Delta x}\int_{x_{i-\frac{1}{2}}}^{x_{i+\frac{1}{2}}}c(x,t^n)\ dx,
+\]
+e também, define-se uma média temporal da função fluxo
+\[
+  \bar{F}_{i\pm\frac{1}{2}}^n = \frac{1}{\Delta t}\int_{t^n}^{t^{n+1}}f(c(x_{i\pm\frac{1}{2}},t))\ dt.
+\]
+Integrando a lei de conservação \eqref{LeideConsevacaoMVF} em $[x_{i-\frac{1}{2}},x_{i+\frac{1}{2}}) \times [t^n,t^{n+1})$:
+\[
+  \int_{t^n}^{t^{n+1}}\int_{x_{i-\frac{1}{2}}}^{x_{i+\frac{1}{2}}}\left(\frac{\partial c}{\partial t} + \frac{\partial}{\partial x}f(c)\right)\ dx\ dt = 0,
+\]
+e separando as integrais, utilizando-se também do teorema fundamental do cálculo
+\[
+  \int_{x_{i-\frac{1}{2}}}^{x_{i+\frac{1}{2}}}c(x,t^{n+1})\ dx - \int_{x_{i-\frac{1}{2}}}^{x_{i+\frac{1}{2}}}c(x,t^{n})\ dx = \int_{t^n}^{t^{n+1}}f(c(x_{i-\frac{1}{2}},t))\ dt - \int_{t^n}^{t^{n+1}}f(c(x_{i+\frac{1}{2}},t))\ dt.
+\]
+Têm-se, portanto,
+\begin{equation}\label{eqDaConcentracao}
+  C_i^{n+1} = C_i^n - \frac{\Delta t}{\Delta x}\left(\bar{F}_{i+\frac{1}{2}}^n - \bar{F}_{i-\frac{1}{2}}^n\right).
+\end{equation}
+Ou seja, a equação acima estabelece um princípio de conservação: a variação média da concentração na célula é dada pela diferença dos fluxos nas fronteiras da mesma; ainda sem quaisquer tipos de aproximações.
+
+\subsection{Método upwind para aproximação de fluxos discretos em uma dimensão}
+
+Para aproximar os fluxos discretos $F^n_{i\pm 1/2}$, pode-se usar diversos métodos, como o esquema central (diferenças finitas) ou os métodos de Lax-Friedrichs e Lax-Wendroff. Ainda mais, o método focal usado neste trabalho será o \textit{método upwind}, que leva em conta a estrutura da solução, de modo que a informação em cada ponto é obtida olhando a direção na qual a mesma se propaga. Esse método, assim como os outros, pode ser dividido em casos de coeficientes (velocidades) constantes ou variáveis.
+
+\subsubsection{Caso de coeficientes constantes}
+
+Tendo como exemplo a \textit{equação de advecção escalar}, há apenas uma velocidade, que é positiva ou negativa e, portanto, o método upwind se torna unilateral, com valores determinados com base nas informações à esquerda ou à direita da célula. Dessa forma, o fluxo numérico pode ser definido como
+\[
+  F^n_{i + 1/2} =
+  \left\{
+    \begin{aligned}
+      &uC_i^n, && \text{se $u > 0$} \\
+      &uC_{i+1}^n, && \text{se $u < 0$} \\
+    \end{aligned}
+  \right.
+  \text{ e }
+  F^n_{i - 1/2} =
+  \left\{
+    \begin{aligned}
+      &uC_{i-1}^n, && \text{se $u > 0$} \\
+      &uC_{i}^n, && \text{se $u < 0$} \\
+    \end{aligned}
+  \right..
+\]
+Com isso, a equação \eqref{eqDaConcentracao}\ se torna:
+\begin{equation}
+  C_i^{n+1} =
+  \left\{
+    \begin{aligned}
+      &C_i^n - u\frac{\Delta t}{\Delta x}\left(C^n_{i} - C^n_{i-1}\right), 
+      && \text{se $u > 0$}\\
+      &C_i^n - u\frac{\Delta t}{\Delta x}\left(C^n_{i+1} - C^n_{i}\right)
+      && \text{se $u < 0$}
+    \end{aligned}
+  \right.
+  .
+\end{equation}
+Ou também, por uma perspectiva de propagações de onda, considerando as funções de salto:
+\begin{equation}
+  W_{i+\frac{1}{2}} = C^n_{i+1} - C^n_{i} \text{ e }
+  W_{i-\frac{1}{2}} = C^n_{i} - C^n_{i-1}
+\end{equation}
+que representam as ondas se movendo para as células $V_{i+1}$ e $V_i$, respectivamente, com velocidade $u$ e então:
+\begin{equation}
+  C_i^{n+1} =
+  \left\{
+    \begin{aligned}
+      &C_i^n - u\frac{\Delta t}{\Delta x}W_{i-\frac{1}{2}}, 
+      && \text{se $u > 0$}\\
+      &C_i^n - u\frac{\Delta t}{\Delta x}W_{i+\frac{1}{2}}
+      && \text{se $u < 0$}
+    \end{aligned}
+  \right.
+  .
+\end{equation}
+Considerando $u^+ = \text{max}\{u,0\}$ e $u^- = \text{min}\{u,0\}$, é possível ter a fórmula de concentração:
+\begin{equation}\label{eqUWVelConstante}
+  \begin{aligned}
+    C_i^{n+1} &= C_i^n - \frac{\Delta t}{\Delta x}\left(u^+C^n_{i} + u^-C^n_{i+1} - u^+C^n_{i-1} - u^-C^n_{i}\right) \\
+    &= C_i^n - \frac{\Delta t}{\Delta x}\left(u^+W_{i-\frac{1}{2}} + u^-W_{i+\frac{1}{2}}\right).
+  \end{aligned}
+\end{equation}
+
+\subsubsection{Caso de coeficientes variáveis}
+
+No caso de coeficientes variáveis, onde a velocidade depende da posição, os métodos desenvolvidos não podem ser aplicados diretamente. Ou seja, têm-se uma função $f(c,x) = u(x)c$ que leva à
+\[
+  \frac{\partial c}{\partial t} + \frac{\partial}{\partial x}(u(x)c) = 0,
+\]
+onde a dependência de $x$ da função $f$ pode ser "retirada"\ e então a transformando em um sistema hiperbólico. Para entender o raciocínio desta transformação, pode-se considerar um exemplo do caso escalar com dependência $f = f(x,t,c)$ na equação
+\[
+  \frac{\partial c}{\partial t} + \frac{\partial}{\partial x}f = 0,
+\]
+e definir uma outra função $q$:
+\[
+  q(x,t) = (q_1,q_2,q_3) := (x,t,c),
+\]
+de modo que
+\[
+  \frac{\partial}{\partial t}q(x,t) = (0,1,\partial_t c).
+\]
+Ademais, ter que
+\[
+  \mathbf{F}(q(x,t)) =
+  \begin{bmatrix}
+    0 \\ -q_1 \\ f(q_1,q_2,q_3)
+  \end{bmatrix},
+\]
+portanto
+\[
+  \frac{\partial}{\partial t}
+  \begin{bmatrix}
+    x \\ t \\ c
+  \end{bmatrix}
+   + \frac{\partial}{\partial x}
+  \begin{bmatrix}
+    0 \\ -x \\ f(x,t,c)
+  \end{bmatrix}
+  =
+  \begin{bmatrix}
+    0 \\ 1-1 \\ \partial_tc + \partial_xf
+  \end{bmatrix}
+  =
+  \begin{bmatrix}
+    0 \\ 0 \\ 0
+  \end{bmatrix}
+\]
+que é um sistema hiperbólico
+\begin{equation}\label{sistemaHiperbolico}
+  q_t + \mathbf{F}(q)_x = 0. 
+\end{equation}
+Portanto, com essa técnica de formar um sistema hiperbólico, é possível aplicar uma adaptação de esquemas de volumes finitos para sistemas. O fluxo em $x_{i+1/2}$, por exemplo, seria definido por:
+\[
+  \bar{F}_{i+\frac{1}{2}}^n = \frac{1}{\Delta t}\int_{t^n}^{t^{n+1}}u(x_{i+\frac{1}{2}})c(x_{i+\frac{1}{2}},t)\ dt.
+\]
+Dessa forma, o método upwind não é mais um método apenas unilateral, pois agora com $u(x)$ variável, a discretização pode variar também, a depender do sinal de u. O fluxo em $x_{i+1/2}$
+\[
+  F_{i+\frac{1}{2}}^n = u^+(x_{i+\frac{1}{2}}) C_i^n + u^-(x_{i+\frac{1}{2}}) C_{i+1}^n,
+\]
+onde $u^+ = \max\{u, 0\}$, $u^- = \min\{u, 0\}$. Consequentemente:
+\[
+\begin{aligned}
+C_i^{n+1} &= C_i^n - \frac{\Delta t}{\Delta x} \left( u^+(x_{i+\frac{1}{2}}) C_i^n + u^-(x_{i+\frac{1}{2}}) C_{i+1}^n - u^+(x_{i-\frac{1}{2}}) C_{i-1}^n - u^-(x_{i-\frac{1}{2}}) C_i^n \right) \\
+&= C_i^n - \frac{\Delta t}{\Delta x}
+\left( u^+(x_{i+\frac{1}{2}}) C_i^n + u^-(x_{i+\frac{1}{2}}) (C_{i+1}^n - C_i^n) + u^-(x_{i+\frac{1}{2}}) C_i^n \right.\\ 
+&+\left. u^+(x_{i-\frac{1}{2}}) (C_i^n - C_{i-1}^n) - u^+(x_{i-\frac{1}{2}}) C_i^n - u^-(x_{i-\frac{1}{2}}) C_i^n \right),
+\end{aligned}
+\]
+e, finalmente
+\begin{equation}\label{eqUWVelVariadas}
+\begin{aligned}
+C_i^{n+1} &= C_i^n - \frac{\Delta t}{\Delta x} \left[ \left( u^+(x_{i+\frac{1}{2}}) - u^+(x_{i-\frac{1}{2}}) + u^-(x_{i+\frac{1}{2}}) - u^-(x_{i-\frac{1}{2}}) \right) C_i^n \right] \\
+&- \frac{\Delta t}{\Delta x} \left[ u^-(x_{i-\frac{1}{2}}) W_{i-\frac{1}{2}} + u^+(x_{i+\frac{1}{2}}) W_{i+\frac{1}{2}} \right].
+\end{aligned}
+\end{equation}
+
+\subsubsection{Condição CFL}
+
+A \textit{condição CFL} (Courant, Friedrichs e Lewy) é uma condição necessária, mas não suficiente, para garantir convergência do método de volumes finitos para a equação diferencial, à medida que a malha é refinada. Ou seja, caso a condição CFL seja satisfeita, pode ser que o método convirja, porém caso contrário, não há nenhuma chance de convergência. A convergência ocorre caso $\nu$ (conhecido como número de Courant) for menor ou igual a 1 \cite[p.~76]{sousa2022metodos}:
+\[
+  \nu := u\frac{\Delta t}{\Delta x} \leq 1,
+\]
+com $u$ constante. Caso essa condição não seja satisfeita, a solução não irá convergir pois a solução seria construída com informações que não levam à solução exata. Abaixo há um exemplo visual de casos em que a condição CFL é satisfeita ou não:
+
+\begin{figure}[H]
+  \centering
+    \begin{subfigure}[b]{0.49\textwidth}
+      \centering
+        \begin{tikzpicture}[scale=1-.2] % Opcional: escala do gráfico
+          \fill[fill=gray!20] (0,0) rectangle (2,1);
+          \fill[fill=gray!20] (2,0) rectangle (4,1.5);
+          \fill[fill=gray!20] (2,2.5) rectangle (4,3);
+          
+          \draw[thick] (0,0) -- (0,5);
+          \draw[thick] (0,0) -- (4,0);
+          \draw[thick] (0,5) -- (4,5);
+          \draw[thick] (4,0) -- (4,5);
+
+          \draw[thick] (0,2.5) -- (4,2.5);
+          \draw[thick] (2,0) -- (2,5);
+
+          \draw[->,gray, line width=.3mm] (0,0) -- (2*1.25,2*1.25);
+          \draw[->,red,  line width=.3mm] (2,0) -- (2+2*1.25,2*1.25);
+
+          \draw[dashed] (-.5,0) -- (4,0);
+          \draw[dashed] (-.5,2.5) -- (4,2.5);
+
+          \draw[|-|] (2,-.25) -- (4,-.25);
+          \draw[black] (3,-.25) node[below] {$\Delta x$};
+
+          \draw[|-|] (4.25,0) -- (4.25,2.5);
+          \draw[black] (4.25,1.25) node[right] {$\Delta t$};
+
+          \draw[black] (-.5,2.5) node[left] {$t^{n+1}$};
+          \draw[black] (-.5,0) node[left] {$t^n$};
+
+          \draw[black] (1,1.25) node {$C^n_{i-1}$};
+          \draw[black] (3,1.25) node {$C^n_{i}$};
+          \draw[black] (3,3.75) node {$C^{n+1}_{i}$};
+        \end{tikzpicture}
+      \label{fig:CFL1}
+      \caption{Condição CFL não satisfeita, $\Delta t > \Delta x$.}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.49\textwidth}
+      \centering
+        \begin{tikzpicture}[scale=1.3-.2] % Opcional: escala do gráfico
+          \fill[fill=gray!20] (0,0) rectangle (2,1);
+          \fill[fill=gray!20] (2,0) rectangle (4,1.25);
+          \fill[fill=gray!20] (2,1.5) rectangle (4,2.5);
+          
+          \draw[thick] (0,0) -- (0,3);
+          \draw[thick] (0,0) -- (4,0);
+          \draw[thick] (0,3) -- (4,3);
+          \draw[thick] (4,0) -- (4,3);
+
+          \draw[thick] (0,1.5) -- (4,1.5);
+          \draw[thick] (2,0) -- (2,3);
+
+          \draw[->,gray, line width=.3mm] (0,0) -- (2*1.5/2,2*1.5/2);
+          \draw[->,gray, line width=.3mm] (2,0) -- (2+1.5,1.5);
+
+          \draw[dashed] (-.5,0) -- (4,0);
+          \draw[dashed] (-.5,1.5) -- (4,1.5);
+          
+          \draw[black] (-.5,1.5) node[left] {$t^{n+1}$};
+          \draw[black] (-.5,0) node[left] {$t^n$};
+
+          \draw[|-|] (2,-.25) -- (4,-.25);
+          \draw[black] (3,-.25) node[below] {$\Delta x$};
+
+          \draw[|-|] (4.25,0) -- (4.25,1.5);
+          \draw[black] (4.25,0.75) node[right] {$\Delta t$};
+
+
+          \draw[black] (1,0.75) node {$C^n_{i-1}$};
+          \draw[black] (3,0.75) node {$C^n_{i}$};
+          \draw[black] (3,0.75 + 1.5) node {$C^{n+1}_{i}$};
+        \end{tikzpicture}
+      \label{fig:CFL2}
+      \caption{Condição CFL satisfeita, $\Delta t < \Delta x$.}
+    \end{subfigure}
+  \caption{Propagação da informação de $t^n$ para $t^{n+1}$.}
+  \label{fig:malha}
+\end{figure}
+
+\subsubsection{Exemplos do caso unidimensional}
+
+A implementação para resolver o problema de concentrações é bem trivial, pois dadas as velocidades, bastaria calcular a próxima ''linha temporal'' a partir das concentrações anteriores, com as equações \eqref{eqUWVelConstante}\ ou \eqref{eqUWVelVariadas}. Para ilustrar as soluções, serão utilizados dois exemplos  em graus distintos de dificuldade.
+
+\begin{exemplo}
+  Dado um reservatório unidimensional $\Omega = [0,100]$, com velocidade de transporte igual à $u(t) = 1$ constante. Considerando a concentração do fluido $c(x,t)$:
+  \[
+  \left\{
+    \begin{aligned}
+      \partial_t c + u\partial_xc &= 0 && \text{em $\Omega$} \\
+      c_0(x) &= \frac{\sin(25x)}{4} + \frac{x}{2} + .2 && \text{em $\Omega$}
+    \end{aligned}
+  \right..
+  \]
+  Utilizando a equação \eqref{eqUWVelConstante}, é possível chegar numa solução onde o contaminante passa pelo reservatório da esquerda para a direita sem grandes alterações:
+  \begin{figure}[H]
+    \centering
+    \begin{subfigure}[c]{0.32\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{imagens/1dUWex1_frame_000.png}
+    \end{subfigure}
+    \begin{subfigure}[c]{0.32\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{imagens/1dUWex1_frame_030.png}
+    \end{subfigure}
+    \begin{subfigure}[c]{0.32\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{imagens/1dUWex1_frame_050.png}
+    \end{subfigure}
+    % \begin{subfigure}[c]{0.4\textwidth}
+    %   \centering
+    %   \includegraphics[width=\textwidth]{imagens/1dUWex1_frame_080.png}
+    % \end{subfigure}
+    \caption{Gráfico de concentrações em quatro tempos diferentes.}
+    \label{}
+  \end{figure}
+\end{exemplo}
+
+\begin{exemplo}
+  Dado o problema de contorno unidimensional \eqref{escoamento_base}, que modela o escoamente monofásico de um reservatório saturado, com sistema de equações dado por:
+  \begin{equation}\label{Elip282}
+    \left\{
+      \begin{aligned}
+      -\frac{d}{dx}\left(K\frac{dp}{dx}\right) &= -25\cos(25x) && \text{em $\Omega_e = [0,1]$} \\
+      p &= x && \text{sobre $\partial\Omega_e$}
+      \end{aligned}
+    \right.
+  \end{equation}
+  onde $K(x) = 2 + \sin(25x)$, com soluções em campos de pressões e velocidades:
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=.8\textwidth]{imagens/1D_grafico_pressao_vel.png}
+    \caption{Campo de pressões e velocidades.}
+  \end{figure}
+  Será simulado o fluxo de um contaminante com concentrações $c(x,t)$, governado pelo sistema:
+  \[
+  \left\{
+    \begin{aligned}
+      \partial_t c + u\partial_xc &= 0 && \text{em $\Omega_h$} \\
+      c_0(x) &= e^{-20(3x-.5)^2} + e^{-(3x-3.5)^2}&& \text{em $\Omega_h$}
+    \end{aligned}
+  \right.,
+  \]
+  com $\Omega_h = [0,100]$ e $u$ velocidade obtida na resolução do sistema \eqref{Elip282}. Ademais, foram impostas duas condições de contorno: a extração do contaminante à esquerda do reservatório (com $c(0,n) = 0$) e injeção do contaminante por uma função $g(n)$ à direita do reservatório em todos os $n$ passos temporais. Como detalhe, o contaminante se desloca da direita para a esquerda, haja vista que as velocidades são negativas. Segue que $g(n)$ é:
+  \[
+    g(n) = \left|\frac{\sin{(10n\pi\Delta t)}}{10} + \frac{1}{10n}\right|.
+  \]
+  Utilizando a equação \eqref{eqUWVelVariadas}, é possível chegar numa solução visualizada pelos gráficos a seguir:
+  \begin{figure}[H]
+    \centering
+    \begin{subfigure}[c]{0.32\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{imagens/1dUWex2_frame_010.png}
+    \end{subfigure}
+    \begin{subfigure}[c]{0.32\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{imagens/1dUWex2_frame_038.png}
+    \end{subfigure}
+    \begin{subfigure}[c]{0.32\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{imagens/1dUWex2_frame_078.png}
+    \end{subfigure}
+    % \begin{subfigure}[c]{0.35\textwidth}
+    %   \centering
+    %   \includegraphics[width=\textwidth]{imagens/1dUWex2_frame_098.png}
+    % \end{subfigure}
+    \caption{Gráfico de concentrações em quatro tempos diferentes.}
+    \label{}
+  \end{figure}
+\end{exemplo}
+
+\subsection{Método upwind para aproximação de fluxos discretos em duas dimensões}
+
+Para problemas em duas dimensões, a lei de conservação \eqref{LeideConsevacaoMVF} assume a forma
+\begin{equation}\label{LC2D}
+  c_t + f_x(c) + g_y(c) = 0,
+\end{equation}
+onde a concentração do fluido depende de $x$, $y$ e $t$, isto é, $c(x,y,t)$ e $f(c)$ e $g(c)$ são as funções de fluxo nas direções $x$ e $y$, respectivamente. A equação de advecção em duas dimensões é dada por
+\[
+  c_t + (u(x,y,t)c)_x + (v(x,y,t)c)_y = 0,
+\]
+ou ainda
+\[
+  \frac{\partial c}{\partial t} + \nabla \cdot (\mathbf{u}c) = 0,
+\]
+com $\mathbf{u} = [u(x,y,t), v(x,y,t)]$. Como em uma dimensão, pode-se considerar malhas cartesianas e definir o valor médio da concentração na célula $(i,j)$ no tempo $t^n$ por
+\[
+  C^n_{i,j} = C(x_i,y_i,t^n) \approx \frac{1}{\Delta x \Delta y} \int_{y_{j-\frac{1}{2}}}^{y_{j+\frac{1}{2}}}\int_{x_{i-\frac{1}{2}}}^{x_{i+\frac{1}{2}}}c(x,y,t)\ dx\ dy.
+\]
+Considerando o domínio bidimensional $\Omega$ com discretização cartesiana, então o volume de controle é da forma
+\[
+  V_{i,j} = [x_{i-\frac{1}{2}},x_{i+\frac{1}{2}}]\times [y_{j-\frac{1}{2}},y_{j+\frac{1}{2}}].
+\]
+Integrando a lei de conservação \eqref{LC2D}\ sobre o domínio $[x_{i-1/2},x_{i+1/2}]\times [y_{j-1/2},y_{j+1/2}]\times[t^n,t^{n+1}]$, obtém-se
+\begin{equation}\label{LC2D_int}
+  \int_{t^{n}}^{t^{n+1}} \int_{y_{j-\frac{1}{2}}}^{y_{j+\frac{1}{2}}} \int_{x_{i-\frac{1}{2}}}^{x_{i+\frac{1}{2}}} \left(c_t + f_x(c) + g_y(c)\right)\ dx\ dy\ dt = 0.
+\end{equation}
+Com manipulações matemáticas e definindo
+\begin{equation}
+  \bar{F}_{i+\frac{1}{2},j}^{n} = \frac{1}{\Delta t \Delta x} \int_{t^{n}}^{t^{n+1}} \int_{y_{j-\frac{1}{2}}}^{y_{j+\frac{1}{2}}} f(c(x_{i+\frac{1}{2}}, y, t)) \, dy \, dt
+\end{equation}
+e
+\begin{equation}
+  \bar{G}_{i,j+\frac{1}{2}}^{n} = \frac{1}{\Delta t \Delta x} \int_{t^{n}}^{t^{n+1}} \int_{x_{i-\frac{1}{2}}}^{x_{i+\frac{1}{2}}} g(c(x, y_{j+\frac{1}{2}}, t)) \, dx \, dt,
+\end{equation}
+além de dividir ambos os lados de \eqref{LC2D_int} por $\Delta x \Delta y$, têm-se
+\begin{equation}
+  C_{i,j}^{n+1} = C_{i,j}^{n} - \frac{\Delta t}{\Delta x} \left( \bar{F}_{i+\frac{1}{2},j}^{n} - \bar{F}_{i-\frac{1}{2},j}^{n} \right) - \frac{\Delta t}{\Delta y} \left( \bar{G}_{i,j+\frac{1}{2}}^{n} - \bar{G}_{i,j-\frac{1}{2}}^{n} \right)
+\end{equation}
+onde os fluxos $\bar{F}$ e $\bar{G}$ podem ser aproximados por fluxos discretos em cada direção, assim como em \eqref{eqUWVelConstante}\ ou \eqref{eqUWVelVariadas}. Analogamente como na seção anterior, a condição CFL pode ser descrita agora, em duas dimensões, por:
+\[
+  \Delta t \leq \frac{\min\{\Delta x, \Delta y\}}{\max\{|u|,|v|\}}.
+\]
+
+\subsubsection{Exemplos do caso bidimensional}
+
+A implementação para resolver o problema de concentrações é análogo ao unidimensional, porém agora calculando os fluxos discretos sequencialmente: primeiro $\bar{F}$ e depois $\bar{G}$. Para ilustrar as soluções, serão utilizados alguns exemplos, homogêneos e heterogêneos, em graus distintos de dificuldade. Todos os exemplos seguem a mesma formatação, com diferenças apenas na equação de permeabilidade $K(x,y)$: são problemas do tipo \textit{a quarter of the five spot} com a injeção de um contaminante em $(1,1)$ e extração em $(M,N)$, em um intervalo $\Omega_e = [0,1]\times[0,1]$ em $50\times50$ células computacionais.
+
+Nota-se que foi necessário o artifício de um \textit{contorno de Dirichlet local}, já usado em seções anteriores, onde se impôs uma pressão em um ponto específico da matriz, no caso o ponto $(1,1)$.
+
+\begin{exemplo}\label{ex1CB}
+  O primeiro exemplo é o mais simples, utiliza do mesmo esquema do exemplo \ref{exemplobiqof5}, a saber: um problema elíptico bidimensional simplificado como \eqref{escoamento_base}, uma configuração \textit{a quarter of the five spot} como na definição \ref{qot5} e condições de contorno homogêneas de Neumann:
+  \[
+    \left\{
+      \begin{aligned}
+      \nabla \cdot u &= q && \text{em $\Omega = [0,1]\times [0,1]$} \\
+      u\cdot n &= 0 && \text{sobre $\partial\Omega$} \\
+      -K \nabla p &= u && \text{(Velocidade de Darcy)}
+      \end{aligned}
+    \right..
+  \] 
+  Com uma permeabilidade absoluta $K(x,y) = 1$ constante, termo fonte $\tilde{q} = 1$, poço de injeção na célula $(1,1)$ e poço de produção em $(N,M)$. Ao resolver o problema elíptico de escoamento, obtém-se o campo de pressões e o campo de velocidades da figura \ref{Ex2Deliptica}b, mas novamente:
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=.5\textwidth]{imagens/desenvolvimento_2Deliptica_ex2.png}
+    \caption{Campo de pressões e velocidades de \ref{ex1CB}.}
+    \label{figex1CB}
+  \end{figure}
+  Então, dadas as velocidades como conhecidas, simula-se a concentração de um contaminante em cada célula do problema pelo método UpWind descrito anteriormente (mais específicadamente, com as equações para coeficientes variáveis). A dispersão do contaminante é uniforme, podendo ser observadas nas figuras:
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=.99\textwidth]{imagens/ex1_painel_6_graficos.png}
+    \caption{Gráficos de concentrações de \ref{ex1CB}.}
+  \end{figure}
+\end{exemplo}
+
+\begin{exemplo}\label{ex2CB}
+  Neste segundo exemplo, dado um problema elíptico bidimensional simplificado como \eqref{escoamento_base}, uma configuração \textit{a quarter of the five spot} como na definição \ref{qot5} e condições de contorno homogêneas de Neumann:
+  \[
+    \left\{
+      \begin{aligned}
+      \nabla \cdot u &= q && \text{em $\Omega = [0,1]\times [0,1]$} \\
+      u\cdot n &= 0 && \text{sobre $\partial\Omega$} \\
+      -K \nabla p &= u && \text{(Velocidade de Darcy)}
+      \end{aligned}
+    \right..
+  \] 
+  Além disso, o problema tem um meio heterogêneo, com campo de permeabilidades dividido em cinco faixas verticais, termo fonte $\tilde{q} = 1$, poço de injeção na célula $(1,1)$ e poço de produção em $(N,M)$. A permeabilidade absoluta $K(x,y)$ pode ser esquematizada por:
+  \[
+    K(x,y) =
+    \left\{
+      \begin{aligned}
+        .1 && &\text{se $y \in [0,.2]\cup(.8,1]$} \\
+        .3 && &\text{se $y \in (.2,.4]\cup(.6,.8]$} \\
+        .7 && &\text{se $y \in (.4,.6]$} \\
+      \end{aligned}
+    \right.
+  \]
+  para todo $x$. O campo de permeabilidade, assim como o de pressões e velocidades obtidos pela solução do problema elíptico acima, pode ser visualizado abaixo:
+  \begin{figure}[H]
+    \centering
+    \begin{subfigure}[c]{0.49\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{imagens/ex2_perm_hetero.png}
+    \end{subfigure}
+    \begin{subfigure}[c]{0.49\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{imagens/ex2_pressao_velocidade.png}
+    \end{subfigure}
+    \caption{Gráficos de permeabilidade e de pressão com velocidades não normalizadas}
+    \label{}
+  \end{figure}
+  Então, dadas as velocidades conhecidas, simula-se a concentração do contaminante na malha com o método de discretização UpWind. Neste caso, a injeção do contaminante será somente no início da simulação e o que se observa é o óbvio, o contaminante tem fluxo mais acelerado nas faixas de maior permeabilidade:
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{imagens/ex2_painel_6_graficos.png}
+    \caption{Gráficos de concentrações de \ref{ex2CB}.}
+  \end{figure}
+\end{exemplo}
+
+\begin{exemplo}\label{ex3CB}
+  Neste terceiro exemplo, configura-se um problema elíptico bidimensional simplificado como \eqref{escoamento_base}, uma configuração \textit{a quarter of the five spot} como na definição \ref{qot5} e condições de contorno homogêneas de Neumann.
+  % \[
+  %   \left\{
+  %     \begin{aligned}
+  %     \nabla \cdot u &= q && \text{em $\Omega = [0,1]\times [0,1]$} \\
+  %     u\cdot n &= 0 && \text{sobre $\partial\Omega$} \\
+  %     -K \nabla p &= u && \text{(Velocidade de Darcy)}
+  %     \end{aligned}
+  %   \right..
+  % \] 
+  Ademais, têm-se um campo de permeabilidades heterogêneo, com uma diagonal de maior permeabilidade e decaimento exponencial quão mais distante dela:
+  \[
+    K(x,y) = e^{-|x-y|-0.3}
+  \]
+  para todo $x,y$. O campo de permeabilidade, assim como o de pressões e velocidades, pode ser visualizado abaixo:
+  \begin{figure}[H]
+    \centering
+    \begin{subfigure}[c]{0.4\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{imagens/ex3_perm_hetero.png}
+    \end{subfigure}
+    \begin{subfigure}[c]{0.4\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{imagens/ex3_pressao_velocidade.png}
+    \end{subfigure}
+    \caption{Gráficos de permeabilidade e de pressão com velocidades normalizadas}
+    \label{}
+  \end{figure}
+  Então, dadas as velocidades obtidas pela solução do problema elíptico descrito anteriormente, simula-se a concentração do contaminante na malha com o método de discretização UpWind. A injeção do contaminante será no início da simulação e o que se observa é intuitivo: um fluxo maior pela diagonal.
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=.7\textwidth]{imagens/ex3_painel_6_graficos.png}
+    \caption{Gráficos de concentrações de \ref{ex3CB}.}
+  \end{figure}
+\end{exemplo}
+
+\begin{exemplo}\label{ex4CB}
+  No quarto exemplo, esquematiza-se um problema elíptico bidimensional simplificado como \eqref{escoamento_base}, uma configuração \textit{a quarter of the five spot} como na definição \ref{qot5} e condições de contorno homogêneas de Neumann. Além, têm-se uma região circular de baixa permeabilidade no centro, sendo exponencialmente aumentada até as bordas. O campo não homogêneo pode ser obtido com
+  \[
+    K(x,y) = \max\left\{e^{0.8d+0.1} - 1.1, 0.1\right\},
+  \]
+  com $d$ sendo a distância entre a coordenada $(x,y)$ e o centro $(0.5,0.5)$: $d = d(x,y) = \sqrt{(x-0.5)^2 + (y-0.5)^2}$, para todo $x,y$. O campo de permeabilidade, assim como o de pressões e velocidades, pode ser visualizado abaixo:
+  \begin{figure}[H]
+    \centering
+    \begin{subfigure}[c]{0.4\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{imagens/ex4_perm_hetero.png}
+    \end{subfigure}
+    \begin{subfigure}[c]{0.4\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{imagens/ex4_pressao_velocidade.png}
+    \end{subfigure}
+    \caption{Gráficos de permeabilidade e de pressão com velocidades normalizadas.}
+  \end{figure}
+  Dessa forma, dadas as velocidades pela solução do problema elíptico, calcula-se a concentração do contaminante no tempo com a injeção do contaminante somente no início da simulação. O contaminante, então, evita a região central, indo pelas bordas:
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=.68\textwidth]{imagens/ex4_painel_6_graficos.png}
+    \caption{Gráficos de concentrações de \ref{ex4CB}.}
+  \end{figure}
+\end{exemplo}

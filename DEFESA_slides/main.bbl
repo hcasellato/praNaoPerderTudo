@@ -1,0 +1,408 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{burden2016analise}{book}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=b100b4a2a83d36753763f0b747f23098}{%
+           family={BURDEN},
+           familyi={B\bibinitperiod},
+           given={Richard\bibnamedelima L.},
+           giveni={R\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c8ce1c341dd3b62ba2bcdaef6243012c}{%
+           family={FAIRES},
+           familyi={F\bibinitperiod},
+           given={J.\bibnamedelimi Douglas},
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5c26d56c529b5706d4141391b6a9d203}{%
+           family={BURDEN},
+           familyi={B\bibinitperiod},
+           given={Annette\bibnamedelima M.},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {portuguese}%
+      }
+      \list{location}{1}{%
+        {São Paulo}%
+      }
+      \list{publisher}{1}{%
+        {Cengage Learning}%
+      }
+      \strng{namehash}{17da2ac82c2144768c8d80330a84e5f1}
+      \strng{fullhash}{17da2ac82c2144768c8d80330a84e5f1}
+      \strng{bibnamehash}{17da2ac82c2144768c8d80330a84e5f1}
+      \strng{authorbibnamehash}{17da2ac82c2144768c8d80330a84e5f1}
+      \strng{authornamehash}{17da2ac82c2144768c8d80330a84e5f1}
+      \strng{authorfullhash}{17da2ac82c2144768c8d80330a84e5f1}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{10}
+      \field{isbn}{978-85-221-2341-4}
+      \field{note}{Tradução de: \textit{Numerical Analysis}. 10. ed.}
+      \field{title}{Análise Numérica}
+      \field{year}{2016}
+      \true{nocite}
+    \endentry
+    \entry{Eymard2000}{book}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=3868b66d5ee28d5944d7109bf4426180}{%
+           family={EYMARD},
+           familyi={E\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7f845bd050eb91bf9ec2f8db010950f9}{%
+           family={GALLOUËT},
+           familyi={G\bibinitperiod},
+           given={Thierry},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7a40de4f0195fa7feebe3a51fcc03d84}{%
+           family={HERBIN},
+           familyi={H\bibinitperiod},
+           given={Raphaèle},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{location}{1}{%
+        {Amsterdam}%
+      }
+      \list{publisher}{1}{%
+        {North-Holland}%
+      }
+      \strng{namehash}{965b2ca930520b9d4aae3ec4b4a4bf1b}
+      \strng{fullhash}{965b2ca930520b9d4aae3ec4b4a4bf1b}
+      \strng{bibnamehash}{965b2ca930520b9d4aae3ec4b4a4bf1b}
+      \strng{authorbibnamehash}{965b2ca930520b9d4aae3ec4b4a4bf1b}
+      \strng{authornamehash}{965b2ca930520b9d4aae3ec4b4a4bf1b}
+      \strng{authorfullhash}{965b2ca930520b9d4aae3ec4b4a4bf1b}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-0-444-50437-7}
+      \field{note}{Título em inglês: "Finite Volume Methods".}
+      \field{series}{Handbook of Numerical Analysis}
+      \field{title}{Finite Volume Methods}
+      \field{volume}{7}
+      \field{year}{2000}
+      \true{nocite}
+      \field{pages}{713\bibrangedash 1020}
+      \range{pages}{308}
+      \verb{doi}
+      \verb 10.1016/S1570-8659(00)07005-8
+      \endverb
+    \endentry
+    \entry{higham2002accuracy}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=20816eb9d72a695b867fb1ad71145235}{%
+           family={HIGHAM},
+           familyi={H\bibinitperiod},
+           given={Nicholas\bibnamedelima J.},
+           giveni={N\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{location}{1}{%
+        {Philadelphia, PA}%
+      }
+      \list{publisher}{2}{%
+        {Society for Industrial}%
+        {Applied Mathematics (SIAM)}%
+      }
+      \strng{namehash}{20816eb9d72a695b867fb1ad71145235}
+      \strng{fullhash}{20816eb9d72a695b867fb1ad71145235}
+      \strng{bibnamehash}{20816eb9d72a695b867fb1ad71145235}
+      \strng{authorbibnamehash}{20816eb9d72a695b867fb1ad71145235}
+      \strng{authornamehash}{20816eb9d72a695b867fb1ad71145235}
+      \strng{authorfullhash}{20816eb9d72a695b867fb1ad71145235}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{2}
+      \field{isbn}{0-89871-521-0}
+      \field{series}{Other Titles in Applied Mathematics}
+      \field{title}{Accuracy and Stability of Numerical Algorithms}
+      \field{year}{2002}
+      \true{nocite}
+      \verb{doi}
+      \verb 10.1137/1.9780898718027
+      \endverb
+    \endentry
+    \entry{isaacson1966analysis}{book}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=3243acdc8e6deeeb6cf647b3ae7c5572}{%
+           family={ISAACSON},
+           familyi={I\bibinitperiod},
+           given={Eugene},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1373fc5105e20e18d2f3f6568a77afeb}{%
+           family={KELLER},
+           familyi={K\bibinitperiod},
+           given={Herbert\bibnamedelima Bishop},
+           giveni={H\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{location}{1}{%
+        {New York}%
+      }
+      \list{publisher}{1}{%
+        {John Wiley \& Sons}%
+      }
+      \strng{namehash}{6f52042f558872bccc78355dfa81c82b}
+      \strng{fullhash}{6f52042f558872bccc78355dfa81c82b}
+      \strng{bibnamehash}{6f52042f558872bccc78355dfa81c82b}
+      \strng{authorbibnamehash}{6f52042f558872bccc78355dfa81c82b}
+      \strng{authornamehash}{6f52042f558872bccc78355dfa81c82b}
+      \strng{authorfullhash}{6f52042f558872bccc78355dfa81c82b}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{0-486-68029-0}
+      \field{note}{Reprinted by Dover Publications in 1994.}
+      \field{title}{Analysis of Numerical Methods}
+      \field{year}{1966}
+      \true{nocite}
+    \endentry
+    \entry{mishra2009numerical}{misc}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=202d2742653588d0b8e2bddcf2377672}{%
+           family={Mishra},
+           familyi={M\bibinitperiod},
+           given={Siddhartha},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=16e04b6a3fb24d14de88406794aef20f}{%
+           family={Fjordholm},
+           familyi={F\bibinitperiod},
+           given={Ulrik\bibnamedelima Skre},
+           giveni={U\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6e730fe4ae710cf7bae643887e4a9881}{%
+           family={Abgrall},
+           familyi={A\bibinitperiod},
+           given={Rémi},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{6522c131f429524614e38aa1274585d5}
+      \strng{fullhash}{6522c131f429524614e38aa1274585d5}
+      \strng{bibnamehash}{6522c131f429524614e38aa1274585d5}
+      \strng{authorbibnamehash}{6522c131f429524614e38aa1274585d5}
+      \strng{authornamehash}{6522c131f429524614e38aa1274585d5}
+      \strng{authorfullhash}{6522c131f429524614e38aa1274585d5}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Notas de Aula}
+      \field{note}{Acesso em: 23 ago. 2025}
+      \field{title}{Numerical Methods for Conservation Laws and Related Equations}
+      \field{year}{2017}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://metaphor.ethz.ch/x/2019/hs/401-4671-00L/literature/mishra_hyperbolic_pdes.pdf
+      \endverb
+      \verb{url}
+      \verb https://metaphor.ethz.ch/x/2019/hs/401-4671-00L/literature/mishra_hyperbolic_pdes.pdf
+      \endverb
+    \endentry
+    \entry{sousa2022metodos}{book}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=1d0f93463a84ed8d3e7fe94b462798d9}{%
+           family={SOUSA},
+           familyi={S\bibinitperiod},
+           given={Fabricio\bibnamedelima S.},
+           giveni={F\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0d7b1cfd345fcf3d13e39fd19bb86866}{%
+           family={ROCHA},
+           familyi={R\bibinitperiod},
+           given={Franciane\bibnamedelima F.},
+           giveni={F\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {portuguese}%
+      }
+      \list{location}{1}{%
+        {São Carlos, SP}%
+      }
+      \list{publisher}{1}{%
+        {SBMAC}%
+      }
+      \strng{namehash}{b5461fc6118c680d226152133311a415}
+      \strng{fullhash}{b5461fc6118c680d226152133311a415}
+      \strng{bibnamehash}{b5461fc6118c680d226152133311a415}
+      \strng{authorbibnamehash}{b5461fc6118c680d226152133311a415}
+      \strng{authornamehash}{b5461fc6118c680d226152133311a415}
+      \strng{authorfullhash}{b5461fc6118c680d226152133311a415}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-65-86388-18-3}
+      \field{series}{Notas em Matemática Aplicada}
+      \field{title}{Métodos de volumes finitos para modelagem computacional de reservatórios de petróleo}
+      \field{volume}{96}
+      \field{year}{2022}
+      \true{nocite}
+      \field{pages}{102}
+      \range{pages}{1}
+    \endentry
+    \entry{strauss2008}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=ac74f36fb64f5c38fc5049c9c181b41d}{%
+           family={STRAUSS},
+           familyi={S\bibinitperiod},
+           given={Walter\bibnamedelima A.},
+           giveni={W\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Hoboken, NJ}%
+      }
+      \list{publisher}{1}{%
+        {John Wiley \& Sons}%
+      }
+      \strng{namehash}{ac74f36fb64f5c38fc5049c9c181b41d}
+      \strng{fullhash}{ac74f36fb64f5c38fc5049c9c181b41d}
+      \strng{bibnamehash}{ac74f36fb64f5c38fc5049c9c181b41d}
+      \strng{authorbibnamehash}{ac74f36fb64f5c38fc5049c9c181b41d}
+      \strng{authornamehash}{ac74f36fb64f5c38fc5049c9c181b41d}
+      \strng{authorfullhash}{ac74f36fb64f5c38fc5049c9c181b41d}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{2}
+      \field{isbn}{978-0470-05456-7}
+      \field{title}{Partial Differential Equations: An Introduction}
+      \field{year}{2008}
+      \true{nocite}
+    \endentry
+    \entry{thomas1995numerical}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=9b1809b132148d954f8e71faf79146f9}{%
+           family={THOMAS},
+           familyi={T\bibinitperiod},
+           given={J.\bibnamedelimi W.},
+           giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{location}{1}{%
+        {New York}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{9b1809b132148d954f8e71faf79146f9}
+      \strng{fullhash}{9b1809b132148d954f8e71faf79146f9}
+      \strng{bibnamehash}{9b1809b132148d954f8e71faf79146f9}
+      \strng{authorbibnamehash}{9b1809b132148d954f8e71faf79146f9}
+      \strng{authornamehash}{9b1809b132148d954f8e71faf79146f9}
+      \strng{authorfullhash}{9b1809b132148d954f8e71faf79146f9}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-1-4899-7278-1}
+      \field{series}{Texts in Applied Mathematics}
+      \field{title}{Numerical Partial Differential Equations: Finite Difference Methods}
+      \field{volume}{22}
+      \field{year}{1995}
+      \true{nocite}
+    \endentry
+    \entry{zill2017first}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=92d0fbf7ab5ca1e5bad09d1eff3f236c}{%
+           family={ZILL},
+           familyi={Z\bibinitperiod},
+           given={Dennis\bibnamedelima G.},
+           giveni={D\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{location}{1}{%
+        {Boston, MA}%
+      }
+      \list{publisher}{1}{%
+        {Cengage Learning}%
+      }
+      \strng{namehash}{92d0fbf7ab5ca1e5bad09d1eff3f236c}
+      \strng{fullhash}{92d0fbf7ab5ca1e5bad09d1eff3f236c}
+      \strng{bibnamehash}{92d0fbf7ab5ca1e5bad09d1eff3f236c}
+      \strng{authorbibnamehash}{92d0fbf7ab5ca1e5bad09d1eff3f236c}
+      \strng{authornamehash}{92d0fbf7ab5ca1e5bad09d1eff3f236c}
+      \strng{authorfullhash}{92d0fbf7ab5ca1e5bad09d1eff3f236c}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{9}
+      \field{isbn}{978-1-305-96573-6}
+      \field{title}{A First Course in Differential Equations with Modeling Applications}
+      \field{year}{2017}
+      \true{nocite}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

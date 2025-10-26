@@ -1,0 +1,82 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.7 }
+
+\bibitem[BURDEN, FAIRES e BURDEN 2016]{burden2016analise}
+\abntrefinfo{BURDEN, FAIRES e BURDEN}{BURDEN; FAIRES; BURDEN}{2016}
+{BURDEN, R.~L.; FAIRES, J.~D.; BURDEN, A.~M. \textbf{Análise Numérica}. 10.
+  ed. São Paulo: Cengage Learning, 2016. Tradução de: \textit{Numerical
+  Analysis}. 10. ed.
+ISBN 978-85-221-2341-4.}
+
+\bibitem[EYMARD, GALLOUËT e HERBIN 2000]{Eymard2000}
+\abntrefinfo{EYMARD, GALLOUËT e HERBIN}{EYMARD; GALLOUËT; HERBIN}{2000}
+{EYMARD, R.; GALLOUËT, T.; HERBIN, R. \textbf{Finite Volume Methods}.
+  Amsterdam: North-Holland, 2000. v.~7. 713--1020~p.  (Handbook of Numerical
+  Analysis, v.~7). Título em inglês: "Finite Volume Methods".
+ISBN 978-0-444-50437-7.}
+
+\bibitem[HIGHAM 2002]{higham2002accuracy}
+\abntrefinfo{HIGHAM}{HIGHAM}{2002}
+{HIGHAM, N.~J. \textbf{Accuracy and Stability of Numerical Algorithms}. 2. ed.
+  Philadelphia, PA: Society for Industrial and Applied Mathematics (SIAM),
+  2002.  (Other Titles in Applied Mathematics).
+ISBN 0-89871-521-0.}
+
+\bibitem[ISAACSON e KELLER 1966]{isaacson1966analysis}
+\abntrefinfo{ISAACSON e KELLER}{ISAACSON; KELLER}{1966}
+{ISAACSON, E.; KELLER, H.~B. \textbf{Analysis of Numerical Methods}. New York:
+  John Wiley \& Sons, 1966. Reprinted by Dover Publications in 1994.
+ISBN 0-486-68029-0.}
+
+\bibitem[Mishra, Fjordholm e Abgrall 2017]{mishra2009numerical}
+\abntrefinfo{Mishra, Fjordholm e Abgrall}{Mishra; Fjordholm; Abgrall}{2017}
+{MISHRA, S.; FJORDHOLM, U.~S.; ABGRALL, R. \textbf{Numerical Methods for
+  Conservation Laws and Related Equations}. 2017. Notas de Aula.
+Acesso em: 23 ago. 2025.
+Dispon{\'\i}vel em:
+  \url{https://metaphor.ethz.ch/x/2019/hs/401-4671-00L/literature/mishra\_hyperbolic\_pdes.pdf}.}
+
+\bibitem[SOUSA e ROCHA 2022]{sousa2022metodos}
+\abntrefinfo{SOUSA e ROCHA}{SOUSA; ROCHA}{2022}
+{SOUSA, F.~S.; ROCHA, F.~F. \textbf{Métodos de volumes finitos para modelagem
+  computacional de reservatórios de petróleo}. São Carlos, SP: SBMAC, 2022.
+  v.~96. 102~p.  (Notas em Matemática Aplicada, v.~96).
+ISBN 978-65-86388-18-3.}
+
+\bibitem[(SPE) 2023]{spe_csp_dataset}
+\abntrefinfo{(SPE)}{(SPE)}{2023}
+{(SPE), S. of P.~E. \textbf{CSP Datasets: Set02}. 2023.
+Acesso em: 9 ago. 2025.
+Dispon{\'\i}vel em: \url{https://www.spe.org/web/csp/datasets/set02.htm}.}
+
+\bibitem[STRAUSS 2008]{strauss2008}
+\abntrefinfo{STRAUSS}{STRAUSS}{2008}
+{STRAUSS, W.~A. \textbf{Partial Differential Equations: An Introduction}. 2.
+  ed. Hoboken, NJ: John Wiley \& Sons, 2008.
+ISBN 978-0470-05456-7.}
+
+\bibitem[THOMAS 1995]{thomas1995numerical}
+\abntrefinfo{THOMAS}{THOMAS}{1995}
+{THOMAS, J.~W. \textbf{Numerical Partial Differential Equations: Finite
+  Difference Methods}. New York: Springer, 1995. v.~22.  (Texts in Applied
+  Mathematics, v.~22).
+ISBN 978-1-4899-7278-1.}
+
+\bibitem[TSANG, ZHENG e BODVARSSON 2005]{tsang2005}
+\abntrefinfo{TSANG, ZHENG e BODVARSSON}{TSANG; ZHENG; BODVARSSON}{2005}
+{TSANG, C.-F.; ZHENG, C.; BODVARSSON, G.~S. \textbf{Applied contaminant
+  transport theory and practice}. 2. ed. Hoboken: Wiley-Interscience, 2005.
+  XV--XVII~p.  (Wiley Series in Water Resources Engineering).
+ISBN 9780471713250.}
+
+\bibitem[ZILL 2017]{zill2017first}
+\abntrefinfo{ZILL}{ZILL}{2017}
+{ZILL, D.~G. \textbf{A First Course in Differential Equations with Modeling
+  Applications}. 9. ed. Boston, MA: Cengage Learning, 2017.
+ISBN 978-1-305-96573-6.}
+
+\end{thebibliography}

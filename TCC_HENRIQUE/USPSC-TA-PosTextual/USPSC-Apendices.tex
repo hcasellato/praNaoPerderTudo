@@ -1,0 +1,389 @@
+%% USPSC-Apendice.tex
+% ---
+% Inicia os apêndices
+% ---
+
+\begin{apendicesenv}
+% Imprime uma página indicando o início dos apêndices
+\partapendices
+\chapter{Notas sobre Fatoração de Matrizes}\label{notas_sobre_fatora_o_de_matrizes}
+
+Este apêndice tem como objetivo complementar a monografia com teoremas e definições, ainda que laterais ao objetivo final do trabalho, muito importantes para o bom andamento da leitura; no que tange a fatoração de matrizes.
+
+\section{Fatoração $\mathbf{LU}$}
+Considera-se que a matriz $A_{n,n} = [a_{ij}]$ pode ser fatorada em duas matrizes $L_{n,n} = [l_{ij}]$ e $U_{n,n} = [u_{ij}]$, triangulares inferior e superior, da forma que
+
+\[
+    A = LU =
+    \begin{bmatrix}
+        l_{11} && 0 && 0      && \cdots && 0 \\ 
+        l_{21} && l_{22} && &&        && 0 \\ 
+        \vdots && && \ddots && && 0 \\
+        \vdots && && && \ddots && 0 \\
+        0 && \cdots && 0 && l_{N,N-1} && l_{N,N}
+    \end{bmatrix}
+    \begin{bmatrix}
+        u_{11} && u_{12} && 0      && \cdots && 0 \\ 
+        0 && u_{22} && u_{23} &&        && 0 \\ 
+        \vdots && && \ddots && && 0 \\
+        \vdots && && && \ddots && u_{N-1,N} \\
+        0 && \cdots && 0 && 0 && u_{N,N}
+    \end{bmatrix}.
+\]
+
+Existem três métodos principais para fatoração de matrizes, os métodos de \textit{Doolitle}, de \textit{Crout} e de \textit{Cholesky}, onde, respectivamente: $l_{ii} = 1$, $u_{ii} = 1$ e $l_{ii} = u_{ii}$; em todos os casos, para cada $i$. Para fatorar a matriz, tanto sendo Doolitle ou Crout, pode-se usar o algoritmo geral:
+\begin{algobox}[Fatoração LU]
+\begin{enumerate}[label=\textbf{Passo \arabic*)}, leftmargin=*, align=parleft, nosep]
+    \item Selecionar $l_{11}$ e $u_{11}$ tal que $l_{11}u_{11} = a_{11}$. Caso $l_{11}u_{11} = 0$, a fatoração é impossível;
+    \item Para $j = 2, ..., n$, fazer
+    \[  	
+			u_{1j} = a_{1j}/l_{11}  \quad\text{ e }\quad l_{j1} = a_{j1}/u_{11};
+    \]
+    \item Para $i = 2, ..., n-1$, fazer
+    \begin{enumerate}[label=\textbf{Passo 3.\arabic*)}, nosep]
+    	\item Selecionar $l_{11}$ e $u_{11}$ tal que:
+    	\[
+    		l_{ii}u_{ii} = a_{ii} - \sum_{k=1}^{i-1}{l_{ik}u_{ki}}.
+    	\]
+    	Caso $l_{ii}u_{ii} = 0$, a fatoração é impossível;
+    	\item Para $j = i+1,...,n$, fazer
+    	\[
+    		u_{ij} = (a_{ij} - \sum_{k=1}^{i-1}{l_{ik}u_{kj}})/l_{ii} \quad\text{ e }\quad l_{ji} = (a_{ji} - \sum_{k=1}^{i-1}{l_{jk}u_{ki}})/u_{ii};
+    	\]
+    \end{enumerate}
+    \item Selecionar $l_{nn}$ e $u_{nn}$ tal que:
+    \[
+    	l_{nn}u_{nn} = a_{nn} - \sum_{k=1}^{n-1}{l_{nk}u_{kn}}.
+    \]
+    Caso $l_{nn}u_{nn} = 0$, a fatoração é possível, porém $A$ é singular;
+    \item Saída de $L$ e $U$.
+\end{enumerate}
+\end{algobox}
+
+Esta fatoração tem custo de $N^2(M-N/2)$ \textit{flops}, para uma matriz $A \in \mathbb{R}^{M\times N},\ M \geq N$. Após a fatoração, o sistema de equações $Aw = b$ se transforma em $LUw = b$ e para resolvê-lo, toma-se $Uw = x$, descobre-se $x$ em $Lx = b$ e depois $w$. Para isso, faz-se o processo de \textit{substituição progressiva}
+\[
+	x_1 = \frac{b_1}{l_{11}}\quad\text{ e }\quad
+	x_i = \frac{1}{l_{ii}}\left(b_i - \sum_{j=1}^{i-1}{l_{ij}x_j}\right),\ \forall i=2,3...,n.
+\]
+Depois que $x$ é descoberto, faz-se a \textit{substituição regressiva}
+\[
+	w_n = \frac{x_n}{u_{nn}}\quad\text{ e }\quad
+	w_i = \frac{1}{u_{ii}}\left(b_i - \sum_{j=i+1}^{n}{u_{ij}w_j}\right),\ \forall j=2,3...,n.
+\]
+Antes de introduzir teoremas, são necessárias ainda algumas definições, começando com a singularidade de matrizes:
+
+\begin{definicao}
+	Uma matriz não invertível é chamada de \textit{singular} e uma matriz invertível é chamada de \textit{não singular}.
+\end{definicao} 
+
+Às vezes, é preciso que linhas de uma matriz sejam reorganizadas para que os erros de arredondamento sejam controlados. Para tanto, é usada uma classe de matrizes de permutação.
+\begin{definicao}
+	Uma \textit{matriz de permutação} $P_{n,n} = [p_{ij}]$, é uma matriz identidade com linhas permutadas, por exemplo:
+	\[
+		P = 
+		\begin{bmatrix}
+		0 && 0 && 1 \\
+		0 && 1 && 0 \\
+		1 && 0 && 0
+		\end{bmatrix}.
+	\]
+\end{definicao} 
+Agora, o teorema que garante a existência de uma fatoração $LU$, usando a notação de submatrizes $A_k := A(1:k,1:k)$,
+
+\begin{teorema}\label{theo91}
+    \cite[p.~161]{higham2002accuracy}
+    Existe uma única fatoração $LU$ de $A \in \mathbb{R}^{n\times n}$ se e somente se as submatrizes $A_k$ são não singulares para $k = 1,2,...,n-1$. Se $A_k$ é singular para alguns $1 \leq k \leq n-1$, então a fatoração pode existir, mas não será única.
+\end{teorema}
+
+Ou seja, que:
+
+\begin{teorema}
+    \cite[p.~448]{burden2016analise}
+	Se a eliminação de Gauss puder ser realizada no sistema linear $Ax = b$ sem pivotamento, então a matriz $A$ pode ser fatorada no produto de matrizes triangulares inferior e superior, L e U, respectivamente; da forma que (com $m_{ji} = a_{ji}^{(i)}/a_{ii}^{(i)}$),
+\[
+    A = LU =
+    \begin{bmatrix}
+        1 && 0 && 0      && \cdots && 0 \\ 
+        m_{21} && 1 && &&        && 0 \\ 
+        \vdots && && \ddots && && 0 \\
+        \vdots && && && \ddots && 0 \\
+        m_{N,1} && \cdots && 0 && m_{N,N-1} && 1
+    \end{bmatrix}
+    \begin{bmatrix}
+        a^{(1)}_{11} && a^{(1)}_{12} && \cdots && \cdots && a^{(1)}_{1,N} \\ 
+        0 && a^{(2)}_{22} && a^{(2)}_{23} &&        && \vdots \\ 
+        \vdots && && \ddots && && 0 \\
+        \vdots && && && \ddots && a^{(N-1)}_{N-1,N} \\
+        0 && \cdots && 0 && 0 && a^{(N)}_{N,N}
+    \end{bmatrix}.
+\]
+\end{teorema}
+
+Como as matrizes de permeabilidades tratadas nesta monografia são \textit{diagonais dominantes}, é natural que sejam descritas as definições e teoremas para este tipo de matriz:
+
+\begin{definicao}
+	\cite[p. ~457]{burden2016analise}
+    Diz-se que a matriz $A_{N,N}$ é \textit{diagonal dominante por linhas} quando
+	\begin{equation}
+		|a_{ii}| \geq \sum_{j = 1, j \neq i}^{N}|a_{ij}|, \forall i = 1,2,...,N,
+	\end{equation}
+	e por colunas de forma similar. Também, ela é \textit{estritamente diagonal dominante} quando a desigualdade for estrita para cada $N$.
+\end{definicao}
+
+O seguinte teorema garante a fatoração LU para matrizes:
+
+\begin{teorema}\label{diagdom}
+	\cite[p. ~172]{higham2002accuracy}
+    Seja $A \in \mathbb{C}^{N\times N}$ não singular, se $A$ é diagonal dominante por linhas e colunas, então $A$ tem uma fatoração $LU$ sem pivotamento.\footnotemark
+\end{teorema}
+\footnotetext{Este teorema é uma versão condensada do \textit{teorema 9.9} em \citeonline[p. ~172]{higham2002accuracy}. Isto foi feito, pois o teorema abrangia outros conceitos que não serão importantes para este trabalho, assim podendo atrapalhar o seguimento.}
+
+\section{Fatoração de Cholesky}
+Como, em geral, as matrizes usadas serão matrizes simétricas, segue que
+
+\begin{definicao}
+  \cite[p. ~196]{higham2002accuracy}
+	Uma matriz simétrica $A \in \mathbb{R}^{n \times n}$ é positiva definida se $x^tAx > 0$ para todos os vetores não nulos $x \in \mathbb{R}$. Condições equivalentes conhecidas para $A = A^t$ ser positiva definida são:
+    \begin{enumerate}[label=\roman*.]
+      \item $\det{(A_k)} > 0$, $k = 1:n$, onde $A_k = A(1:k,1:k)$ é a submatriz principal líder de ordem $K$; e
+      \item $\lambda_k(A) > 0$, $k = 1:n$, onde $\lambda_k$ é o $k$-ésimo maior autovalor.
+    \end{enumerate}
+\end{definicao}
+Já pela primeira condição, implica-se que $A$ tem uma fatoração $LU$ (ver teorema \ref{theo91})
+
+\begin{teorema}
+  \cite[p. ~196]{higham2002accuracy}
+	Se $A \in \mathbb{R}^{N\times N}$ é simétrica positiva definida, então existe uma única matriz triangular inferior $L \in \mathbb{R}^{N\times N}$ com elementos da diagonal positivos tal que $LL^t = A$.
+\end{teorema}
+
+Para tal, usa-se um algoritmo de fatoração de Cholesky
+\begin{algobox}[Fatoração de Cholesky]
+\begin{enumerate}[label=\textbf{Passo \arabic*)}, leftmargin=*, align=parleft, nosep]
+    \item Fazer $l_{ii} = \sqrt{a_{ii}}$;
+    \item Para $j = 2, ..., n$, fazer $l_{j1} = a_{j1} / l_{11}$;
+    \item Para $i = 2, ..., n-1$,
+    \begin{enumerate}[label=\textbf{Passo 3.\arabic*)}, nosep]
+    	\item Fazer
+    	\[
+    		l_{ii} = \sqrt{a_{ii} - \sum_{k=1}^{i-1}l_{ik}};
+    	\]
+    	\item Para $j = i+1,...,n$, fazer
+    	\[
+    		l_{ji} = \sqrt{a_{ji} - \sum_{k=1}^{i-1}l_{jk}l_{ik}};
+    	\]
+    \end{enumerate}
+    \item Fazer $l_{nn} = (a_{nn} - \sum_{k=1}^{i-1}l_{nk})^{1/2}$;
+    \item Saída de $L$.
+\end{enumerate}
+\end{algobox}
+
+E tem um custo de $n^3/3$ \textit{flops}, menor que na fatoração $LU$. Pelo algoritmo de Cholesky usar raízes quadradas, geralmente se usa uma variação $A = LDL^t$, onde $L$ é a matriz triangular inferior de diagonal igual a um e $D$ uma matriz diagonal. O algoritmo é da forma
+\begin{algobox}[Fatoração $\mathbf{LDL^t}$]
+\begin{enumerate}[label=\textbf{Passo \arabic*)}, leftmargin=*, align=parleft, nosep]
+    \item Para $i = 1, ..., n$,
+    \begin{enumerate}[label=\textbf{Passo 1.\arabic*)}, nosep]
+    	\item Para $j = 1,...,i$, fazer $v_{j} = l_{ij}d_{j}$;
+    	\item Fazer $d_{i} = a_{ii} - \sum_{k=1}^{i-1}l_{ij}v_j$;
+    	\item Para $j = i+1,...,n$, fazer
+    	\[
+    		l_{ji} = \frac{a_{ji} - \sum_{k=1}^{i-1}l_{jk}v_{k}}{d_i};
+    	\]
+    \end{enumerate}
+    \item Saída de $L$ e $D$.
+\end{enumerate}
+\end{algobox}
+
+Nesta monografia, não há uma indicação direta que as matrizes tridiagonais estudadas sejam necessariamente simétricas positivas definidas, portanto são usados outros resultados que justificam a fatoração de Cholesky e $LDL^t$:
+
+\begin{teorema}
+    \cite[p. ~463]{burden2016analise}
+    A matriz simétrica $A$ é definida positiva se e somente se a eliminação de Gauss sem trocas de linhas puder ser feita no sistema linear $Ax = b$, com todos os elementos pivô positivos. Além disso, nesse caso, os cálculos são estáveis com relação ao crescimento de erros de arredondamento.
+    
+\end{teorema}
+
+\begin{corolario}
+    \cite[p. ~463]{burden2016analise}
+    Seja $A$ uma matriz $n \times n$ simétrica para a qual a eliminação de Gauss possa ser aplicada sem trocas de linhas. Então, $A$ pode ser fatorada em $LDL^t$, em que $L$ é triangular inferior com $1$ em sua diagonal e $D$ é a matriz diagonal com $a_{11}^{(1)},...,a_{nn}^{(n)}$ em sua diagonal.
+\end{corolario} 
+
+\section{Fatoração $\mathbf{LU}$ tridiagonal em bloco}
+O que garante que a matriz possa ser fatorada em $LU$ por blocos é o fato de que:
+\begin{teorema}
+    \cite[p.~61]{isaacson1966analysis}
+	Caso as submatrizes diagonais principais
+	\[
+		A^{(k)} \equiv 
+	  \begin{bmatrix}
+	    A_1 & C_1 &     &        &         \\
+	    B_2 & A_2 & C_2 &        &         \\
+	        & B_3 & A_3 & \ddots &         \\
+	        &  & \ddots & \ddots & C_{k-1} \\
+	        &  &        & B_k    & A_k
+		\end{bmatrix},
+		\quad k = 1,2,...,n,
+	\]
+	da matriz original sejam não singulares, então a fatoração em bloco pode ser realizada (isto é, se $A_i$ são não singulares).
+\end{teorema}
+
+O algoritmo original da fatoração $LU$ em bloco, com a inversão da matriz $\bar{A}$ e que leva à ordem de quantidades de operações $O(3NM^3)$, é
+
+\begin{algobox}[Solução do sistema por fatoração $\mathbf{LU}$ em bloco original]
+  \begin{enumerate}[label=\textbf{Passo \arabic*)}, leftmargin=*, align=parleft, nosep]
+    \item Colocar $\bar{A}_1 = A_1$ e $\Gamma_1 = \bar{A}_1^{-1}C_1$;
+    \item Para $i = 2, 3, ..., N$, calcular
+    \[
+      \bar{A}_i = A_i - B_i\Gamma_{i-1}
+    \]
+    \item Para $i = 2, 3, ..., N-1$, calcular
+    \[
+      \Gamma_i = \bar{A}_i^{-1}C_i;
+    \]
+    \item Calcular $\bar{A}_N = A_N - B_N\Gamma_{N-1}$;
+    \item Pensando em $Lz = d$, colocar $z^{(1)} = \bar{A}_1^{-1}d^{(1)}$ e, para $i = 2, 3, ..., N$,
+    \[
+      z^{(i)} = \bar{A}_i^{-1}(d^{(i)} - B_iw^{(i-1)});
+    \]
+    \item Calcular, com $w^{(N)} = z^{(N)}$, para $i = N-1, N-2, ..., 1$,
+    \[
+      w^{(i)} = z^{(i)} - \Gamma_iw^{(i+1)};
+    \]
+    \item \textbf{Saída:} As aproximações $w_i$ para $i = 1,\ldots,N$.
+  \end{enumerate}
+\end{algobox}
+
+
+
+% Como é foco da seção \ref{sec:problemas_de_valores_de_contorno} sistemas tridiagonais, então faz-se útil as seguintes definição e teorema:
+
+% \begin{definicao}
+% 	Uma matriz $A$ é \textit{definida positiva} se for simétrica e se $x^TAx > 0$ para todo vetor $n$
+% \end{definicao}
+
+
+% \begin{teorema}
+% \end{teorema}
+
+
+% \chapter{Notas sobre a geração de campos de permeabilidades heterogêneos}\label{cha:notas_gcph}
+
+% Este apêndice baseia-se na leitura do artigo \cite{glimm1993theory}, que está fora do escopo deste trabalho, dado que tem como referências conteúdos de análise funcional, processos estocásticos e geoestatística. Porém, como é importante para a geração de campos de permeabilidade heterogêneos e é citado no livro \cite{sousa2022metodos}, será desenvolvido, assim como possível, nesta seção. Pode-se usar como referências adicionais os livros \cite{gelfand1964generalized}, \cite{adler2007random} e \cite{chiles1999geostatistics}.
+
+% A incerteza é uma característica essencial ao fluxo em meios porosos, haja vista que a permeabilidade, porosidade e fatores de atraso são altamente variáveis. É possível modelar, tendo como base o artigo \cite{glimm1993theory}, a incerteza dessas propriedades geológicas como um campo aleatório $\xi(x)$.
+
+% Considera-se que esse campo é estacionário, onde suas propriedades estatísticas são invariantes à translação, com média $\bar{\xi}$ independente de $x \in \mathbb{R}^d$ e covariância $\langle \xi(x)\xi(y)\rangle = g(x-y)$, dependendo somente da variável de diferença $x-y$. Esse campo será \textit{isotrópico} e invariante à translação se a covariância (e todos os seus momentos de maior ordem) dependerem somente do tamanho euclidiano de $|x-y|$
+
+% Pensando na computação deste campo, $\xi$ é definido em uma malha de pontos discretos $i \in \epsilon \mathbb{Z}^d$ que aproxima $\mathbb{R}^d$, de espaçamento $\epsilon$. Por exemplo, para o caso unidimensional ($d = 1$) com um espaçamento $\epsilon = .25$, pode-se ver uma seção dos pontos da malha de $.25\mathbb{Z} \cap [-2,2]$ é:
+% \[
+% 	.25\mathbb{Z} \cap [0,1] = \{0.0,\ 0.25,\ 0.50,\ 0.75,\ 1.0\}.
+% \]
+% Dessa forma, primeiro toma-se variáveis aleatórias Gaussianas independentes $\eta(i)$ de média zero e covariância $\langle \eta(i)^2 \rangle = \epsilon^d$, e então com elas é possível formar uma integral de convolução discreta com limite contínuo
+% \begin{equation}\label{eq21_macro}
+% 	\xi(x) = \int f(x-y)\eta(y)\ dy.
+% \end{equation}
+% Logo, o campo $\xi$ é Gaussiano, com covariância
+% \begin{equation}
+% 	g(x) = \int f(x-y)f(-y)\ dy \equiv f * f^{\vee}(x),
+% \end{equation}
+% onde $f^{\vee}(x) = f(-x)$.
+
+
+
+
+
+
+% Esta covariância $g$ será sempre positiva definida e sempre tem uma convolução de raiz quadrada $f$ (por $\xi$ ser um campo estacionário aleatório).
+% Como o artigo se debruça sobre leis de escala,
+% \[
+% 	f(x) = b'r^{-\beta-d/2},
+% \]
+% em que $\beta$ é um expoente de escala assintótico. A função de covariância\footnotemark para a permeabilidade log $\xi(x)$ é da forma
+
+% \footnotetext{No artigo, os termos, mesmo que tecnicamente diferentes, são usados de forma intercambiável, pois, no contexto de campos gaussianos estacionários de média 0, também aliado ao fato que neste artigo $\sigma^2$ é constante Vale lembrar que a correlação é a covariância de duas variáveis dividida pelo produto de seus desvios padrões.}
+
+% \begin{equation}
+% 	\langle \xi(x)\xi(y)\rangle = b|x-y|^{-\beta},
+% \end{equation}
+% em que $b$ e $\beta$ são funções de $r = |x-y|$ que variam lentamente. Caso $b$ e $\beta$ sejam independentes de $r$, o que é o caso tratado aqui, então a covariância é \textit{auto-semelhante} ou \textit{fractal}\footnotemark.
+
+
+% \footnotetext{Auto-semelhança é uma característica de um objeto que é exatamente ou aproximadamente similar a uma parte de si mesmo, como a orla de continentes ou o conjunto de Mandelbrot.}
+
+% Este método de construção de campos aleatórios é computacionalmente intenso, e pode ser mitigado com paralelização (já que os valores $\xi(x)$ são obtidos independentemente e os campos de ruído $\eta(x)$ podem ser armazenados ou recalculados) ou com métodos para tratar a longa calda da integral de convolução em (\ref{eq21_macro}).
+
+% A permeabilidade é geralmente descrita como uma variável log-normal
+% \begin{equation}
+% 	K(x) = e^{\xi(x)}
+% \end{equation}
+% para um campo de permeabilidades escalares $K(x)$. Ademais, restringe-se o problema a
+% \begin{equation}
+% 	K = K_0e^{\xi(x)} = K_0e^{\xi'(y)},
+% \end{equation}
+% onde $K_0$ é um tensor constante e $\xi'$ é um escalar Gaussianamente distribuído e estatisticamente isotrópico como a função $y = \Lambda^{-1}x$.
+
+% A geologia de um local é, geralmente, parcialmente conhecida, portanto variáveis aleatórias sem 
+% restrições é inapropriado. No caso de restrições lineares, ou conhecimento parcial de $\xi$, a separação $\xi = \xi_d + \xi_r$ em uma soma de um campo determinístico (ou restrito) $\xi_d$ com um campo aleatório $\xi_r$, que é dado pelo método de Krigagem (ver o capítulo 3 de \cite{chiles1999geostatistics}).
+
+
+\chapter{Notas sobre o método de volumes finitos}\label{cha:notas_sobre_mvf}
+
+Considerando um problema unidimensional com contorno Dirichlet homogêneo, uma função $f : (0,1) \mapsto \mathbb{R}$ da forma que
+
+\begin{equation}\label{eliptic_simple_case}
+	\left\{
+	\begin{align}
+		-\nabla \cdot (\nabla u) &= f(x) && x \in (0,1) \\
+		u(0)    &= 0 \\		
+		u(1)    &= 0
+	\end{align}
+	\right.
+	.
+\end{equation}
+Se $f \in C([0,1],\mathbb{R})$, existe uma única solução $u \in C^2([0,1],\mathbb{R})$ para (\theequation). Para computar uma aproximação numérica para a solução, segue a definição de uma malha admissível:
+
+\begin{definicao}\label{malha_admissivel}%[Malha unidimensional admissível]
+	\cite[p.~729]{Eymard2000} Uma malha unidimensional admissível de $(0,1)$ é dada pelas famílias $(K_i)_{i = 1,...,N}$, $N \in \mathbb{N}^*$, tal que $K_i = (x_{i - 1/2}, x_{i + 1/2})$, e $(x_i)_{i = 0,...,N+1}$ da forma que
+	\[
+		x_0 = x_{1/2} = 0 < x_1 < x_{3/2} < \cdots < x_{i - 1/2} < x_i < x_{i + 1/2} < \cdots < x_N < 1 = x_{N+1/2} = x_{N+1}.
+	\]
+	Colocando
+    \begin{enumerate}[label=\roman*.]
+        \item $h_i = x_{i + 1/2} - x_{i - 1/2}$ para $i = 1,...,N$ e então $\sum_{i=1}^N h_i = 1$;
+        \item $h_i^{-} = x_{i} - x_{i - 1/2}$;
+        \item $h_i^{+} = x_{i + 1/2} - x_{i}$ para $i = 1,...,N$;
+        \item $h_{i + 1/2} = x_{i+1} - x_i$ para $i = 0,...,N$; e 
+        \item $h = \max{\{h_i, i = 1,...,N\}}$.
+    \end{enumerate}
+\end{definicao}
+
+Levando as condições de contorno em consideração e colocando
+\[
+	\begin{align}
+		f_i = \frac{1}{h_i} \int_{K_i} f(x)dx && \forall i = 1,...,N,
+	\end{align}
+\]
+o esquema de volumes finitos para \eqref{eliptic_simple_case} é escrito como
+\begin{equation}\label{esquema_simples_volFin}
+	\begin{align}
+		F_{i + 1/2} - F_{i - 1/2} &= h_if_i && \forall i = 1,...,N, \\
+		F_{i + 1/2} &= - \frac{u_{i+1} - u_i}{h_{i+1/2}} && \forall i = 0,...,N,
+	\end{align}
+\end{equation}
+com, especialmente, $u_0 = u_{N+1} = 0$. Agora, um teorema para uma estimativa de erro para o problema simples \eqref{eliptic_simple_case}
+
+\begin{teorema}
+	\cite[p.~735]{Eymard2000} Seja $f \in C([0,1],\mathbb{R})$ e $u \in C^2([0,1],\mathbb{R})$ uma solução (única) para o problema \eqref{eliptic_simple_case}. Dada uma malha admissível (no sentido da definição \ref{malha_admissivel}), então existe um vetor único $U = (u_1,...,u_N)^t \in \mathbb{R}^N$ solução para \eqref{esquema_simples_volFin} e existe $T \geq 0$, somente dependendo de $u$, tal que
+	\begin{equation}
+		\sum_{i=0}^N\frac{(e_{i+1} - e_i)^2}{h_{i+1/2}} \leq T^2h^2
+	\end{equation}
+	e
+	\begin{equation}
+		|e_i| \leq Th, \quad \forall i = 1,...,N,
+	\end{equation}
+	com $e_0 = e_{N+1} = 0$ e $e_i = u(x_i) - u_i$ para todo $i = 1,...,N$.
+\end{teorema}
+
+
+
+
+
+\end{apendicesenv}
