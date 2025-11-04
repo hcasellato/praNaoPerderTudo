@@ -1,5 +1,6 @@
 \beamer@sectionintoc {1}{Definições gerais}{3}{0}{1}
-\beamer@sectionintoc {2}{Modelagem de escoamentos monofásicos}{12}{0}{2}
-\beamer@sectionintoc {3}{Método de volumes finitos para equações elípticas}{22}{0}{3}
-\beamer@sectionintoc {4}{Método de volumes finitos para equações hiperbólicas}{45}{0}{4}
-\beamer@sectionintoc {5}{Conclusão}{47}{0}{5}
+\beamer@sectionintoc {2}{Modelagem de escoamentos monofásicos}{9}{0}{2}
+\beamer@sectionintoc {3}{Método de volumes finitos para equações elípticas}{18}{0}{3}
+\beamer@sectionintoc {4}{Introdução a problemas de transporte passivo em meios porosos}{34}{0}{4}
+\beamer@sectionintoc {5}{Método de volumes finitos para equações hiperbólicas}{38}{0}{5}
+\beamer@sectionintoc {6}{Referências}{49}{0}{6}

@@ -434,16 +434,23 @@ onde $p_0$ é a pressão de referência quando $\phi_0$. Normalmente, assume-se 
 \end{equation}
 A \textit{permeabilidade} $K$ representa a habilidade do meio poroso em transmitir um fluido através dos seus poros interconectados, sendo um parâmetro que mede a capacidade de transmissão do fluido quando o meio poroso está completamente saturado do mesmo. Quando somente dá um único fluido no meio poroso, esta propriedade recebe o nome de \textit{permeabilidade absoluta}. A permeabilidade é dada por um tensor simétrico positivo definido, caso ela seja isotrópica, $K$ é um escalar. Quando $K$ é espacialmente constante o meio se denomina \textit{homogêneo} e caso contrário, \textit{heterogêneo}.
 
-\subsection{Compressibilidade}
+\subsection{Compressibilidade dos fluidos}
 
 A compressibilidade $c_f$ relacionada à variação do volume $V$ ou massa específica $\rho$ com a variação de pressão $p$:
 \begin{equation}
   c_f = \left.\frac{1}{V}\frac{dV}{dp}\right|_T = \left.\frac{1}{\rho}\frac{\partial\rho}{\partial p}\right|_T,
 \end{equation}
-onde pela mesma lógica usada para $c_r$, obtém-se
+em uma temperatura $T$ fixa. Pela mesma lógica usada para $c_r$, obtém-se
 \begin{equation}
   \rho \approx \rho_0(1 + c_f(p - p_0)).
 \end{equation}
+Os \textit{escoamentos} presentes no reservatório podem ser classiﬁcados como:
+\begin{enumerate}[label=\roman*.]
+\justifying
+\item \textit{Incompressíveis}: possuem compressibilidade zero, o que implica uma massa específica constante independentemente da pressão;
+\item \textit{Levemente compressíveis}: possuem uma compressibilidade baixa e constante, com sua massa específica variando linearmente com a pressão; ou
+\item \textit{Compressíveis}: possuem compressibilidade alta e sua massa específica cresce com a pressão, tendendo a se estabilizar em altas pressões.
+\end{enumerate}
 
 \subsection{Lei de Darcy}
 
@@ -1088,8 +1095,8 @@ Vale notar que os três algoritmos possuem a mesma ordem de erro de truncamento 
 
   \begin{figure}[H]
     \centering
-    \includegraphics[width=.6\textwidth]{imagens/desenvolvimento_CF_ex2.jpeg}
-    \caption{Solução pelo método de fatoração de Crout}
+    \includegraphics[width=.5\textwidth]{imagens/desenvolvimento_CF_ex2.jpeg}
+    \caption{Solução pelo método de fatoração de Crout.}
     \label{Ex2DescontCF}
   \end{figure}
 \end{exemplo}
@@ -1689,8 +1696,7 @@ que representam as ondas se movendo para as células $V_{i+1}$ e $V_i$, respecti
       &C_i^n - u\frac{\Delta t}{\Delta x}W_{i+\frac{1}{2}}
       && \text{se $u < 0$}
     \end{aligned}
-  \right.
-  .
+  \right..
 \end{equation}
 Considerando $u^+ = \text{max}\{u,0\}$ e $u^- = \text{min}\{u,0\}$, é possível ter a fórmula de concentração:
 \begin{equation}\label{eqUWVelConstante}
@@ -1913,7 +1919,7 @@ A implementação para resolver o problema de concentrações é bem trivial, po
   onde $K(x) = 2 + \sin(25x)$, com soluções em campos de pressões e velocidades:
   \begin{figure}[H]
     \centering
-    \includegraphics[width=.8\textwidth]{imagens/1D_grafico_pressao_vel.png}
+    \includegraphics[width=.7\textwidth]{imagens/1D_grafico_pressao_vel.png}
     \caption{Campo de pressões e velocidades.}
   \end{figure}
   Será simulado o fluxo de um contaminante com concentrações $c(x,t)$, governado pelo sistema:
@@ -1981,7 +1987,7 @@ Integrando a lei de conservação \eqref{LC2D}\ sobre o domínio $[x_{i-1/2},x_{
 \end{equation}
 Com manipulações matemáticas e definindo
 \begin{equation}
-  \bar{F}_{i+\frac{1}{2},j}^{n} = \frac{1}{\Delta t \Delta x} \int_{t^{n}}^{t^{n+1}} \int_{y_{j-\frac{1}{2}}}^{y_{j+\frac{1}{2}}} f(c(x_{i+\frac{1}{2}}, y, t)) \, dy \, dt
+  \bar{F}_{i+\frac{1}{2},j}^{n} = \frac{1}{\Delta t \Delta y} \int_{t^{n}}^{t^{n+1}} \int_{y_{j-\frac{1}{2}}}^{y_{j+\frac{1}{2}}} f(c(x_{i+\frac{1}{2}}, y, t)) \, dy \, dt
 \end{equation}
 e
 \begin{equation}
@@ -2016,14 +2022,14 @@ Nota-se que foi necessário o artifício de um \textit{contorno de Dirichlet loc
   Com uma permeabilidade absoluta $K(x,y) = 1$ constante, termo fonte $\tilde{q} = 1$, poço de injeção na célula $(1,1)$ e poço de produção em $(N,M)$. Ao resolver o problema elíptico de escoamento, obtém-se o campo de pressões e o campo de velocidades da figura \ref{Ex2Deliptica}b, mas novamente:
   \begin{figure}[H]
     \centering
-    \includegraphics[width=.5\textwidth]{imagens/desenvolvimento_2Deliptica_ex2.png}
+    \includegraphics[width=.4\textwidth]{imagens/desenvolvimento_2Deliptica_ex2.png}
     \caption{Campo de pressões e velocidades de \ref{ex1CB}.}
     \label{figex1CB}
   \end{figure}
-  Então, dadas as velocidades como conhecidas, simula-se a concentração de um contaminante em cada célula do problema pelo método UpWind descrito anteriormente (mais específicadamente, com as equações para coeficientes variáveis). A dispersão do contaminante é uniforme, podendo ser observadas nas figuras:
+  Então, dadas as velocidades como conhecidas, simula-se a concentração de um contaminante em cada célula do problema pelo método upwind descrito anteriormente (mais específicadamente, com as equações para coeficientes variáveis). A dispersão do contaminante é uniforme, podendo ser observadas nas figuras:
   \begin{figure}[H]
     \centering
-    \includegraphics[width=.99\textwidth]{imagens/ex1_painel_6_graficos.png}
+    \includegraphics[width=.6\textwidth]{imagens/ex1_painel_6_graficos.png}
     \caption{Gráficos de concentrações de \ref{ex1CB}.}
   \end{figure}
 \end{exemplo}
@@ -2053,21 +2059,21 @@ Nota-se que foi necessário o artifício de um \textit{contorno de Dirichlet loc
   para todo $x$. O campo de permeabilidade, assim como o de pressões e velocidades obtidos pela solução do problema elíptico acima, pode ser visualizado abaixo:
   \begin{figure}[H]
     \centering
-    \begin{subfigure}[c]{0.49\textwidth}
+    \begin{subfigure}[c]{0.4\textwidth}
       \centering
       \includegraphics[width=\textwidth]{imagens/ex2_perm_hetero.png}
     \end{subfigure}
-    \begin{subfigure}[c]{0.49\textwidth}
+    \begin{subfigure}[c]{0.4\textwidth}
       \centering
       \includegraphics[width=\textwidth]{imagens/ex2_pressao_velocidade.png}
     \end{subfigure}
-    \caption{Gráficos de permeabilidade e de pressão com velocidades não normalizadas}
+    \caption{Gráficos de permeabilidade e de pressão com velocidades não normalizadas.}
     \label{}
   \end{figure}
-  Então, dadas as velocidades conhecidas, simula-se a concentração do contaminante na malha com o método de discretização UpWind. Neste caso, a injeção do contaminante será somente no início da simulação e o que se observa é o óbvio, o contaminante tem fluxo mais acelerado nas faixas de maior permeabilidade:
+  Então, dadas as velocidades conhecidas, simula-se a concentração do contaminante na malha com o método de discretização upwind. Neste caso, a injeção do contaminante será somente no início da simulação e o que se observa é o óbvio, o contaminante tem fluxo mais acelerado nas faixas de maior permeabilidade:
   \begin{figure}[H]
     \centering
-    \includegraphics[width=\textwidth]{imagens/ex2_painel_6_graficos.png}
+    \includegraphics[width=.7\textwidth]{imagens/ex2_painel_6_graficos.png}
     \caption{Gráficos de concentrações de \ref{ex2CB}.}
   \end{figure}
 \end{exemplo}
@@ -2130,7 +2136,7 @@ Nota-se que foi necessário o artifício de um \textit{contorno de Dirichlet loc
   Dessa forma, dadas as velocidades pela solução do problema elíptico, calcula-se a concentração do contaminante no tempo com a injeção do contaminante somente no início da simulação. O contaminante, então, evita a região central, indo pelas bordas:
   \begin{figure}[H]
     \centering
-    \includegraphics[width=.68\textwidth]{imagens/ex4_painel_6_graficos.png}
+    \includegraphics[width=.6\textwidth]{imagens/ex4_painel_6_graficos.png}
     \caption{Gráficos de concentrações de \ref{ex4CB}.}
   \end{figure}
 \end{exemplo}

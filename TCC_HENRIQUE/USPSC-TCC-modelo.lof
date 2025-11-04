@@ -4,24 +4,24 @@
 \contentsline {figure}{\numberline {2}{\ignorespaces Comparação $y_i$ e $w_i$ para o exemplo \ref {ex221}.\relax }}{32}{figure.caption.17}%
 \contentsline {figure}{\numberline {3}{\ignorespaces Simplificação da vibração de uma corda em um berimbau.\relax }}{36}{figure.caption.18}%
 \contentsline {figure}{\numberline {4}{\ignorespaces Exemplificação de tipos de contorno.\relax }}{37}{figure.caption.19}%
-\contentsline {figure}{\numberline {5}{\ignorespaces Visualização do intervalo $I$ com discretização no centro da célula e contorno de Neumann.\relax }}{39}{figure.caption.20}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Visualização do intervalo $I$ com discretização no centro da célula e contorno de Neumann.\relax }}{40}{figure.caption.20}%
 \contentsline {figure}{\numberline {6}{\ignorespaces Intervalo $I$ com discretização no centro da célula, contorno de Dirichlet à esquerda usando célula fantasma.\relax }}{40}{figure.caption.21}%
 \contentsline {figure}{\numberline {7}{\ignorespaces Intervalo $I$ com discretização no centro da célula, contorno de Dirichlet à esquerda usando meia célula.\relax }}{40}{figure.caption.22}%
 \contentsline {figure}{\numberline {8}{\ignorespaces Esquema de volumes finitos unidimensional.\relax }}{41}{figure.caption.23}%
 \contentsline {figure}{\numberline {9}{\ignorespaces Solução por diferentes métodos de fatoração (Crout e $LDL^t$)\relax }}{45}{figure.caption.25}%
-\contentsline {figure}{\numberline {10}{\ignorespaces Solução pelo método de fatoração de Crout\relax }}{46}{figure.caption.26}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Solução pelo método de fatoração de Crout.\relax }}{46}{figure.caption.26}%
 \contentsline {figure}{\numberline {11}{\ignorespaces Componentes norte, sul, leste e oeste em $\partial V_{i,j}$.\relax }}{46}{figure.caption.27}%
 \contentsline {figure}{\numberline {12}{\ignorespaces Exemplo de ordenação das células computacionais para um problema bidimensional.\relax }}{49}{figure.caption.28}%
 \contentsline {figure}{\numberline {13}{\ignorespaces Campo de pressões e vetores dos exemplos.\relax }}{52}{figure.caption.29}%
 \contentsline {figure}{\numberline {14}{\ignorespaces Diferentes curvas características.\relax }}{54}{figure.caption.30}%
 \contentsline {figure}{\numberline {15}{\ignorespaces Uma discretização de volumes finitos para leis de conservação hiperbólicas.\relax }}{55}{figure.caption.31}%
 \contentsline {figure}{\numberline {16}{\ignorespaces Propagação da informação de $t^n$ para $t^{n+1}$.\relax }}{58}{figure.caption.32}%
-\contentsline {figure}{\numberline {17}{\ignorespaces Gráfico de concentrações em quatro tempos diferentes.\relax }}{58}{figure.caption.33}%
+\contentsline {figure}{\numberline {17}{\ignorespaces Gráfico de concentrações em quatro tempos diferentes.\relax }}{59}{figure.caption.33}%
 \contentsline {figure}{\numberline {18}{\ignorespaces Campo de pressões e velocidades.\relax }}{59}{figure.caption.34}%
-\contentsline {figure}{\numberline {19}{\ignorespaces Gráfico de concentrações em quatro tempos diferentes.\relax }}{59}{figure.caption.35}%
-\contentsline {figure}{\numberline {20}{\ignorespaces Campo de pressões e velocidades de \ref {ex1CB}.\relax }}{61}{figure.caption.36}%
+\contentsline {figure}{\numberline {19}{\ignorespaces Gráfico de concentrações em quatro tempos diferentes.\relax }}{60}{figure.caption.35}%
+\contentsline {figure}{\numberline {20}{\ignorespaces Campo de pressões e velocidades de \ref {ex1CB}.\relax }}{62}{figure.caption.36}%
 \contentsline {figure}{\numberline {21}{\ignorespaces Gráficos de concentrações de \ref {ex1CB}.\relax }}{62}{figure.caption.37}%
-\contentsline {figure}{\numberline {22}{\ignorespaces Gráficos de permeabilidade e de pressão com velocidades não normalizadas\relax }}{63}{figure.caption.38}%
+\contentsline {figure}{\numberline {22}{\ignorespaces Gráficos de permeabilidade e de pressão com velocidades não normalizadas.\relax }}{63}{figure.caption.38}%
 \contentsline {figure}{\numberline {23}{\ignorespaces Gráficos de concentrações de \ref {ex2CB}.\relax }}{63}{figure.caption.39}%
 \contentsline {figure}{\numberline {24}{\ignorespaces Gráficos de permeabilidade e de pressão com velocidades normalizadas\relax }}{64}{figure.caption.40}%
 \contentsline {figure}{\numberline {25}{\ignorespaces Gráficos de concentrações de \ref {ex3CB}.\relax }}{64}{figure.caption.41}%

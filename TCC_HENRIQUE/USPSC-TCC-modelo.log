@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.8.1)  20 OCT 2025 15:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.8.1)  28 OCT 2025 00:13
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2197,171 +2197,165 @@ nput line 410.
  [32
 
  <./imagens/desenvolvimento_PVC_comparacao.jpeg>] [33]
-[34] [35] [36]
-Underfull \vbox (badness 4060) has occurred while \output is active []
-
- [37]
-[38] [39] [40] [41] [42] [43]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[44]
-<imagens/desenvolvimento_CF.jpeg, id=605, 361.35pt x 361.35pt>
+[34] [35] [36] [37] [38] [39] [40] [41] [42] [43] [44]
+<imagens/desenvolvimento_CF.jpeg, id=607, 361.35pt x 361.35pt>
 File: imagens/desenvolvimento_CF.jpeg Graphic file (type jpg)
 <use imagens/desenvolvimento_CF.jpeg>
 Package pdftex.def Info: imagens/desenvolvimento_CF.jpeg  used on input line 10
-51.
+58.
 (pdftex.def)             Requested size: 218.39806pt x 218.39963pt.
-<imagens/desenvolvimento_LDL.jpeg, id=606, 361.35pt x 361.35pt>
+<imagens/desenvolvimento_LDL.jpeg, id=608, 361.35pt x 361.35pt>
 File: imagens/desenvolvimento_LDL.jpeg Graphic file (type jpg)
 <use imagens/desenvolvimento_LDL.jpeg>
 Package pdftex.def Info: imagens/desenvolvimento_LDL.jpeg  used on input line 1
-057.
+064.
 (pdftex.def)             Requested size: 218.39806pt x 218.39963pt.
  [45 <./imagens/desenvolvimento_CF.jpeg> <./imagens/desenvolvimento_LDL.jpeg>]
-<imagens/desenvolvimento_CF_ex2.jpeg, id=613, 578.16pt x 361.35pt>
+<imagens/desenvolvimento_CF_ex2.jpeg, id=616, 578.16pt x 361.35pt>
 File: imagens/desenvolvimento_CF_ex2.jpeg Graphic file (type jpg)
 <use imagens/desenvolvimento_CF_ex2.jpeg>
 Package pdftex.def Info: imagens/desenvolvimento_CF_ex2.jpeg  used on input lin
-e 1091.
-(pdftex.def)             Requested size: 273.00278pt x 170.62299pt.
+e 1098.
+(pdftex.def)             Requested size: 227.5pt x 142.18306pt.
  [46 <./imagens/desenvolvimento_CF_ex2.jpeg>]
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmss' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [47] [48] [49] [50]
-<imagens/desenvolvimento_2Deliptica_ex1.png, id=671, 551.9019pt x 498.663pt>
+ [47] [48]
+Underfull \vbox (badness 1490) has occurred while \output is active []
+
+ [49]
+[50] [51]
+<imagens/desenvolvimento_2Deliptica_ex1.png, id=681, 551.9019pt x 498.663pt>
 File: imagens/desenvolvimento_2Deliptica_ex1.png Graphic file (type png)
 <use imagens/desenvolvimento_2Deliptica_ex1.png>
 Package pdftex.def Info: imagens/desenvolvimento_2Deliptica_ex1.png  used on in
-put line 1427.
+put line 1434.
 (pdftex.def)             Requested size: 181.99722pt x 164.43755pt.
-<imagens/desenvolvimento_2Deliptica_ex2.png, id=675, 549.7338pt x 498.663pt>
+<imagens/desenvolvimento_2Deliptica_ex2.png, id=685, 549.7338pt x 498.663pt>
 File: imagens/desenvolvimento_2Deliptica_ex2.png Graphic file (type png)
 <use imagens/desenvolvimento_2Deliptica_ex2.png>
 Package pdftex.def Info: imagens/desenvolvimento_2Deliptica_ex2.png  used on in
-put line 1434.
+put line 1441.
 (pdftex.def)             Requested size: 181.99722pt x 165.09192pt.
- [51]
-[52 <./imagens/desenvolvimento_2Deliptica_ex1.png> <./imagens/desenvolvimento_2
-Deliptica_ex2.png>] [53] [54] [55] [56] [57]
-<imagens/1dUWex1_frame_000.png, id=747, 433.62pt x 289.08pt>
+ [52 <./imagens/desenvolvimento_2Deliptica_ex1.png> <./imagens/desenvolvimento_
+2Deliptica_ex2.png>] [53] [54] [55] [56] [57] [58]
+<imagens/1dUWex1_frame_000.png, id=754, 433.62pt x 289.08pt>
 File: imagens/1dUWex1_frame_000.png Graphic file (type png)
 <use imagens/1dUWex1_frame_000.png>
-Package pdftex.def Info: imagens/1dUWex1_frame_000.png  used on input line 1884
+Package pdftex.def Info: imagens/1dUWex1_frame_000.png  used on input line 1890
 .
 (pdftex.def)             Requested size: 145.60333pt x 97.06845pt.
-<imagens/1dUWex1_frame_030.png, id=748, 433.62pt x 289.08pt>
+<imagens/1dUWex1_frame_030.png, id=755, 433.62pt x 289.08pt>
 File: imagens/1dUWex1_frame_030.png Graphic file (type png)
 <use imagens/1dUWex1_frame_030.png>
-Package pdftex.def Info: imagens/1dUWex1_frame_030.png  used on input line 1888
+Package pdftex.def Info: imagens/1dUWex1_frame_030.png  used on input line 1894
 .
 (pdftex.def)             Requested size: 145.60333pt x 97.06845pt.
-<imagens/1dUWex1_frame_050.png, id=749, 433.62pt x 289.08pt>
+<imagens/1dUWex1_frame_050.png, id=756, 433.62pt x 289.08pt>
 File: imagens/1dUWex1_frame_050.png Graphic file (type png)
 <use imagens/1dUWex1_frame_050.png>
-Package pdftex.def Info: imagens/1dUWex1_frame_050.png  used on input line 1892
+Package pdftex.def Info: imagens/1dUWex1_frame_050.png  used on input line 1898
 .
 (pdftex.def)             Requested size: 145.60333pt x 97.06845pt.
- [58 <./imagens/1dUWex1_frame_000.png> <./imagens/1dUWex1_frame_030.png> <./ima
-gens/1dUWex1_frame_050.png>]
-<imagens/1D_grafico_pressao_vel.png, id=759, 860.013pt x 353.4003pt>
+<imagens/1D_grafico_pressao_vel.png, id=758, 860.013pt x 353.4003pt>
 File: imagens/1D_grafico_pressao_vel.png Graphic file (type png)
 <use imagens/1D_grafico_pressao_vel.png>
 Package pdftex.def Info: imagens/1D_grafico_pressao_vel.png  used on input line
- 1916.
-(pdftex.def)             Requested size: 364.00139pt x 149.57568pt.
-<imagens/1dUWex2_frame_010.png, id=762, 433.62pt x 289.08pt>
+ 1922.
+(pdftex.def)             Requested size: 318.49861pt x 130.88008pt.
+ [59 <./imagens/1dUWex1_frame_000.png> <./imagens/1dUWex1_frame_030.png> <./ima
+gens/1dUWex1_frame_050.png> <./imagens/1D_grafico_pressao_vel.png>]
+<imagens/1dUWex2_frame_010.png, id=774, 433.62pt x 289.08pt>
 File: imagens/1dUWex2_frame_010.png Graphic file (type png)
 <use imagens/1dUWex2_frame_010.png>
-Package pdftex.def Info: imagens/1dUWex2_frame_010.png  used on input line 1937
+Package pdftex.def Info: imagens/1dUWex2_frame_010.png  used on input line 1943
 .
 (pdftex.def)             Requested size: 145.60333pt x 97.06845pt.
-<imagens/1dUWex2_frame_038.png, id=763, 433.62pt x 289.08pt>
+<imagens/1dUWex2_frame_038.png, id=775, 433.62pt x 289.08pt>
 File: imagens/1dUWex2_frame_038.png Graphic file (type png)
 <use imagens/1dUWex2_frame_038.png>
-Package pdftex.def Info: imagens/1dUWex2_frame_038.png  used on input line 1941
+Package pdftex.def Info: imagens/1dUWex2_frame_038.png  used on input line 1947
 .
 (pdftex.def)             Requested size: 145.60333pt x 97.06845pt.
-<imagens/1dUWex2_frame_078.png, id=764, 433.62pt x 289.08pt>
+<imagens/1dUWex2_frame_078.png, id=776, 433.62pt x 289.08pt>
 File: imagens/1dUWex2_frame_078.png Graphic file (type png)
 <use imagens/1dUWex2_frame_078.png>
-Package pdftex.def Info: imagens/1dUWex2_frame_078.png  used on input line 1945
+Package pdftex.def Info: imagens/1dUWex2_frame_078.png  used on input line 1951
 .
 (pdftex.def)             Requested size: 145.60333pt x 97.06845pt.
-
-[59 <./imagens/1D_grafico_pressao_vel.png> <./imagens/1dUWex2_frame_010.png> <.
-/imagens/1dUWex2_frame_038.png> <./imagens/1dUWex2_frame_078.png>] [60]
+ [60 <./imagens/1dUWex2_frame_010.png> <./imagens/1dUWex2_frame_038.png> <./ima
+gens/1dUWex2_frame_078.png>]
 File: imagens/desenvolvimento_2Deliptica_ex2.png Graphic file (type png)
 <use imagens/desenvolvimento_2Deliptica_ex2.png>
 Package pdftex.def Info: imagens/desenvolvimento_2Deliptica_ex2.png  used on in
-put line 2019.
-(pdftex.def)             Requested size: 227.5pt x 206.36299pt.
-<imagens/ex1_painel_6_graficos.png, id=797, 621.522pt x 480.8364pt>
+put line 2025.
+(pdftex.def)             Requested size: 181.99722pt x 165.09192pt.
+
+[61]
+<imagens/ex1_painel_6_graficos.png, id=804, 621.522pt x 480.8364pt>
 File: imagens/ex1_painel_6_graficos.png Graphic file (type png)
 <use imagens/ex1_painel_6_graficos.png>
 Package pdftex.def Info: imagens/ex1_painel_6_graficos.png  used on input line 
-2026.
-(pdftex.def)             Requested size: 450.4525pt x 348.49841pt.
-
-[61]
-<imagens/ex2_perm_hetero.png, id=806, 478.9092pt x 425.1885pt>
+2032.
+(pdftex.def)             Requested size: 273.00278pt x 211.20915pt.
+ [62 <./imagens/ex1_painel_6_graficos.png>]
+<imagens/ex2_perm_hetero.png, id=814, 478.9092pt x 425.1885pt>
 File: imagens/ex2_perm_hetero.png Graphic file (type png)
 <use imagens/ex2_perm_hetero.png>
-Package pdftex.def Info: imagens/ex2_perm_hetero.png  used on input line 2058.
-(pdftex.def)             Requested size: 222.9525pt x 197.93768pt.
-<imagens/ex2_pressao_velocidade.png, id=807, 493.3632pt x 425.6703pt>
+Package pdftex.def Info: imagens/ex2_perm_hetero.png  used on input line 2064.
+(pdftex.def)             Requested size: 181.99722pt x 161.57979pt.
+<imagens/ex2_pressao_velocidade.png, id=815, 493.3632pt x 425.6703pt>
 File: imagens/ex2_pressao_velocidade.png Graphic file (type png)
 <use imagens/ex2_pressao_velocidade.png>
 Package pdftex.def Info: imagens/ex2_pressao_velocidade.png  used on input line
- 2062.
-(pdftex.def)             Requested size: 222.9525pt x 192.36176pt.
- [62 <./imagens/ex1_painel_6_graficos.png>]
-<imagens/ex2_painel_6_graficos.png, id=813, 621.522pt x 480.8364pt>
+ 2068.
+(pdftex.def)             Requested size: 181.99722pt x 157.0214pt.
+<imagens/ex2_painel_6_graficos.png, id=816, 621.522pt x 480.8364pt>
 File: imagens/ex2_painel_6_graficos.png Graphic file (type png)
 <use imagens/ex2_painel_6_graficos.png>
 Package pdftex.def Info: imagens/ex2_painel_6_graficos.png  used on input line 
-2070.
-(pdftex.def)             Requested size: 455.0pt x 352.01282pt.
+2076.
+(pdftex.def)             Requested size: 318.49861pt x 246.4119pt.
  [63 <./imagens/ex2_perm_hetero.png> <./imagens/ex2_pressao_velocidade.png> <./
 imagens/ex2_painel_6_graficos.png>]
-<imagens/ex3_perm_hetero.png, id=825, 478.9092pt x 425.1885pt>
+<imagens/ex3_perm_hetero.png, id=828, 478.9092pt x 425.1885pt>
 File: imagens/ex3_perm_hetero.png Graphic file (type png)
 <use imagens/ex3_perm_hetero.png>
-Package pdftex.def Info: imagens/ex3_perm_hetero.png  used on input line 2095.
+Package pdftex.def Info: imagens/ex3_perm_hetero.png  used on input line 2101.
 (pdftex.def)             Requested size: 181.99722pt x 161.57979pt.
-<imagens/ex3_pressao_velocidade.png, id=826, 485.6544pt x 425.6703pt>
+<imagens/ex3_pressao_velocidade.png, id=829, 485.6544pt x 425.6703pt>
 File: imagens/ex3_pressao_velocidade.png Graphic file (type png)
 <use imagens/ex3_pressao_velocidade.png>
 Package pdftex.def Info: imagens/ex3_pressao_velocidade.png  used on input line
- 2099.
+ 2105.
 (pdftex.def)             Requested size: 181.99722pt x 159.52203pt.
-<imagens/ex3_painel_6_graficos.png, id=827, 621.522pt x 480.8364pt>
+<imagens/ex3_painel_6_graficos.png, id=830, 621.522pt x 480.8364pt>
 File: imagens/ex3_painel_6_graficos.png Graphic file (type png)
 <use imagens/ex3_painel_6_graficos.png>
 Package pdftex.def Info: imagens/ex3_painel_6_graficos.png  used on input line 
-2107.
+2113.
 (pdftex.def)             Requested size: 318.49861pt x 246.4119pt.
  [64 <./imagens/ex3_perm_hetero.png> <./imagens/ex3_pressao_velocidade.png> <./
 imagens/ex3_painel_6_graficos.png>]
-<imagens/ex4_perm_hetero.png, id=839, 478.9092pt x 425.1885pt>
+<imagens/ex4_perm_hetero.png, id=842, 478.9092pt x 425.1885pt>
 File: imagens/ex4_perm_hetero.png Graphic file (type png)
 <use imagens/ex4_perm_hetero.png>
-Package pdftex.def Info: imagens/ex4_perm_hetero.png  used on input line 2122.
+Package pdftex.def Info: imagens/ex4_perm_hetero.png  used on input line 2128.
 (pdftex.def)             Requested size: 181.99722pt x 161.57979pt.
-<imagens/ex4_pressao_velocidade.png, id=840, 493.3632pt x 425.6703pt>
+<imagens/ex4_pressao_velocidade.png, id=843, 493.3632pt x 425.6703pt>
 File: imagens/ex4_pressao_velocidade.png Graphic file (type png)
 <use imagens/ex4_pressao_velocidade.png>
 Package pdftex.def Info: imagens/ex4_pressao_velocidade.png  used on input line
- 2126.
+ 2132.
 (pdftex.def)             Requested size: 181.99722pt x 157.0214pt.
-<imagens/ex4_painel_6_graficos.png, id=841, 621.522pt x 480.8364pt>
+<imagens/ex4_painel_6_graficos.png, id=844, 621.522pt x 480.8364pt>
 File: imagens/ex4_painel_6_graficos.png Graphic file (type png)
 <use imagens/ex4_painel_6_graficos.png>
 Package pdftex.def Info: imagens/ex4_painel_6_graficos.png  used on input line 
-2133.
-(pdftex.def)             Requested size: 309.39667pt x 239.36842pt.
+2139.
+(pdftex.def)             Requested size: 273.00278pt x 211.20915pt.
 ) [65 <./imagens/ex4_perm_hetero.png> <./imagens/ex4_pressao_velocidade.png> <.
 /imagens/ex4_painel_6_graficos.png>]
 \openout2 = `USPSC-TA-Textual/USPSC-Cap3-Conclusao.aux'.
@@ -2409,11 +2403,11 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 ] [74] [75] [76]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 211.
+(hyperref)                removing `math shift' on input line 209.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 211.
+(hyperref)                removing `math shift' on input line 209.
 
 [77] [78
 
@@ -2426,7 +2420,7 @@ See the amsmath package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.339 	\end{align}
+l.337 	\end{align}
                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2439,7 +2433,7 @@ See the amsmath package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.364 	\end{align}
+l.362 	\end{align}
                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2452,7 +2446,7 @@ See the amsmath package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.371 	\end{align}
+l.369 	\end{align}
                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2485,10 +2479,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 51353 strings out of 476091
- 1106602 string characters out of 5794082
+ 51355 strings out of 476091
+ 1106604 string characters out of 5794082
  1887330 words of memory out of 5000000
- 70083 multiletter control sequences out of 15000+600000
+ 70082 multiletter control sequences out of 15000+600000
  589772 words of font info for 389 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,17n,94p,1204b,1532s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2518,10 +2512,10 @@ y8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm1
 0.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on USPSC-TCC-modelo.pdf (82 pages, 5691473 bytes).
+Output written on USPSC-TCC-modelo.pdf (82 pages, 5691963 bytes).
 PDF statistics:
- 1357 PDF objects out of 1440 (max. 8388607)
- 1158 compressed objects within 12 object streams
- 385 named destinations out of 1000 (max. 500000)
+ 1360 PDF objects out of 1440 (max. 8388607)
+ 1161 compressed objects within 12 object streams
+ 388 named destinations out of 1000 (max. 500000)
  62560 words of extra memory for PDF output out of 74296 (max. 10000000)
 

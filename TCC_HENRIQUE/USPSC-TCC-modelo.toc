@@ -20,30 +20,30 @@
 \contentsline {subsection}{\numberline {2.2.2}Implementação do método das diferenças finitas linear}{30}{subsection.2.2.2}%
 \contentsline {section}{\numberline {2.3}Definições gerais e propriedades de meios porosos e de fluidos}{32}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}Meios porosos}{32}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Compressibilidade}{33}{subsection.2.3.2}%
-\contentsline {subsection}{\numberline {2.3.3}Lei de Darcy}{33}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.2}Compressibilidade dos fluidos}{33}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Lei de Darcy}{34}{subsection.2.3.3}%
 \contentsline {subsection}{\numberline {2.3.4}Viscosidade}{34}{subsection.2.3.4}%
 \contentsline {subsection}{\numberline {2.3.5}Volumes elementares representativos}{34}{subsection.2.3.5}%
-\contentsline {section}{\numberline {2.4}Modelagem de escoamentos monofásicos}{34}{section.2.4}%
+\contentsline {section}{\numberline {2.4}Modelagem de escoamentos monofásicos}{35}{section.2.4}%
 \contentsline {subsection}{\numberline {2.4.1}Condições auxiliares}{35}{subsection.2.4.1}%
 \contentsline {subsection}{\numberline {2.4.2}Meios homogêneos e heterogêneos}{37}{subsection.2.4.2}%
 \contentsline {section}{\numberline {2.5}Uma breve introdução ao método de volumes finitos}{38}{section.2.5}%
 \contentsline {section}{\numberline {2.6}Método de volumes finitos para equações elípticas}{39}{section.2.6}%
 \contentsline {subsection}{\numberline {2.6.1}Malha centrada em células}{39}{subsection.2.6.1}%
-\contentsline {subsection}{\numberline {2.6.2}Caso unidimensional}{40}{subsection.2.6.2}%
+\contentsline {subsection}{\numberline {2.6.2}Caso unidimensional}{41}{subsection.2.6.2}%
 \contentsline {subsubsection}{\numberline {2.6.2.1}Implementação}{42}{subsubsection.2.6.2.1}%
 \contentsline {subsection}{\numberline {2.6.3}Caso bidimensional}{46}{subsection.2.6.3}%
-\contentsline {subsubsection}{\numberline {2.6.3.1}Condição de contorno de Neumann}{47}{subsubsection.2.6.3.1}%
+\contentsline {subsubsection}{\numberline {2.6.3.1}Condição de contorno de Neumann}{48}{subsubsection.2.6.3.1}%
 \contentsline {subsubsection}{\numberline {2.6.3.2}Condição de contorno de Dirichlet}{48}{subsubsection.2.6.3.2}%
 \contentsline {subsubsection}{\numberline {2.6.3.3}Implementação}{49}{subsubsection.2.6.3.3}%
 \contentsline {section}{\numberline {2.7}Introdução a problemas de transporte passivo em meios porosos}{52}{section.2.7}%
 \contentsline {subsection}{\numberline {2.7.1}Derivação de leis de conservação hiperbólicas}{53}{subsection.2.7.1}%
-\contentsline {subsection}{\numberline {2.7.2}Equação de transporte linear}{53}{subsection.2.7.2}%
+\contentsline {subsection}{\numberline {2.7.2}Equação de transporte linear}{54}{subsection.2.7.2}%
 \contentsline {section}{\numberline {2.8}Método de volumes finitos para equações hiperbólicas}{54}{section.2.8}%
-\contentsline {subsection}{\numberline {2.8.1}Método upwind para aproximação de fluxos discretos em uma dimensão}{55}{subsection.2.8.1}%
+\contentsline {subsection}{\numberline {2.8.1}Método upwind para aproximação de fluxos discretos em uma dimensão}{56}{subsection.2.8.1}%
 \contentsline {subsubsection}{\numberline {2.8.1.1}Caso de coeficientes constantes}{56}{subsubsection.2.8.1.1}%
-\contentsline {subsubsection}{\numberline {2.8.1.2}Caso de coeficientes variáveis}{56}{subsubsection.2.8.1.2}%
-\contentsline {subsubsection}{\numberline {2.8.1.3}Condição CFL}{57}{subsubsection.2.8.1.3}%
+\contentsline {subsubsection}{\numberline {2.8.1.2}Caso de coeficientes variáveis}{57}{subsubsection.2.8.1.2}%
+\contentsline {subsubsection}{\numberline {2.8.1.3}Condição CFL}{58}{subsubsection.2.8.1.3}%
 \contentsline {subsubsection}{\numberline {2.8.1.4}Exemplos do caso unidimensional}{58}{subsubsection.2.8.1.4}%
 \contentsline {subsection}{\numberline {2.8.2}Método upwind para aproximação de fluxos discretos em duas dimensões}{60}{subsection.2.8.2}%
 \contentsline {subsubsection}{\numberline {2.8.2.1}Exemplos do caso bidimensional}{61}{subsubsection.2.8.2.1}%

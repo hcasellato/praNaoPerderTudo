@@ -1,0 +1,62 @@
+\section{Introdução a problemas de transporte passivo em meios porosos} % Seções são adicionadas para organizar sua apresentação em blocos discretos, todas as seções e subseções são automaticamente exibidas no índice como uma visão geral da apresentação, mas NÃO são exibidas como slides separados.
+
+%----------------------------------------------------------------------------------------
+
+\begin{frame}{Problemas de transporte passivo em meios porosos}
+	O movimento de um fluido em escoamento monofásico em meios porosos é descrito por um \textit{problema de transporte passivo}, onde o \textbf{fluido marcado} segue o escoamento \textit{sem alterar suas propriedades}.
+
+	Com a velocidade do fluido $u$ obtida através da solução do problema elíptico dado por \eqref{escoamento_base}\ e \eqref{leiDeDarcy}, esse deslocamento pode ser estimado pela seguinte equação hiperbólica:
+	\begin{equation}\label{transpPassivCompleto}
+	\left\{
+	  \begin{aligned}
+	    \frac{\partial}{\partial t}(\phi c) + \nabla \cdot (uc) &= q && \text{em $\Omega$} \\
+	    c(x,t=0) &= c_0 && \text{em $\Omega$} \\
+	    c(x,t) &= c_b(x,t) && \text{em $\partial\Omega^-$}
+	  \end{aligned},
+	\right.
+	\end{equation}
+	onde $\phi$ é a porosidade, $q$ é o termo fonte, $c(x,t)$ é a concentração do contaminante, $c_0$ é a condição inicial e $c_b$ é a concentração nas bordas de entrada
+	\[
+		\partial\Omega^- = \{x \in \partial\Omega; u \cdot n < 0\},	
+	\]
+	onde $n$ é a normal exterior à fronteira $\partial\Omega$.
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+
+\begin{frame}{Problemas de transporte passivo em meios porosos}
+	Em simulações numéricas, geralmente o termo fonte da equação \eqref{transpPassivCompleto}\ leva em conta os poços de injeção e produção, os quais podem ser convertidos em condições de contorno adequadas, gerando a equação:
+
+	\begin{equation}
+	\left\{
+	  \begin{aligned}
+	   \phi \frac{\partial c}{\partial t} + \nabla \cdot (uc) &= 0 && \text{em $\Omega$} \\
+	    c(x,t=0) &= c_0 && \text{em $\Omega$} \\
+	    c(x,t) &= c_b(x,t) && \text{em $\partial\Omega^-$}
+	  \end{aligned},
+	\right.
+	\end{equation}
+	onde a porosidade $\phi = \phi(x)$ é constante no tempo. Caso a porosidade seja uniforme e constante no tempo, é possível escalonar a primeira equação de (\theequation) para
+	\begin{equation}\label{eq53}
+	  \frac{\partial c}{\partial \tau} + \nabla \cdot (uc) = 0,
+	\end{equation}
+	onde $\tau = t/\phi$. Admitindo que a velocidade $u$ é conhecida e não depende da concentração (considerando que $K$ é constante), têm-se uma \textbf{lei de conservação hiperbólica linear}.
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+
+\begin{frame}{Derivação de leis de conservação hiperbólicas}
+	Aqui, deriva-se uma \textbf{lei de balanço} para determinar a conservação de \textit{concentração} $c(x,t)$ em um domínio $\Omega \subset \mathbb{R}^n$. Essa lei de balanço estabelece que a variação temporal da quantidade $c$ em um domínio $\Omega$ é igual a taxa de fluxo de $c$ por $\partial \Omega$ mais o total de $c$ injetado ou retirado de $\Omega$:
+	\begin{equation}
+	  \frac{\partial}{\partial t}\int_\Omega\phi c(x,t)\ dx = - \int_{\partial\Omega}f(c(x,t))\cdot n\ ds + \int_\Omega q\ dx,
+	\end{equation}
+	onde $n$ é o vetor normal à $\partial\Omega$, $f(c)$ é a função de fluxo dependendo de $c$ (não necessariamente linear) e $q$ o termo fonte. Com o teorema da divergência:
+	\begin{equation}
+	  \int_\Omega\left(\frac{\partial}{\partial t}(\phi c(x,t)) + \nabla \cdot f(c(x,t))- q\right)\ dx = 0.
+	\end{equation}
+	Como a equação (\theequation) vale para qualquer domínio arbitrário $\Omega$ e a porosidade $\phi = \phi(x)$ é constante no tempo, então é possível obter a forma diferencial:
+	\begin{equation}\label{EDPH}
+	  \phi \frac{\partial c}{\partial t} + \nabla \cdot f(c) = q
+	\end{equation}
+	chamada, então, de \textbf{equação diferencial parcial hiperbólica}.
+\end{frame}

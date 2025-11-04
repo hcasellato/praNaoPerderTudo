@@ -30,15 +30,15 @@
 \renewcommand{\familydefault}{\rmdefault}
 
 \theoremstyle{plain} % Estilo padrão para teoremas, proposições, etc.
-\newtheorem{teorema}{Teorema}[section] % Numeração por seção
+\newtheorem{teorema}{Teorema} % Numeração por seção
 \newtheorem{proposicao}[teorema]{Proposição} % Mesma numeração que teoremas
 \newtheorem{lema}[teorema]{Lema}
 \newtheorem{corolario}[teorema]{Corolário}
 
 \theoremstyle{definition} % Estilo para definições, exemplos
-\newtheorem{definicao}{Definição}[section]
-\newtheorem{exemplo}{Exemplo}[section]
-\newtheorem{exercicio}{Exercício}[section]
+\newtheorem{definicao}{Definição}
+\newtheorem{exemplo}{Exemplo}
+\newtheorem{exercicio}{Exercício}
 
 \theoremstyle{remark} % Estilo para observações
 \newtheorem*{observacao}{Observação} % Asterisco remove numeração
@@ -102,8 +102,6 @@
 % --- OPTIONAL ---
 \setbeamercolor{background canvas}{bg=backgroundLight!98!white}
 
-
-
 %----------------------------------------------------------------------------------------
 % BIBLIOGRAFIA
 %----------------------------------------------------------------------------------------
@@ -132,6 +130,9 @@
 
 \usepackage{ragged2e}
 \justifying
+
+\usepackage{graphicx}
+\usepackage{animate}
 
 \AtBeginSection[]
 {
@@ -167,16 +168,17 @@
 \end{frame}
 
 % Inclusão das seções
-\include{sections/definicoesGerais}
-\include{sections/modelagemEscoamento}
-\include{sections/elipticas}
-\include{sections/hiperbolicas}
-\include{sections/referencias}
+\include{sections/1_definicoesGerais}
+\include{sections/2_modelagemEscoamento}
+\include{sections/3_elipticas}
+\include{sections/4_transporte}
+\include{sections/5_hiperbolicas}
+\include{sections/6_referencias}
 
 % Slide final
 \begin{frame}
     \begin{center}
-        {\Huge Fim da apresentação!}
+        {\Huge Obrigado!}
     \end{center}
 \end{frame}
 
