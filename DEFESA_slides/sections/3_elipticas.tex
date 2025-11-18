@@ -72,45 +72,23 @@
 
 %----------------------------------------------------------------------------------------
 
-% \begin{frame}{Caso unidimensional: Implementação}
-%   \textbf{Contorno de Neumann}, quando $i = 1$, a condição de contorno à esquerda estaria na célula $x_{i-1/2} = x_{1/2}$. Então, com
-%   \[
-%     - \left.K\frac{dp}{dx}\right|_{x_{\frac{1}{2}}} = u_b,
-%   \]
-%   para a primeira equação do sistema \eqref{forma_matricial_1d},
-%   \[
-%   \begin{aligned}
-%     - \left(\left.K\frac{dp}{dx}\right|_{x_{\frac{3}{2}}} - \left.K\frac{dp}{dx}\right|_{x_{\frac{1}{2}}}\right) &= \Delta x q_1 \\
-%     \frac{2K_1K_{2}}{K_1 + K_{2}}\left(\frac{p_2 - p_1}{\Delta x}\right) &= \Delta xq_1 + u_b
-%   \end{aligned}
-%   \]
-%   ou ainda:
-%   \[
-%     \frac{1}{\Delta x^2}\left(-K_{\frac{3}{2}}(p_2-p_1)\right) = q_1 + \frac{u_b}{\Delta x}
-%   \]
-%   e poderia ser feito na extremidade oposta de forma similar, caso necessário.
-% \end{frame}
-
-%----------------------------------------------------------------------------------------
-
 \begin{frame}{Caso unidimensional: Implementação}
-  \textbf{Contorno de Dirichlet}, quando $i = N$, a face $x_{N+1/2}$, tem pressão imposta
+  \textbf{Contorno de Neumann}, quando $i = 1$, a condição de contorno à esquerda estaria na célula $x_{i-1/2} = x_{1/2}$. Então, com
   \[
-    \left.p\right|_{x_{N+1/2}} = p_b
+    - \left.K\frac{dp}{dx}\right|_{x_{\frac{1}{2}}} = u_b,
   \]
-  e então a última equação do sistema \eqref{forma_matricial_1d} seria, portanto,
-  \begin{equation}\label{eq428}
-    - \left(\left.K\frac{dp}{dx}\right|_{x_{N+\frac{1}{2}}} - \left.K\frac{dp}{dx}\right|_{x_{N-\frac{1}{2}}}\right) = \Delta x q_N.
-  \end{equation}
-  Para este exemplo de contorno Dirichlet, será usada uma discretização com meio volume de controle:
+  para a primeira equação do sistema \eqref{forma_matricial_1d}:
   \[
-    \left.K\frac{dp}{dx}\right|_{x_{N+\frac{1}{2}}} = K_N\left(\frac{p_b - p_N}{\Delta x/2}\right) = 2K_N\left(\frac{p_b - p_N}{\Delta x}\right)
+    \frac{1}{\Delta x^2}\left(-K_{\frac{3}{2}}(p_2-p_1)\right) = q_1 + \frac{u_b}{\Delta x}.
   \]
-  Dessa forma, em \eqref{eq428}:
+  Em contrapartida, quando na face $x_{N+1/2}$, será utilizado \textbf{Contorno de Dirichlet} com pressão imposta
   \[
-    \frac{1}{\Delta x^2}\left(2K_{N}p_N + K_{N-\frac{1}{2}}(p_N-p_{N-1})\right) = q_1 + \frac{2K_{N}p_b}{\Delta x^2}
+    \left.p\right|_{x_{N+1/2}} = p_b.
   \]
-  e poderia ser feito na extremidade oposta de forma similar, caso necessário.
+  Portanto, usando uma discretização com meio volume de controlea, última equação do sistema \eqref{forma_matricial_1d} torna-se:
+  \[
+    \frac{1}{\Delta x^2}\left(2K_{N}p_N + K_{N-\frac{1}{2}}(p_N-p_{N-1})\right) = q_1 + \frac{2K_{N}p_b}{\Delta x^2}.
+  \]
 \end{frame}
 
 %----------------------------------------------------------------------------------------
