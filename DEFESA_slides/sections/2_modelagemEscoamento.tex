@@ -8,7 +8,7 @@
   \begin{equation}
       \frac{\partial}{\partial t}\int_V \phi\rho\ dx + \int_{\partial V}\rho (u \cdot n)\ ds = \int_V q\ dx.
   \end{equation}
-  Aplicando-se o teorema da divergência, utilizando a Lei de Darcy e desenvolvendo-a, obtém-se a equação diferencial parcial de incógnitas $p$ e $\rho$:
+  Aplicando-se o teorema da divergência, utilizando a Lei de Darcy e desenvolven-do-a, obtém-se a equação diferencial parcial de incógnitas $p$ e $\rho$:
   \begin{equation}
     \rho \phi c_t \frac{\partial p}{\partial t} - \nabla \cdot \left(\frac{\rho K}{\mu}(\nabla p - \rho g \nabla z)\right) = q,
   \end{equation}
@@ -34,25 +34,7 @@
 
 %----------------------------------------------------------------------------------------
 
-\begin{frame}{Meios homogêneos e heterogêneos}
-  Para classificar meios como homogêneos ou heterogêneos, considera-se uma simplificação de \eqref{eq246}\ para o escoamento monofásico, com as hipóteses do escoamento ser \textit{incompressível, isotérmico e sem efeito gravitacional}, da forma que:
-  \begin{equation}\label{escoamento_base}
-  \left\{
-    \begin{aligned}
-      \nabla \cdot u &= \frac{q}{\rho} && \text{em } \Omega \\
-      u &= -\frac{K}{\mu} \nabla p && \text{em } \Omega \\
-      p &= p_b && \text{em } \partial\Omega_p \\
-      u \cdot n &= u_b && \text{em } \partial\Omega_u
-    \end{aligned}
-  \right.
-  ,
-  \end{equation}
-  onde a viscosidade $\mu$ e massa específica $\rho$ são uniformes no caso incompressível e consideradas unitárias aqui. Também, onde $\partial \Omega = \partial \Omega_p \cup \partial \Omega_u$ é a fronteira do domínio $\Omega \subset \mathbb{R}^d$ com $d = \{1,2,3\}$.
-\end{frame}
-
-%----------------------------------------------------------------------------------------
-
-\begin{frame}{Meios homogêneos e heterogêneos}
+\begin{frame}{Condições auxiliares}
   Para exemplificar os tipos de fronteiras nas bordas $\partial \Omega = \partial \Omega_p \cup \partial \Omega_u$, seguem as figuras:
     \begin{figure}[H]
     \centering
@@ -99,9 +81,28 @@
 %----------------------------------------------------------------------------------------
 
 \begin{frame}{Meios homogêneos e heterogêneos}
+  Para classificar meios como homogêneos ou heterogêneos, considera-se uma simplificação de \eqref{eq246}\ para o escoamento monofásico, com as hipóteses do escoamento ser \textit{incompressível, isotérmico e sem efeito gravitacional}, da forma que:
+  \begin{equation}\label{escoamento_base}
+  \left\{
+    \begin{aligned}
+      \nabla \cdot u &= \frac{q}{\rho} && \text{em } \Omega \\
+      u &= -\frac{K}{\mu} \nabla p && \text{em } \Omega \\
+      p &= p_b && \text{em } \partial\Omega_p \\
+      u \cdot n &= u_b && \text{em } \partial\Omega_u
+    \end{aligned}
+  \right.
+  ,
+  \end{equation}
+  onde a viscosidade $\mu$ e massa específica $\rho$ são uniformes no caso incompressível e consideradas unitárias aqui. Também, onde $\partial \Omega = \partial \Omega_p \cup \partial \Omega_u$ é a fronteira do domínio $\Omega \subset \mathbb{R}^d$ com $d = \{1,2,3\}$.
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+
+\begin{frame}{Meios homogêneos e heterogêneos}
   Portanto, o meio pode ser classificado, principalmente entre:
   \begin{itemize}
-    \item Um meio dito \textbf{homogêneo}, governado pelo sistema de escoamentos monofásicos (\theequation), ocorre quando a permeabilidade absoluta $K$ é constante e uniforme, logo não dependendo de $x$; ou
+    \justifying
+    \item Um meio dito \textbf{homogêneo}, governado pelo sistema de escoamentos mono-fásicos (\theequation), ocorre quando a permeabilidade absoluta $K$ é constante e uniforme, logo não dependendo de $x$; ou
     \item Quando o meio é \textbf{heterogêneo}, a permeabilidade absoluta $K$ varia com $x$ e então o escoamento tende a passar pelas regiões de alta permeabilidade e evitar as de baixa permeabilidade.
   \end{itemize}
   Também, é possível usar um modelo do projeto \textit{SPE10} fornecido pela \textit{Sociedade de Engenheiros de Petróleo}, utilizado como referência em simulações de reservatórios de petróleo.

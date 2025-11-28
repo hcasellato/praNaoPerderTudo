@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.8.1)  17 NOV 2025 12:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.8.1)  26 NOV 2025 13:13
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2180,12 +2180,6 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 19.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 19.
-
-Overfull \hbox (7.95888pt too wide) in paragraph at lines 19--19
-\T1/ptm/m/n/10.95 (-20) Aplicando-se o teo-rema da di-vergên-cia, uti-lizando a
- Lei de Darcy e desenvolvendo-
- []
-
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 19.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -2196,7 +2190,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 19.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 19.
-[10
+ [10
 
 ]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -2219,80 +2213,80 @@ ine 33.
 
 ]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 51.
+ine 79.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 79.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 79.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 79.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 51.
+ine 79.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 79.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.3> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 79.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5.5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 79.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 51.
+ine 79.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 51.
+ine 79.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 51.
+ine 79.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 51.
+ine 79.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 51.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 51.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 51.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 51.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 51.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 51.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 51.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 51.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 51.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 51.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 51.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 51.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 51.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 51.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 51.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 51.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 51.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 51.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 51.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 51.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 51.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 51.
+ine 79.
  [12
 
 ]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 97.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 97.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 97.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 97.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 97.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 97.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.3> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 97.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5.5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 97.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 97.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 97.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 97.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 97.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 97.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 97.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 97.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 97.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 97.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 97.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 97.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 97.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 97.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 97.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 97.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 97.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 97.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 97.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 97.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 97.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 97.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 97.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -2307,128 +2301,128 @@ ine 97.
 
 ]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 108.
+ine 109.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 108.
+ine 109.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 108.
+ine 109.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 108.
+ine 109.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 108.
+ine 109.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 108.
+ine 109.
  [14
 
 ]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 127.
+ine 128.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 127.
+ine 128.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 127.
+ine 128.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 127.
+ine 128.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 127.
+ine 128.
  [15
 
 ]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 168.
+ine 169.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 168.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 169.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8.8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 168.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 169.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6.6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 168.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 169.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 168.
+ine 169.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 168.
+ine 169.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 168.
+ine 169.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 168.
+ine 169.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 168.
+ine 169.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 168.
+ine 169.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 168.
+ine 169.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 168.
+ine 169.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 168.
+ine 169.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 168.
+ine 169.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 168.
+ine 169.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 168.
+ine 169.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 168.
+ine 169.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 168.
+ine 169.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 168.
+ine 169.
  [16
 
 ]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 256.
+ine 257.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 256.
+ine 257.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 256.
+ine 257.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 256.
+ine 257.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 256.
+ine 257.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 256.
+ine 257.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 256.
+ine 257.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 256.
+ine 257.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 256.
+ine 257.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 256.
+ine 257.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 256.
+ine 257.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 256.
+ine 257.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 256.
+ine 257.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 256.
+ine 257.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 256.
+ine 257.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 256.
+ine 257.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 256.
+ine 257.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 256.
+ine 257.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 256.
+ine 257.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 256.
+ine 257.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 256.
+ine 257.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 256.
+ine 257.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 256.
+ine 257.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 256.
+ine 257.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 256.
+ine 257.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 256.
+ine 257.
 
-Overfull \vbox (42.09296pt too high) detected at line 256
+Overfull \vbox (42.09296pt too high) detected at line 257
  []
 
 [17
@@ -2659,105 +2653,105 @@ ine 115.
  [23
 
 ]
-LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
-ne 136.
-LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
-ne 136.
-LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
-ne 136.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 136.
+ine 133.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 136.
+ine 133.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 136.
+ine 133.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 136.
+ine 133.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 136.
+ine 133.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 136.
+ine 133.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 136.
+ine 133.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 136.
+ine 133.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 136.
+ine 133.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 136.
+ine 133.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 136.
+ine 133.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 136.
+ine 133.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 136.
+ine 133.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 136.
+ine 133.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 136.
+ine 133.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 136.
+ine 133.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 136.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 136.
+ine 133.
  [24
 
 ]
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 154.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 154.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 154.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 154.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 154.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 154.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 154.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 154.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 154.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 154.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 154.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 154.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 154.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 154.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 154.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 154.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 154.
- [25
-
-]
-<img/desenvolvimento_CF.jpeg, id=314, 361.35pt x 361.35pt>
+<img/desenvolvimento_CF.jpeg, id=306, 361.35pt x 361.35pt>
 File: img/desenvolvimento_CF.jpeg Graphic file (type jpg)
 <use img/desenvolvimento_CF.jpeg>
-Package pdftex.def Info: img/desenvolvimento_CF.jpeg  used on input line 177.
+Package pdftex.def Info: img/desenvolvimento_CF.jpeg  used on input line 156.
 (pdftex.def)             Requested size: 154.03186pt x 154.03212pt.
-<img/desenvolvimento_LDL.jpeg, id=315, 361.35pt x 361.35pt>
+<img/desenvolvimento_LDL.jpeg, id=307, 361.35pt x 361.35pt>
 File: img/desenvolvimento_LDL.jpeg Graphic file (type jpg)
 <use img/desenvolvimento_LDL.jpeg>
-Package pdftex.def Info: img/desenvolvimento_LDL.jpeg  used on input line 177.
+Package pdftex.def Info: img/desenvolvimento_LDL.jpeg  used on input line 156.
 (pdftex.def)             Requested size: 154.03186pt x 154.03212pt.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 156.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 156.
+ [25
+
+ <./img/desenvolvimento_CF.jpeg> <./img/desenvolvimento_LDL.jpeg>]
+LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
+ne 177.
+LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
+ne 177.
+LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
+ne 177.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 177.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 177.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 177.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 177.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 177.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 177.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 177.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 177.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 177.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 177.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 177.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 177.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 177.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 177.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 177.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 177.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 177.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 177.
  [26
 
- <./img/desenvolvimento_CF.jpeg> <./img/desenvolvimento_LDL.jpeg>]
+]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 199.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -3562,2304 +3556,2396 @@ ine 170.
  [42
 
 ]
-<img//1dVFUW_frames_temp/frame_000.png, id=540, 433.62pt x 289.08pt>
+<img/1D_grafico_pressao_vel.png, id=540, 860.013pt x 353.4003pt>
+File: img/1D_grafico_pressao_vel.png Graphic file (type png)
+<use img/1D_grafico_pressao_vel.png>
+Package pdftex.def Info: img/1D_grafico_pressao_vel.png  used on input line 183
+.
+(pdftex.def)             Requested size: 342.29536pt x 140.65659pt.
+ [43
+
+ <./img/1D_grafico_pressao_vel.png>]
+<img/1dVFUW_frames_temp/frame_005.png, id=563, 433.62pt x 289.08pt>
+File: img/1dVFUW_frames_temp/frame_005.png Graphic file (type png)
+<use img/1dVFUW_frames_temp/frame_005.png>
+Package pdftex.def Info: img/1dVFUW_frames_temp/frame_005.png  used on input li
+ne 221.
+(pdftex.def)             Requested size: 109.53702pt x 73.0241pt.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 221.
+<img/1dVFUW_frames_temp/frame_020.png, id=564, 433.62pt x 289.08pt>
+File: img/1dVFUW_frames_temp/frame_020.png Graphic file (type png)
+<use img/1dVFUW_frames_temp/frame_020.png>
+Package pdftex.def Info: img/1dVFUW_frames_temp/frame_020.png  used on input li
+ne 221.
+(pdftex.def)             Requested size: 109.53702pt x 73.0241pt.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 221.
+<img/1dVFUW_frames_temp/frame_035.png, id=565, 433.62pt x 289.08pt>
+File: img/1dVFUW_frames_temp/frame_035.png Graphic file (type png)
+<use img/1dVFUW_frames_temp/frame_035.png>
+Package pdftex.def Info: img/1dVFUW_frames_temp/frame_035.png  used on input li
+ne 221.
+(pdftex.def)             Requested size: 109.53702pt x 73.0241pt.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 221.
+<img/1dVFUW_frames_temp/frame_050.png, id=566, 433.62pt x 289.08pt>
+File: img/1dVFUW_frames_temp/frame_050.png Graphic file (type png)
+<use img/1dVFUW_frames_temp/frame_050.png>
+Package pdftex.def Info: img/1dVFUW_frames_temp/frame_050.png  used on input li
+ne 221.
+(pdftex.def)             Requested size: 109.53702pt x 73.0241pt.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 221.
+<img/1dVFUW_frames_temp/frame_065.png, id=567, 433.62pt x 289.08pt>
+File: img/1dVFUW_frames_temp/frame_065.png Graphic file (type png)
+<use img/1dVFUW_frames_temp/frame_065.png>
+Package pdftex.def Info: img/1dVFUW_frames_temp/frame_065.png  used on input li
+ne 221.
+(pdftex.def)             Requested size: 109.53702pt x 73.0241pt.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 221.
+<img/1dVFUW_frames_temp/frame_080.png, id=568, 433.62pt x 289.08pt>
+File: img/1dVFUW_frames_temp/frame_080.png Graphic file (type png)
+<use img/1dVFUW_frames_temp/frame_080.png>
+Package pdftex.def Info: img/1dVFUW_frames_temp/frame_080.png  used on input li
+ne 221.
+(pdftex.def)             Requested size: 109.53702pt x 73.0241pt.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 221.
+
+
+Package hyperref Warning: Ignoring empty anchor on input line 221.
+
+[44
+
+ <./img/1dVFUW_frames_temp/frame_005.png> <./img/1dVFUW_frames_temp/frame_020.p
+ng> <./img/1dVFUW_frames_temp/frame_035.png> <./img/1dVFUW_frames_temp/frame_05
+0.png> <./img/1dVFUW_frames_temp/frame_065.png> <./img/1dVFUW_frames_temp/frame
+_080.png>]
+<img//1dVFUW_frames_temp/frame_000.png, id=594, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_000.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_000.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_000.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
  <./img//1dVFUW_frames_temp/frame_000.png> <a0,fr0>
-<img//1dVFUW_frames_temp/frame_001.png, id=544, 433.62pt x 289.08pt>
+<img//1dVFUW_frames_temp/frame_001.png, id=598, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_001.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_001.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_001.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
  <./img//1dVFUW_frames_temp/frame_001.png> <a0,fr1>
-<img//1dVFUW_frames_temp/frame_002.png, id=548, 433.62pt x 289.08pt>
+<img//1dVFUW_frames_temp/frame_002.png, id=602, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_002.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_002.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_002.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
- <./img//1dVFUW_frames_temp/frame_002.png> <a0,fr2>
-<img//1dVFUW_frames_temp/frame_003.png, id=552, 433.62pt x 289.08pt>
+ <./img//1dVFUW_frames_temp/frame_002.png>
+<a0,fr2>
+<img//1dVFUW_frames_temp/frame_003.png, id=606, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_003.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_003.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_003.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
  <./img//1dVFUW_frames_temp/frame_003.png> <a0,fr3>
-<img//1dVFUW_frames_temp/frame_004.png, id=556, 433.62pt x 289.08pt>
+<img//1dVFUW_frames_temp/frame_004.png, id=610, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_004.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_004.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_004.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
- <./img//1dVFUW_frames_temp/frame_004.png>
-<a0,fr4>
-<img//1dVFUW_frames_temp/frame_005.png, id=561, 433.62pt x 289.08pt>
+ <./img//1dVFUW_frames_temp/frame_004.png> <a0,fr4>
+<img//1dVFUW_frames_temp/frame_005.png, id=614, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_005.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_005.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_005.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
- <./img//1dVFUW_frames_temp/frame_005.png> <a0,fr5>
-<img//1dVFUW_frames_temp/frame_006.png, id=565, 433.62pt x 289.08pt>
+ <./img//1dVFUW_frames_temp/frame_005.png>
+<a0,fr5>
+<img//1dVFUW_frames_temp/frame_006.png, id=618, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_006.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_006.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_006.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
  <./img//1dVFUW_frames_temp/frame_006.png> <a0,fr6>
-<img//1dVFUW_frames_temp/frame_007.png, id=569, 433.62pt x 289.08pt>
+<img//1dVFUW_frames_temp/frame_007.png, id=622, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_007.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_007.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_007.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
- <./img//1dVFUW_frames_temp/frame_007.png>
-<a0,fr7>
-<img//1dVFUW_frames_temp/frame_008.png, id=573, 433.62pt x 289.08pt>
+ <./img//1dVFUW_frames_temp/frame_007.png> <a0,fr7>
+<img//1dVFUW_frames_temp/frame_008.png, id=626, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_008.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_008.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_008.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
- <./img//1dVFUW_frames_temp/frame_008.png> <a0,fr8>
-<img//1dVFUW_frames_temp/frame_009.png, id=577, 433.62pt x 289.08pt>
+ <./img//1dVFUW_frames_temp/frame_008.png>
+<a0,fr8>
+<img//1dVFUW_frames_temp/frame_009.png, id=630, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_009.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_009.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_009.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
  <./img//1dVFUW_frames_temp/frame_009.png> <a0,fr9>
-<img//1dVFUW_frames_temp/frame_010.png, id=581, 433.62pt x 289.08pt>
+<img//1dVFUW_frames_temp/frame_010.png, id=634, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_010.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_010.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_010.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
- <./img//1dVFUW_frames_temp/frame_010.png>
-<a0,fr10>
-<img//1dVFUW_frames_temp/frame_011.png, id=585, 433.62pt x 289.08pt>
+ <./img//1dVFUW_frames_temp/frame_010.png> <a0,fr10>
+<img//1dVFUW_frames_temp/frame_011.png, id=638, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_011.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_011.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_011.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
- <./img//1dVFUW_frames_temp/frame_011.png> <a0,fr11>
-<img//1dVFUW_frames_temp/frame_012.png, id=589, 433.62pt x 289.08pt>
+ <./img//1dVFUW_frames_temp/frame_011.png>
+<a0,fr11>
+<img//1dVFUW_frames_temp/frame_012.png, id=642, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_012.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_012.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_012.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
  <./img//1dVFUW_frames_temp/frame_012.png> <a0,fr12>
-<img//1dVFUW_frames_temp/frame_013.png, id=593, 433.62pt x 289.08pt>
+<img//1dVFUW_frames_temp/frame_013.png, id=646, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_013.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_013.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_013.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
- <./img//1dVFUW_frames_temp/frame_013.png>
-<a0,fr13>
-<img//1dVFUW_frames_temp/frame_014.png, id=597, 433.62pt x 289.08pt>
+ <./img//1dVFUW_frames_temp/frame_013.png> <a0,fr13>
+<img//1dVFUW_frames_temp/frame_014.png, id=650, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_014.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_014.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_014.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
- <./img//1dVFUW_frames_temp/frame_014.png> <a0,fr14>
-<img//1dVFUW_frames_temp/frame_015.png, id=601, 433.62pt x 289.08pt>
+ <./img//1dVFUW_frames_temp/frame_014.png>
+<a0,fr14>
+<img//1dVFUW_frames_temp/frame_015.png, id=654, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_015.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_015.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_015.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
  <./img//1dVFUW_frames_temp/frame_015.png> <a0,fr15>
-<img//1dVFUW_frames_temp/frame_016.png, id=605, 433.62pt x 289.08pt>
+<img//1dVFUW_frames_temp/frame_016.png, id=658, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_016.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_016.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_016.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
- <./img//1dVFUW_frames_temp/frame_016.png>
-<a0,fr16>
-<img//1dVFUW_frames_temp/frame_017.png, id=609, 433.62pt x 289.08pt>
+ <./img//1dVFUW_frames_temp/frame_016.png> <a0,fr16>
+<img//1dVFUW_frames_temp/frame_017.png, id=662, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_017.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_017.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_017.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
- <./img//1dVFUW_frames_temp/frame_017.png> <a0,fr17>
-<img//1dVFUW_frames_temp/frame_018.png, id=613, 433.62pt x 289.08pt>
+ <./img//1dVFUW_frames_temp/frame_017.png>
+<a0,fr17>
+<img//1dVFUW_frames_temp/frame_018.png, id=666, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_018.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_018.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_018.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
  <./img//1dVFUW_frames_temp/frame_018.png> <a0,fr18>
-<img//1dVFUW_frames_temp/frame_019.png, id=617, 433.62pt x 289.08pt>
+<img//1dVFUW_frames_temp/frame_019.png, id=670, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_019.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_019.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_019.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
- <./img//1dVFUW_frames_temp/frame_019.png>
-<a0,fr19>
-<img//1dVFUW_frames_temp/frame_020.png, id=621, 433.62pt x 289.08pt>
+ <./img//1dVFUW_frames_temp/frame_019.png> <a0,fr19>
+<img//1dVFUW_frames_temp/frame_020.png, id=674, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_020.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_020.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_020.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
- <./img//1dVFUW_frames_temp/frame_020.png> <a0,fr20>
-<img//1dVFUW_frames_temp/frame_021.png, id=625, 433.62pt x 289.08pt>
+ <./img//1dVFUW_frames_temp/frame_020.png>
+<a0,fr20>
+<img//1dVFUW_frames_temp/frame_021.png, id=678, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_021.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_021.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_021.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
  <./img//1dVFUW_frames_temp/frame_021.png> <a0,fr21>
-<img//1dVFUW_frames_temp/frame_022.png, id=629, 433.62pt x 289.08pt>
+<img//1dVFUW_frames_temp/frame_022.png, id=682, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_022.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_022.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_022.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
- <./img//1dVFUW_frames_temp/frame_022.png>
-<a0,fr22>
-<img//1dVFUW_frames_temp/frame_023.png, id=633, 433.62pt x 289.08pt>
+ <./img//1dVFUW_frames_temp/frame_022.png> <a0,fr22>
+<img//1dVFUW_frames_temp/frame_023.png, id=686, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_023.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_023.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_023.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
- <./img//1dVFUW_frames_temp/frame_023.png> <a0,fr23>
-<img//1dVFUW_frames_temp/frame_024.png, id=637, 433.62pt x 289.08pt>
+ <./img//1dVFUW_frames_temp/frame_023.png>
+<a0,fr23>
+<img//1dVFUW_frames_temp/frame_024.png, id=690, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_024.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_024.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_024.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
  <./img//1dVFUW_frames_temp/frame_024.png> <a0,fr24>
-<img//1dVFUW_frames_temp/frame_025.png, id=641, 433.62pt x 289.08pt>
+<img//1dVFUW_frames_temp/frame_025.png, id=694, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_025.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_025.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_025.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
- <./img//1dVFUW_frames_temp/frame_025.png>
-<a0,fr25>
-<img//1dVFUW_frames_temp/frame_026.png, id=645, 433.62pt x 289.08pt>
+ <./img//1dVFUW_frames_temp/frame_025.png> <a0,fr25>
+<img//1dVFUW_frames_temp/frame_026.png, id=698, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_026.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_026.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_026.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
- <./img//1dVFUW_frames_temp/frame_026.png> <a0,fr26>
-<img//1dVFUW_frames_temp/frame_027.png, id=649, 433.62pt x 289.08pt>
+ <./img//1dVFUW_frames_temp/frame_026.png>
+<a0,fr26>
+<img//1dVFUW_frames_temp/frame_027.png, id=702, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_027.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_027.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_027.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
  <./img//1dVFUW_frames_temp/frame_027.png> <a0,fr27>
-<img//1dVFUW_frames_temp/frame_028.png, id=653, 433.62pt x 289.08pt>
+<img//1dVFUW_frames_temp/frame_028.png, id=706, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_028.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_028.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_028.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
- <./img//1dVFUW_frames_temp/frame_028.png>
-<a0,fr28>
-<img//1dVFUW_frames_temp/frame_029.png, id=657, 433.62pt x 289.08pt>
+ <./img//1dVFUW_frames_temp/frame_028.png> <a0,fr28>
+<img//1dVFUW_frames_temp/frame_029.png, id=710, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_029.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_029.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_029.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
- <./img//1dVFUW_frames_temp/frame_029.png> <a0,fr29>
-<img//1dVFUW_frames_temp/frame_030.png, id=661, 433.62pt x 289.08pt>
+ <./img//1dVFUW_frames_temp/frame_029.png>
+<a0,fr29>
+<img//1dVFUW_frames_temp/frame_030.png, id=714, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_030.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_030.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_030.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
  <./img//1dVFUW_frames_temp/frame_030.png> <a0,fr30>
-<img//1dVFUW_frames_temp/frame_031.png, id=665, 433.62pt x 289.08pt>
+<img//1dVFUW_frames_temp/frame_031.png, id=718, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_031.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_031.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_031.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
- <./img//1dVFUW_frames_temp/frame_031.png>
-<a0,fr31>
-<img//1dVFUW_frames_temp/frame_032.png, id=669, 433.62pt x 289.08pt>
+ <./img//1dVFUW_frames_temp/frame_031.png> <a0,fr31>
+<img//1dVFUW_frames_temp/frame_032.png, id=722, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_032.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_032.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_032.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
- <./img//1dVFUW_frames_temp/frame_032.png> <a0,fr32>
-<img//1dVFUW_frames_temp/frame_033.png, id=673, 433.62pt x 289.08pt>
+ <./img//1dVFUW_frames_temp/frame_032.png>
+<a0,fr32>
+<img//1dVFUW_frames_temp/frame_033.png, id=726, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_033.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_033.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_033.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
  <./img//1dVFUW_frames_temp/frame_033.png> <a0,fr33>
-<img//1dVFUW_frames_temp/frame_034.png, id=677, 433.62pt x 289.08pt>
+<img//1dVFUW_frames_temp/frame_034.png, id=730, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_034.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_034.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_034.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
- <./img//1dVFUW_frames_temp/frame_034.png>
-<a0,fr34>
-<img//1dVFUW_frames_temp/frame_035.png, id=681, 433.62pt x 289.08pt>
+ <./img//1dVFUW_frames_temp/frame_034.png> <a0,fr34>
+<img//1dVFUW_frames_temp/frame_035.png, id=734, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_035.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_035.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_035.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
- <./img//1dVFUW_frames_temp/frame_035.png> <a0,fr35>
-<img//1dVFUW_frames_temp/frame_036.png, id=685, 433.62pt x 289.08pt>
+ <./img//1dVFUW_frames_temp/frame_035.png>
+<a0,fr35>
+<img//1dVFUW_frames_temp/frame_036.png, id=738, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_036.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_036.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_036.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
  <./img//1dVFUW_frames_temp/frame_036.png> <a0,fr36>
-<img//1dVFUW_frames_temp/frame_037.png, id=689, 433.62pt x 289.08pt>
+<img//1dVFUW_frames_temp/frame_037.png, id=742, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_037.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_037.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_037.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
- <./img//1dVFUW_frames_temp/frame_037.png>
-<a0,fr37>
-<img//1dVFUW_frames_temp/frame_038.png, id=693, 433.62pt x 289.08pt>
+ <./img//1dVFUW_frames_temp/frame_037.png> <a0,fr37>
+<img//1dVFUW_frames_temp/frame_038.png, id=746, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_038.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_038.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_038.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
- <./img//1dVFUW_frames_temp/frame_038.png> <a0,fr38>
-<img//1dVFUW_frames_temp/frame_039.png, id=697, 433.62pt x 289.08pt>
+ <./img//1dVFUW_frames_temp/frame_038.png>
+<a0,fr38>
+<img//1dVFUW_frames_temp/frame_039.png, id=750, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_039.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_039.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_039.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
  <./img//1dVFUW_frames_temp/frame_039.png> <a0,fr39>
-<img//1dVFUW_frames_temp/frame_040.png, id=701, 433.62pt x 289.08pt>
+<img//1dVFUW_frames_temp/frame_040.png, id=754, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_040.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_040.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_040.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
- <./img//1dVFUW_frames_temp/frame_040.png>
-<a0,fr40>
-<img//1dVFUW_frames_temp/frame_041.png, id=705, 433.62pt x 289.08pt>
+ <./img//1dVFUW_frames_temp/frame_040.png> <a0,fr40>
+<img//1dVFUW_frames_temp/frame_041.png, id=758, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_041.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_041.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_041.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
- <./img//1dVFUW_frames_temp/frame_041.png> <a0,fr41>
-<img//1dVFUW_frames_temp/frame_042.png, id=709, 433.62pt x 289.08pt>
+ <./img//1dVFUW_frames_temp/frame_041.png>
+<a0,fr41>
+<img//1dVFUW_frames_temp/frame_042.png, id=762, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_042.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_042.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_042.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
  <./img//1dVFUW_frames_temp/frame_042.png> <a0,fr42>
-<img//1dVFUW_frames_temp/frame_043.png, id=713, 433.62pt x 289.08pt>
+<img//1dVFUW_frames_temp/frame_043.png, id=766, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_043.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_043.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_043.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
- <./img//1dVFUW_frames_temp/frame_043.png>
-<a0,fr43>
-<img//1dVFUW_frames_temp/frame_044.png, id=717, 433.62pt x 289.08pt>
+ <./img//1dVFUW_frames_temp/frame_043.png> <a0,fr43>
+<img//1dVFUW_frames_temp/frame_044.png, id=770, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_044.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_044.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_044.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
- <./img//1dVFUW_frames_temp/frame_044.png> <a0,fr44>
-<img//1dVFUW_frames_temp/frame_045.png, id=721, 433.62pt x 289.08pt>
+ <./img//1dVFUW_frames_temp/frame_044.png>
+<a0,fr44>
+<img//1dVFUW_frames_temp/frame_045.png, id=774, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_045.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_045.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_045.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
  <./img//1dVFUW_frames_temp/frame_045.png> <a0,fr45>
-<img//1dVFUW_frames_temp/frame_046.png, id=725, 433.62pt x 289.08pt>
+<img//1dVFUW_frames_temp/frame_046.png, id=778, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_046.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_046.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_046.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
- <./img//1dVFUW_frames_temp/frame_046.png>
-<a0,fr46>
-<img//1dVFUW_frames_temp/frame_047.png, id=729, 433.62pt x 289.08pt>
+ <./img//1dVFUW_frames_temp/frame_046.png> <a0,fr46>
+<img//1dVFUW_frames_temp/frame_047.png, id=782, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_047.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_047.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_047.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
- <./img//1dVFUW_frames_temp/frame_047.png> <a0,fr47>
-<img//1dVFUW_frames_temp/frame_048.png, id=733, 433.62pt x 289.08pt>
+ <./img//1dVFUW_frames_temp/frame_047.png>
+<a0,fr47>
+<img//1dVFUW_frames_temp/frame_048.png, id=786, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_048.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_048.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_048.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
  <./img//1dVFUW_frames_temp/frame_048.png> <a0,fr48>
-<img//1dVFUW_frames_temp/frame_049.png, id=737, 433.62pt x 289.08pt>
+<img//1dVFUW_frames_temp/frame_049.png, id=790, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_049.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_049.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_049.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
- <./img//1dVFUW_frames_temp/frame_049.png>
-<a0,fr49>
-<img//1dVFUW_frames_temp/frame_050.png, id=741, 433.62pt x 289.08pt>
+ <./img//1dVFUW_frames_temp/frame_049.png> <a0,fr49>
+<img//1dVFUW_frames_temp/frame_050.png, id=794, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_050.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_050.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_050.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
- <./img//1dVFUW_frames_temp/frame_050.png> <a0,fr50>
-<img//1dVFUW_frames_temp/frame_051.png, id=745, 433.62pt x 289.08pt>
+ <./img//1dVFUW_frames_temp/frame_050.png>
+<a0,fr50>
+<img//1dVFUW_frames_temp/frame_051.png, id=798, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_051.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_051.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_051.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
  <./img//1dVFUW_frames_temp/frame_051.png> <a0,fr51>
-<img//1dVFUW_frames_temp/frame_052.png, id=749, 433.62pt x 289.08pt>
+<img//1dVFUW_frames_temp/frame_052.png, id=802, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_052.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_052.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_052.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
- <./img//1dVFUW_frames_temp/frame_052.png>
-<a0,fr52>
-<img//1dVFUW_frames_temp/frame_053.png, id=753, 433.62pt x 289.08pt>
+ <./img//1dVFUW_frames_temp/frame_052.png> <a0,fr52>
+<img//1dVFUW_frames_temp/frame_053.png, id=806, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_053.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_053.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_053.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
- <./img//1dVFUW_frames_temp/frame_053.png> <a0,fr53>
-<img//1dVFUW_frames_temp/frame_054.png, id=757, 433.62pt x 289.08pt>
+ <./img//1dVFUW_frames_temp/frame_053.png>
+<a0,fr53>
+<img//1dVFUW_frames_temp/frame_054.png, id=810, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_054.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_054.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_054.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
  <./img//1dVFUW_frames_temp/frame_054.png> <a0,fr54>
-<img//1dVFUW_frames_temp/frame_055.png, id=761, 433.62pt x 289.08pt>
+<img//1dVFUW_frames_temp/frame_055.png, id=814, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_055.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_055.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_055.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
- <./img//1dVFUW_frames_temp/frame_055.png>
-<a0,fr55>
-<img//1dVFUW_frames_temp/frame_056.png, id=765, 433.62pt x 289.08pt>
+ <./img//1dVFUW_frames_temp/frame_055.png> <a0,fr55>
+<img//1dVFUW_frames_temp/frame_056.png, id=818, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_056.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_056.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_056.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
- <./img//1dVFUW_frames_temp/frame_056.png> <a0,fr56>
-<img//1dVFUW_frames_temp/frame_057.png, id=769, 433.62pt x 289.08pt>
+ <./img//1dVFUW_frames_temp/frame_056.png>
+<a0,fr56>
+<img//1dVFUW_frames_temp/frame_057.png, id=822, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_057.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_057.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_057.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
  <./img//1dVFUW_frames_temp/frame_057.png> <a0,fr57>
-<img//1dVFUW_frames_temp/frame_058.png, id=773, 433.62pt x 289.08pt>
+<img//1dVFUW_frames_temp/frame_058.png, id=826, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_058.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_058.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_058.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
- <./img//1dVFUW_frames_temp/frame_058.png>
-<a0,fr58>
-<img//1dVFUW_frames_temp/frame_059.png, id=777, 433.62pt x 289.08pt>
+ <./img//1dVFUW_frames_temp/frame_058.png> <a0,fr58>
+<img//1dVFUW_frames_temp/frame_059.png, id=830, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_059.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_059.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_059.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
- <./img//1dVFUW_frames_temp/frame_059.png> <a0,fr59>
-<img//1dVFUW_frames_temp/frame_060.png, id=781, 433.62pt x 289.08pt>
+ <./img//1dVFUW_frames_temp/frame_059.png>
+<a0,fr59>
+<img//1dVFUW_frames_temp/frame_060.png, id=834, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_060.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_060.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_060.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
  <./img//1dVFUW_frames_temp/frame_060.png> <a0,fr60>
-<img//1dVFUW_frames_temp/frame_061.png, id=785, 433.62pt x 289.08pt>
+<img//1dVFUW_frames_temp/frame_061.png, id=838, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_061.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_061.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_061.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
- <./img//1dVFUW_frames_temp/frame_061.png>
-<a0,fr61>
-<img//1dVFUW_frames_temp/frame_062.png, id=789, 433.62pt x 289.08pt>
+ <./img//1dVFUW_frames_temp/frame_061.png> <a0,fr61>
+<img//1dVFUW_frames_temp/frame_062.png, id=842, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_062.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_062.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_062.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
- <./img//1dVFUW_frames_temp/frame_062.png> <a0,fr62>
-<img//1dVFUW_frames_temp/frame_063.png, id=793, 433.62pt x 289.08pt>
+ <./img//1dVFUW_frames_temp/frame_062.png>
+<a0,fr62>
+<img//1dVFUW_frames_temp/frame_063.png, id=846, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_063.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_063.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_063.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
  <./img//1dVFUW_frames_temp/frame_063.png> <a0,fr63>
-<img//1dVFUW_frames_temp/frame_064.png, id=797, 433.62pt x 289.08pt>
+<img//1dVFUW_frames_temp/frame_064.png, id=850, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_064.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_064.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_064.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
- <./img//1dVFUW_frames_temp/frame_064.png>
-<a0,fr64>
-<img//1dVFUW_frames_temp/frame_065.png, id=801, 433.62pt x 289.08pt>
+ <./img//1dVFUW_frames_temp/frame_064.png> <a0,fr64>
+<img//1dVFUW_frames_temp/frame_065.png, id=854, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_065.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_065.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_065.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
- <./img//1dVFUW_frames_temp/frame_065.png> <a0,fr65>
-<img//1dVFUW_frames_temp/frame_066.png, id=805, 433.62pt x 289.08pt>
+ <./img//1dVFUW_frames_temp/frame_065.png>
+<a0,fr65>
+<img//1dVFUW_frames_temp/frame_066.png, id=858, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_066.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_066.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_066.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
  <./img//1dVFUW_frames_temp/frame_066.png> <a0,fr66>
-<img//1dVFUW_frames_temp/frame_067.png, id=809, 433.62pt x 289.08pt>
+<img//1dVFUW_frames_temp/frame_067.png, id=862, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_067.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_067.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_067.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
- <./img//1dVFUW_frames_temp/frame_067.png>
-<a0,fr67>
-<img//1dVFUW_frames_temp/frame_068.png, id=813, 433.62pt x 289.08pt>
+ <./img//1dVFUW_frames_temp/frame_067.png> <a0,fr67>
+<img//1dVFUW_frames_temp/frame_068.png, id=866, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_068.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_068.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_068.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
- <./img//1dVFUW_frames_temp/frame_068.png> <a0,fr68>
-<img//1dVFUW_frames_temp/frame_069.png, id=817, 433.62pt x 289.08pt>
+ <./img//1dVFUW_frames_temp/frame_068.png>
+<a0,fr68>
+<img//1dVFUW_frames_temp/frame_069.png, id=870, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_069.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_069.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_069.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
  <./img//1dVFUW_frames_temp/frame_069.png> <a0,fr69>
-<img//1dVFUW_frames_temp/frame_070.png, id=821, 433.62pt x 289.08pt>
+<img//1dVFUW_frames_temp/frame_070.png, id=874, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_070.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_070.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_070.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
- <./img//1dVFUW_frames_temp/frame_070.png>
-<a0,fr70>
-<img//1dVFUW_frames_temp/frame_071.png, id=825, 433.62pt x 289.08pt>
+ <./img//1dVFUW_frames_temp/frame_070.png> <a0,fr70>
+<img//1dVFUW_frames_temp/frame_071.png, id=878, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_071.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_071.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_071.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
- <./img//1dVFUW_frames_temp/frame_071.png> <a0,fr71>
-<img//1dVFUW_frames_temp/frame_072.png, id=829, 433.62pt x 289.08pt>
+ <./img//1dVFUW_frames_temp/frame_071.png>
+<a0,fr71>
+<img//1dVFUW_frames_temp/frame_072.png, id=882, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_072.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_072.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_072.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
  <./img//1dVFUW_frames_temp/frame_072.png> <a0,fr72>
-<img//1dVFUW_frames_temp/frame_073.png, id=833, 433.62pt x 289.08pt>
+<img//1dVFUW_frames_temp/frame_073.png, id=886, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_073.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_073.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_073.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
- <./img//1dVFUW_frames_temp/frame_073.png>
-<a0,fr73>
-<img//1dVFUW_frames_temp/frame_074.png, id=837, 433.62pt x 289.08pt>
+ <./img//1dVFUW_frames_temp/frame_073.png> <a0,fr73>
+<img//1dVFUW_frames_temp/frame_074.png, id=890, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_074.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_074.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_074.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
- <./img//1dVFUW_frames_temp/frame_074.png> <a0,fr74>
-<img//1dVFUW_frames_temp/frame_075.png, id=841, 433.62pt x 289.08pt>
+ <./img//1dVFUW_frames_temp/frame_074.png>
+<a0,fr74>
+<img//1dVFUW_frames_temp/frame_075.png, id=894, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_075.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_075.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_075.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
  <./img//1dVFUW_frames_temp/frame_075.png> <a0,fr75>
-<img//1dVFUW_frames_temp/frame_076.png, id=845, 433.62pt x 289.08pt>
+<img//1dVFUW_frames_temp/frame_076.png, id=898, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_076.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_076.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_076.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
- <./img//1dVFUW_frames_temp/frame_076.png>
-<a0,fr76>
-<img//1dVFUW_frames_temp/frame_077.png, id=849, 433.62pt x 289.08pt>
+ <./img//1dVFUW_frames_temp/frame_076.png> <a0,fr76>
+<img//1dVFUW_frames_temp/frame_077.png, id=902, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_077.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_077.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_077.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
- <./img//1dVFUW_frames_temp/frame_077.png> <a0,fr77>
-<img//1dVFUW_frames_temp/frame_078.png, id=853, 433.62pt x 289.08pt>
+ <./img//1dVFUW_frames_temp/frame_077.png>
+<a0,fr77>
+<img//1dVFUW_frames_temp/frame_078.png, id=906, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_078.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_078.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_078.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
  <./img//1dVFUW_frames_temp/frame_078.png> <a0,fr78>
-<img//1dVFUW_frames_temp/frame_079.png, id=857, 433.62pt x 289.08pt>
+<img//1dVFUW_frames_temp/frame_079.png, id=910, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_079.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_079.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_079.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
- <./img//1dVFUW_frames_temp/frame_079.png>
-<a0,fr79>
-<img//1dVFUW_frames_temp/frame_080.png, id=861, 433.62pt x 289.08pt>
+ <./img//1dVFUW_frames_temp/frame_079.png> <a0,fr79>
+<img//1dVFUW_frames_temp/frame_080.png, id=914, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_080.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_080.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_080.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
- <./img//1dVFUW_frames_temp/frame_080.png> <a0,fr80>
-<img//1dVFUW_frames_temp/frame_081.png, id=865, 433.62pt x 289.08pt>
+ <./img//1dVFUW_frames_temp/frame_080.png>
+<a0,fr80>
+<img//1dVFUW_frames_temp/frame_081.png, id=919, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_081.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_081.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_081.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
  <./img//1dVFUW_frames_temp/frame_081.png> <a0,fr81>
-<img//1dVFUW_frames_temp/frame_082.png, id=869, 433.62pt x 289.08pt>
+<img//1dVFUW_frames_temp/frame_082.png, id=923, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_082.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_082.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_082.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
- <./img//1dVFUW_frames_temp/frame_082.png>
-<a0,fr82>
-<img//1dVFUW_frames_temp/frame_083.png, id=873, 433.62pt x 289.08pt>
+ <./img//1dVFUW_frames_temp/frame_082.png> <a0,fr82>
+<img//1dVFUW_frames_temp/frame_083.png, id=927, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_083.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_083.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_083.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
- <./img//1dVFUW_frames_temp/frame_083.png> <a0,fr83>
-<img//1dVFUW_frames_temp/frame_084.png, id=877, 433.62pt x 289.08pt>
+ <./img//1dVFUW_frames_temp/frame_083.png>
+<a0,fr83>
+<img//1dVFUW_frames_temp/frame_084.png, id=931, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_084.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_084.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_084.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
  <./img//1dVFUW_frames_temp/frame_084.png> <a0,fr84>
-<img//1dVFUW_frames_temp/frame_085.png, id=881, 433.62pt x 289.08pt>
+<img//1dVFUW_frames_temp/frame_085.png, id=935, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_085.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_085.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_085.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
- <./img//1dVFUW_frames_temp/frame_085.png>
-<a0,fr85>
-<img//1dVFUW_frames_temp/frame_086.png, id=885, 433.62pt x 289.08pt>
+ <./img//1dVFUW_frames_temp/frame_085.png> <a0,fr85>
+<img//1dVFUW_frames_temp/frame_086.png, id=939, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_086.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_086.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_086.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
- <./img//1dVFUW_frames_temp/frame_086.png> <a0,fr86>
-<img//1dVFUW_frames_temp/frame_087.png, id=889, 433.62pt x 289.08pt>
+ <./img//1dVFUW_frames_temp/frame_086.png>
+<a0,fr86>
+<img//1dVFUW_frames_temp/frame_087.png, id=943, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_087.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_087.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_087.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
  <./img//1dVFUW_frames_temp/frame_087.png> <a0,fr87>
-<img//1dVFUW_frames_temp/frame_088.png, id=893, 433.62pt x 289.08pt>
+<img//1dVFUW_frames_temp/frame_088.png, id=947, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_088.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_088.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_088.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
- <./img//1dVFUW_frames_temp/frame_088.png>
-<a0,fr88>
-<img//1dVFUW_frames_temp/frame_089.png, id=897, 433.62pt x 289.08pt>
+ <./img//1dVFUW_frames_temp/frame_088.png> <a0,fr88>
+<img//1dVFUW_frames_temp/frame_089.png, id=951, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_089.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_089.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_089.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
- <./img//1dVFUW_frames_temp/frame_089.png> <a0,fr89>
-<img//1dVFUW_frames_temp/frame_090.png, id=901, 433.62pt x 289.08pt>
+ <./img//1dVFUW_frames_temp/frame_089.png>
+<a0,fr89>
+<img//1dVFUW_frames_temp/frame_090.png, id=955, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_090.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_090.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_090.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
  <./img//1dVFUW_frames_temp/frame_090.png> <a0,fr90>
-<img//1dVFUW_frames_temp/frame_091.png, id=905, 433.62pt x 289.08pt>
+<img//1dVFUW_frames_temp/frame_091.png, id=959, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_091.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_091.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_091.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
- <./img//1dVFUW_frames_temp/frame_091.png>
-<a0,fr91>
-<img//1dVFUW_frames_temp/frame_092.png, id=909, 433.62pt x 289.08pt>
+ <./img//1dVFUW_frames_temp/frame_091.png> <a0,fr91>
+<img//1dVFUW_frames_temp/frame_092.png, id=963, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_092.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_092.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_092.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
- <./img//1dVFUW_frames_temp/frame_092.png> <a0,fr92>
-<img//1dVFUW_frames_temp/frame_093.png, id=913, 433.62pt x 289.08pt>
+ <./img//1dVFUW_frames_temp/frame_092.png>
+<a0,fr92>
+<img//1dVFUW_frames_temp/frame_093.png, id=967, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_093.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_093.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_093.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
  <./img//1dVFUW_frames_temp/frame_093.png> <a0,fr93>
-<img//1dVFUW_frames_temp/frame_094.png, id=917, 433.62pt x 289.08pt>
+<img//1dVFUW_frames_temp/frame_094.png, id=971, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_094.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_094.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_094.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
- <./img//1dVFUW_frames_temp/frame_094.png>
-<a0,fr94>
-<img//1dVFUW_frames_temp/frame_095.png, id=921, 433.62pt x 289.08pt>
+ <./img//1dVFUW_frames_temp/frame_094.png> <a0,fr94>
+<img//1dVFUW_frames_temp/frame_095.png, id=975, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_095.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_095.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_095.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
- <./img//1dVFUW_frames_temp/frame_095.png> <a0,fr95>
-<img//1dVFUW_frames_temp/frame_096.png, id=925, 433.62pt x 289.08pt>
+ <./img//1dVFUW_frames_temp/frame_095.png>
+<a0,fr95>
+<img//1dVFUW_frames_temp/frame_096.png, id=979, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_096.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_096.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_096.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
  <./img//1dVFUW_frames_temp/frame_096.png> <a0,fr96>
-<img//1dVFUW_frames_temp/frame_097.png, id=929, 433.62pt x 289.08pt>
+<img//1dVFUW_frames_temp/frame_097.png, id=983, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_097.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_097.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_097.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
- <./img//1dVFUW_frames_temp/frame_097.png>
-<a0,fr97>
-<img//1dVFUW_frames_temp/frame_098.png, id=933, 433.62pt x 289.08pt>
+ <./img//1dVFUW_frames_temp/frame_097.png> <a0,fr97>
+<img//1dVFUW_frames_temp/frame_098.png, id=987, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_098.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_098.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_098.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
- <./img//1dVFUW_frames_temp/frame_098.png> <a0,fr98>
-<img//1dVFUW_frames_temp/frame_099.png, id=937, 433.62pt x 289.08pt>
+ <./img//1dVFUW_frames_temp/frame_098.png>
+<a0,fr98>
+<img//1dVFUW_frames_temp/frame_099.png, id=991, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_099.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_099.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_099.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
  <./img//1dVFUW_frames_temp/frame_099.png> <a0,fr99>
-<img//1dVFUW_frames_temp/frame_100.png, id=941, 433.62pt x 289.08pt>
+<img//1dVFUW_frames_temp/frame_100.png, id=995, 433.62pt x 289.08pt>
 File: img//1dVFUW_frames_temp/frame_100.png Graphic file (type png)
 <use img//1dVFUW_frames_temp/frame_100.png>
 Package pdftex.def Info: img//1dVFUW_frames_temp/frame_100.png  used on input l
-ine 179.
+ine 231.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
- <./img//1dVFUW_frames_temp/frame_100.png>
-<a0,fr100> [43
+ <./img//1dVFUW_frames_temp/frame_100.png> <a0,fr100> [45
 
 ]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 201.
+ine 253.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 201.
+ine 253.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 201.
+ine 253.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 201.
+ine 253.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 201.
+ine 253.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 201.
+ine 253.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 201.
+ine 253.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 201.
+ine 253.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 201.
+ine 253.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 201.
+ine 253.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 201.
+ine 253.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 201.
+ine 253.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 201.
- [44
+ine 253.
+ [46
 
 ]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 219.
+ine 272.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 219.
+ine 272.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 219.
+ine 272.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 219.
+ine 272.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 219.
+ine 272.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 219.
+ine 272.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 219.
+ine 272.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 219.
+ine 272.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 219.
+ine 272.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 219.
+ine 272.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 219.
+ine 272.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 219.
+ine 272.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 219.
+ine 272.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 219.
+ine 272.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 219.
+ine 272.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 219.
+ine 272.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 219.
+ine 272.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 219.
+ine 272.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 219.
+ine 272.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 219.
+ine 272.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 219.
+ine 272.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 219.
+ine 272.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 219.
- [45
+ine 272.
+ [47
 
 ]
-<img//1ex2dVFUW_frames_temp/frame_0000.png, id=1105, 505.89pt x 433.62pt>
+<img/ex1_painel_6_graficos.png, id=1157, 621.522pt x 480.8364pt>
+File: img/ex1_painel_6_graficos.png Graphic file (type png)
+<use img/ex1_painel_6_graficos.png>
+Package pdftex.def Info: img/ex1_painel_6_graficos.png  used on input line 285.
+
+(pdftex.def)             Requested size: 222.48988pt x 172.12515pt.
+
+Overfull \vbox (0.76668pt too high) detected at line 285
+ []
+
+[48
+
+ <./img/ex1_painel_6_graficos.png>]
+<img//1ex2dVFUW_frames_temp/frame_0000.png, id=1178, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0000.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0000.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0000.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
- <./img//1ex2dVFUW_frames_temp/frame_0000.png>
-<a1,fr0>
-<img//1ex2dVFUW_frames_temp/frame_0001.png, id=1109, 505.89pt x 433.62pt>
+ <./img//1ex2dVFUW_frames_temp/frame_0000.png> <a1,fr0>
+<img//1ex2dVFUW_frames_temp/frame_0001.png, id=1182, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0001.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0001.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0001.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//1ex2dVFUW_frames_temp/frame_0001.png> <a1,fr1>
-<img//1ex2dVFUW_frames_temp/frame_0002.png, id=1113, 505.89pt x 433.62pt>
+<img//1ex2dVFUW_frames_temp/frame_0002.png, id=1186, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0002.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0002.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0002.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//1ex2dVFUW_frames_temp/frame_0002.png> <a1,fr2>
-<img//1ex2dVFUW_frames_temp/frame_0003.png, id=1117, 505.89pt x 433.62pt>
+<img//1ex2dVFUW_frames_temp/frame_0003.png, id=1190, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0003.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0003.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0003.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//1ex2dVFUW_frames_temp/frame_0003.png> <a1,fr3>
-<img//1ex2dVFUW_frames_temp/frame_0004.png, id=1121, 505.89pt x 433.62pt>
+<img//1ex2dVFUW_frames_temp/frame_0004.png, id=1194, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0004.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0004.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0004.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//1ex2dVFUW_frames_temp/frame_0004.png> <a1,fr4>
-<img//1ex2dVFUW_frames_temp/frame_0005.png, id=1125, 505.89pt x 433.62pt>
+<img//1ex2dVFUW_frames_temp/frame_0005.png, id=1198, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0005.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0005.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0005.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//1ex2dVFUW_frames_temp/frame_0005.png> <a1,fr5>
-<img//1ex2dVFUW_frames_temp/frame_0006.png, id=1129, 505.89pt x 433.62pt>
+<img//1ex2dVFUW_frames_temp/frame_0006.png, id=1202, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0006.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0006.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0006.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//1ex2dVFUW_frames_temp/frame_0006.png> <a1,fr6>
-<img//1ex2dVFUW_frames_temp/frame_0007.png, id=1133, 505.89pt x 433.62pt>
+<img//1ex2dVFUW_frames_temp/frame_0007.png, id=1206, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0007.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0007.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0007.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
- <./img//1ex2dVFUW_frames_temp/frame_0007.png> <a1,fr7>
-<img//1ex2dVFUW_frames_temp/frame_0008.png, id=1137, 505.89pt x 433.62pt>
+ <./img//1ex2dVFUW_frames_temp/frame_0007.png>
+<a1,fr7>
+<img//1ex2dVFUW_frames_temp/frame_0008.png, id=1210, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0008.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0008.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0008.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//1ex2dVFUW_frames_temp/frame_0008.png> <a1,fr8>
-<img//1ex2dVFUW_frames_temp/frame_0009.png, id=1141, 505.89pt x 433.62pt>
+<img//1ex2dVFUW_frames_temp/frame_0009.png, id=1214, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0009.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0009.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0009.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//1ex2dVFUW_frames_temp/frame_0009.png> <a1,fr9>
-<img//1ex2dVFUW_frames_temp/frame_0010.png, id=1145, 505.89pt x 433.62pt>
+<img//1ex2dVFUW_frames_temp/frame_0010.png, id=1218, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0010.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0010.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0010.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
- <./img//1ex2dVFUW_frames_temp/frame_0010.png>
-<a1,fr10>
-<img//1ex2dVFUW_frames_temp/frame_0011.png, id=1149, 505.89pt x 433.62pt>
+ <./img//1ex2dVFUW_frames_temp/frame_0010.png> <a1,fr10>
+<img//1ex2dVFUW_frames_temp/frame_0011.png, id=1222, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0011.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0011.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0011.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//1ex2dVFUW_frames_temp/frame_0011.png> <a1,fr11>
-<img//1ex2dVFUW_frames_temp/frame_0012.png, id=1153, 505.89pt x 433.62pt>
+<img//1ex2dVFUW_frames_temp/frame_0012.png, id=1226, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0012.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0012.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0012.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//1ex2dVFUW_frames_temp/frame_0012.png> <a1,fr12>
-<img//1ex2dVFUW_frames_temp/frame_0013.png, id=1157, 505.89pt x 433.62pt>
+<img//1ex2dVFUW_frames_temp/frame_0013.png, id=1230, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0013.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0013.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0013.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//1ex2dVFUW_frames_temp/frame_0013.png> <a1,fr13>
-<img//1ex2dVFUW_frames_temp/frame_0014.png, id=1161, 505.89pt x 433.62pt>
+<img//1ex2dVFUW_frames_temp/frame_0014.png, id=1234, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0014.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0014.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0014.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
- <./img//1ex2dVFUW_frames_temp/frame_0014.png> <a1,fr14>
-<img//1ex2dVFUW_frames_temp/frame_0015.png, id=1165, 505.89pt x 433.62pt>
+ <./img//1ex2dVFUW_frames_temp/frame_0014.png>
+<a1,fr14>
+<img//1ex2dVFUW_frames_temp/frame_0015.png, id=1238, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0015.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0015.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0015.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//1ex2dVFUW_frames_temp/frame_0015.png> <a1,fr15>
-<img//1ex2dVFUW_frames_temp/frame_0016.png, id=1169, 505.89pt x 433.62pt>
+<img//1ex2dVFUW_frames_temp/frame_0016.png, id=1242, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0016.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0016.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0016.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//1ex2dVFUW_frames_temp/frame_0016.png> <a1,fr16>
-<img//1ex2dVFUW_frames_temp/frame_0017.png, id=1173, 505.89pt x 433.62pt>
+<img//1ex2dVFUW_frames_temp/frame_0017.png, id=1246, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0017.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0017.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0017.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
- <./img//1ex2dVFUW_frames_temp/frame_0017.png>
-<a1,fr17>
-<img//1ex2dVFUW_frames_temp/frame_0018.png, id=1177, 505.89pt x 433.62pt>
+ <./img//1ex2dVFUW_frames_temp/frame_0017.png> <a1,fr17>
+<img//1ex2dVFUW_frames_temp/frame_0018.png, id=1250, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0018.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0018.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0018.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//1ex2dVFUW_frames_temp/frame_0018.png> <a1,fr18>
-<img//1ex2dVFUW_frames_temp/frame_0019.png, id=1181, 505.89pt x 433.62pt>
+<img//1ex2dVFUW_frames_temp/frame_0019.png, id=1254, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0019.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0019.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0019.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//1ex2dVFUW_frames_temp/frame_0019.png> <a1,fr19>
-<img//1ex2dVFUW_frames_temp/frame_0020.png, id=1185, 505.89pt x 433.62pt>
+<img//1ex2dVFUW_frames_temp/frame_0020.png, id=1258, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0020.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0020.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0020.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//1ex2dVFUW_frames_temp/frame_0020.png> <a1,fr20>
-<img//1ex2dVFUW_frames_temp/frame_0021.png, id=1189, 505.89pt x 433.62pt>
+<img//1ex2dVFUW_frames_temp/frame_0021.png, id=1262, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0021.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0021.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0021.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
- <./img//1ex2dVFUW_frames_temp/frame_0021.png> <a1,fr21>
-<img//1ex2dVFUW_frames_temp/frame_0022.png, id=1193, 505.89pt x 433.62pt>
+ <./img//1ex2dVFUW_frames_temp/frame_0021.png>
+<a1,fr21>
+<img//1ex2dVFUW_frames_temp/frame_0022.png, id=1266, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0022.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0022.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0022.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//1ex2dVFUW_frames_temp/frame_0022.png> <a1,fr22>
-<img//1ex2dVFUW_frames_temp/frame_0023.png, id=1197, 505.89pt x 433.62pt>
+<img//1ex2dVFUW_frames_temp/frame_0023.png, id=1270, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0023.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0023.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0023.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//1ex2dVFUW_frames_temp/frame_0023.png> <a1,fr23>
-<img//1ex2dVFUW_frames_temp/frame_0024.png, id=1201, 505.89pt x 433.62pt>
+<img//1ex2dVFUW_frames_temp/frame_0024.png, id=1274, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0024.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0024.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0024.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
- <./img//1ex2dVFUW_frames_temp/frame_0024.png>
-<a1,fr24>
-<img//1ex2dVFUW_frames_temp/frame_0025.png, id=1205, 505.89pt x 433.62pt>
+ <./img//1ex2dVFUW_frames_temp/frame_0024.png> <a1,fr24>
+<img//1ex2dVFUW_frames_temp/frame_0025.png, id=1278, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0025.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0025.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0025.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//1ex2dVFUW_frames_temp/frame_0025.png> <a1,fr25>
-<img//1ex2dVFUW_frames_temp/frame_0026.png, id=1209, 505.89pt x 433.62pt>
+<img//1ex2dVFUW_frames_temp/frame_0026.png, id=1282, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0026.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0026.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0026.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//1ex2dVFUW_frames_temp/frame_0026.png> <a1,fr26>
-<img//1ex2dVFUW_frames_temp/frame_0027.png, id=1213, 505.89pt x 433.62pt>
+<img//1ex2dVFUW_frames_temp/frame_0027.png, id=1286, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0027.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0027.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0027.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//1ex2dVFUW_frames_temp/frame_0027.png> <a1,fr27>
-<img//1ex2dVFUW_frames_temp/frame_0028.png, id=1217, 505.89pt x 433.62pt>
+<img//1ex2dVFUW_frames_temp/frame_0028.png, id=1291, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0028.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0028.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0028.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
- <./img//1ex2dVFUW_frames_temp/frame_0028.png> <a1,fr28>
-<img//1ex2dVFUW_frames_temp/frame_0029.png, id=1221, 505.89pt x 433.62pt>
+ <./img//1ex2dVFUW_frames_temp/frame_0028.png>
+<a1,fr28>
+<img//1ex2dVFUW_frames_temp/frame_0029.png, id=1295, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0029.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0029.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0029.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//1ex2dVFUW_frames_temp/frame_0029.png> <a1,fr29>
-<img//1ex2dVFUW_frames_temp/frame_0030.png, id=1225, 505.89pt x 433.62pt>
+<img//1ex2dVFUW_frames_temp/frame_0030.png, id=1299, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0030.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0030.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0030.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//1ex2dVFUW_frames_temp/frame_0030.png> <a1,fr30>
-<img//1ex2dVFUW_frames_temp/frame_0031.png, id=1229, 505.89pt x 433.62pt>
+<img//1ex2dVFUW_frames_temp/frame_0031.png, id=1303, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0031.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0031.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0031.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
- <./img//1ex2dVFUW_frames_temp/frame_0031.png>
-<a1,fr31>
-<img//1ex2dVFUW_frames_temp/frame_0032.png, id=1233, 505.89pt x 433.62pt>
+ <./img//1ex2dVFUW_frames_temp/frame_0031.png> <a1,fr31>
+<img//1ex2dVFUW_frames_temp/frame_0032.png, id=1307, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0032.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0032.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0032.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//1ex2dVFUW_frames_temp/frame_0032.png> <a1,fr32>
-<img//1ex2dVFUW_frames_temp/frame_0033.png, id=1237, 505.89pt x 433.62pt>
+<img//1ex2dVFUW_frames_temp/frame_0033.png, id=1311, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0033.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0033.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0033.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//1ex2dVFUW_frames_temp/frame_0033.png> <a1,fr33>
-<img//1ex2dVFUW_frames_temp/frame_0034.png, id=1241, 505.89pt x 433.62pt>
+<img//1ex2dVFUW_frames_temp/frame_0034.png, id=1315, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0034.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0034.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0034.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//1ex2dVFUW_frames_temp/frame_0034.png> <a1,fr34>
-<img//1ex2dVFUW_frames_temp/frame_0035.png, id=1245, 505.89pt x 433.62pt>
+<img//1ex2dVFUW_frames_temp/frame_0035.png, id=1319, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0035.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0035.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0035.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
- <./img//1ex2dVFUW_frames_temp/frame_0035.png> <a1,fr35>
-<img//1ex2dVFUW_frames_temp/frame_0036.png, id=1249, 505.89pt x 433.62pt>
+ <./img//1ex2dVFUW_frames_temp/frame_0035.png>
+<a1,fr35>
+<img//1ex2dVFUW_frames_temp/frame_0036.png, id=1323, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0036.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0036.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0036.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//1ex2dVFUW_frames_temp/frame_0036.png> <a1,fr36>
-<img//1ex2dVFUW_frames_temp/frame_0037.png, id=1253, 505.89pt x 433.62pt>
+<img//1ex2dVFUW_frames_temp/frame_0037.png, id=1327, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0037.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0037.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0037.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//1ex2dVFUW_frames_temp/frame_0037.png> <a1,fr37>
-<img//1ex2dVFUW_frames_temp/frame_0038.png, id=1257, 505.89pt x 433.62pt>
+<img//1ex2dVFUW_frames_temp/frame_0038.png, id=1331, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0038.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0038.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0038.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
- <./img//1ex2dVFUW_frames_temp/frame_0038.png>
-<a1,fr38>
-<img//1ex2dVFUW_frames_temp/frame_0039.png, id=1261, 505.89pt x 433.62pt>
+ <./img//1ex2dVFUW_frames_temp/frame_0038.png> <a1,fr38>
+<img//1ex2dVFUW_frames_temp/frame_0039.png, id=1335, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0039.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0039.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0039.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//1ex2dVFUW_frames_temp/frame_0039.png> <a1,fr39>
-<img//1ex2dVFUW_frames_temp/frame_0040.png, id=1265, 505.89pt x 433.62pt>
+<img//1ex2dVFUW_frames_temp/frame_0040.png, id=1339, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0040.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0040.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0040.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//1ex2dVFUW_frames_temp/frame_0040.png> <a1,fr40>
-<img//1ex2dVFUW_frames_temp/frame_0041.png, id=1269, 505.89pt x 433.62pt>
+<img//1ex2dVFUW_frames_temp/frame_0041.png, id=1343, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0041.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0041.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0041.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//1ex2dVFUW_frames_temp/frame_0041.png> <a1,fr41>
-<img//1ex2dVFUW_frames_temp/frame_0042.png, id=1273, 505.89pt x 433.62pt>
+<img//1ex2dVFUW_frames_temp/frame_0042.png, id=1347, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0042.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0042.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0042.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
- <./img//1ex2dVFUW_frames_temp/frame_0042.png> <a1,fr42>
-<img//1ex2dVFUW_frames_temp/frame_0043.png, id=1277, 505.89pt x 433.62pt>
+ <./img//1ex2dVFUW_frames_temp/frame_0042.png>
+<a1,fr42>
+<img//1ex2dVFUW_frames_temp/frame_0043.png, id=1351, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0043.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0043.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0043.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//1ex2dVFUW_frames_temp/frame_0043.png> <a1,fr43>
-<img//1ex2dVFUW_frames_temp/frame_0044.png, id=1281, 505.89pt x 433.62pt>
+<img//1ex2dVFUW_frames_temp/frame_0044.png, id=1355, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0044.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0044.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0044.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//1ex2dVFUW_frames_temp/frame_0044.png> <a1,fr44>
-<img//1ex2dVFUW_frames_temp/frame_0045.png, id=1285, 505.89pt x 433.62pt>
+<img//1ex2dVFUW_frames_temp/frame_0045.png, id=1359, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0045.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0045.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0045.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
- <./img//1ex2dVFUW_frames_temp/frame_0045.png>
-<a1,fr45>
-<img//1ex2dVFUW_frames_temp/frame_0046.png, id=1289, 505.89pt x 433.62pt>
+ <./img//1ex2dVFUW_frames_temp/frame_0045.png> <a1,fr45>
+<img//1ex2dVFUW_frames_temp/frame_0046.png, id=1363, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0046.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0046.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0046.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//1ex2dVFUW_frames_temp/frame_0046.png> <a1,fr46>
-<img//1ex2dVFUW_frames_temp/frame_0047.png, id=1293, 505.89pt x 433.62pt>
+<img//1ex2dVFUW_frames_temp/frame_0047.png, id=1367, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0047.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0047.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0047.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//1ex2dVFUW_frames_temp/frame_0047.png> <a1,fr47>
-<img//1ex2dVFUW_frames_temp/frame_0048.png, id=1297, 505.89pt x 433.62pt>
+<img//1ex2dVFUW_frames_temp/frame_0048.png, id=1371, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0048.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0048.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0048.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//1ex2dVFUW_frames_temp/frame_0048.png> <a1,fr48>
-<img//1ex2dVFUW_frames_temp/frame_0049.png, id=1301, 505.89pt x 433.62pt>
+<img//1ex2dVFUW_frames_temp/frame_0049.png, id=1375, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0049.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0049.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0049.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
- <./img//1ex2dVFUW_frames_temp/frame_0049.png> <a1,fr49>
-<img//1ex2dVFUW_frames_temp/frame_0050.png, id=1305, 505.89pt x 433.62pt>
+ <./img//1ex2dVFUW_frames_temp/frame_0049.png>
+<a1,fr49>
+<img//1ex2dVFUW_frames_temp/frame_0050.png, id=1379, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0050.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0050.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0050.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//1ex2dVFUW_frames_temp/frame_0050.png> <a1,fr50>
-<img//1ex2dVFUW_frames_temp/frame_0051.png, id=1309, 505.89pt x 433.62pt>
+<img//1ex2dVFUW_frames_temp/frame_0051.png, id=1383, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0051.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0051.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0051.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//1ex2dVFUW_frames_temp/frame_0051.png> <a1,fr51>
-<img//1ex2dVFUW_frames_temp/frame_0052.png, id=1313, 505.89pt x 433.62pt>
+<img//1ex2dVFUW_frames_temp/frame_0052.png, id=1387, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0052.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0052.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0052.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
- <./img//1ex2dVFUW_frames_temp/frame_0052.png>
-<a1,fr52>
-<img//1ex2dVFUW_frames_temp/frame_0053.png, id=1317, 505.89pt x 433.62pt>
+ <./img//1ex2dVFUW_frames_temp/frame_0052.png> <a1,fr52>
+<img//1ex2dVFUW_frames_temp/frame_0053.png, id=1391, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0053.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0053.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0053.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//1ex2dVFUW_frames_temp/frame_0053.png> <a1,fr53>
-<img//1ex2dVFUW_frames_temp/frame_0054.png, id=1321, 505.89pt x 433.62pt>
+<img//1ex2dVFUW_frames_temp/frame_0054.png, id=1395, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0054.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0054.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0054.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//1ex2dVFUW_frames_temp/frame_0054.png> <a1,fr54>
-<img//1ex2dVFUW_frames_temp/frame_0055.png, id=1325, 505.89pt x 433.62pt>
+<img//1ex2dVFUW_frames_temp/frame_0055.png, id=1399, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0055.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0055.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0055.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//1ex2dVFUW_frames_temp/frame_0055.png> <a1,fr55>
-<img//1ex2dVFUW_frames_temp/frame_0056.png, id=1329, 505.89pt x 433.62pt>
+<img//1ex2dVFUW_frames_temp/frame_0056.png, id=1403, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0056.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0056.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0056.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
- <./img//1ex2dVFUW_frames_temp/frame_0056.png> <a1,fr56>
-<img//1ex2dVFUW_frames_temp/frame_0057.png, id=1333, 505.89pt x 433.62pt>
+ <./img//1ex2dVFUW_frames_temp/frame_0056.png>
+<a1,fr56>
+<img//1ex2dVFUW_frames_temp/frame_0057.png, id=1407, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0057.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0057.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0057.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//1ex2dVFUW_frames_temp/frame_0057.png> <a1,fr57>
-<img//1ex2dVFUW_frames_temp/frame_0058.png, id=1337, 505.89pt x 433.62pt>
+<img//1ex2dVFUW_frames_temp/frame_0058.png, id=1411, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0058.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0058.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0058.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//1ex2dVFUW_frames_temp/frame_0058.png> <a1,fr58>
-<img//1ex2dVFUW_frames_temp/frame_0059.png, id=1341, 505.89pt x 433.62pt>
+<img//1ex2dVFUW_frames_temp/frame_0059.png, id=1415, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0059.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0059.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0059.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
- <./img//1ex2dVFUW_frames_temp/frame_0059.png>
-<a1,fr59>
-<img//1ex2dVFUW_frames_temp/frame_0060.png, id=1345, 505.89pt x 433.62pt>
+ <./img//1ex2dVFUW_frames_temp/frame_0059.png> <a1,fr59>
+<img//1ex2dVFUW_frames_temp/frame_0060.png, id=1419, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0060.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0060.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0060.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//1ex2dVFUW_frames_temp/frame_0060.png> <a1,fr60>
-<img//1ex2dVFUW_frames_temp/frame_0061.png, id=1349, 505.89pt x 433.62pt>
+<img//1ex2dVFUW_frames_temp/frame_0061.png, id=1423, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0061.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0061.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0061.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//1ex2dVFUW_frames_temp/frame_0061.png> <a1,fr61>
-<img//1ex2dVFUW_frames_temp/frame_0062.png, id=1353, 505.89pt x 433.62pt>
+<img//1ex2dVFUW_frames_temp/frame_0062.png, id=1427, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0062.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0062.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0062.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//1ex2dVFUW_frames_temp/frame_0062.png> <a1,fr62>
-<img//1ex2dVFUW_frames_temp/frame_0063.png, id=1357, 505.89pt x 433.62pt>
+<img//1ex2dVFUW_frames_temp/frame_0063.png, id=1431, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0063.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0063.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0063.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
- <./img//1ex2dVFUW_frames_temp/frame_0063.png> <a1,fr63>
-<img//1ex2dVFUW_frames_temp/frame_0064.png, id=1362, 505.89pt x 433.62pt>
+ <./img//1ex2dVFUW_frames_temp/frame_0063.png>
+<a1,fr63>
+<img//1ex2dVFUW_frames_temp/frame_0064.png, id=1435, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0064.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0064.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0064.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//1ex2dVFUW_frames_temp/frame_0064.png> <a1,fr64>
-<img//1ex2dVFUW_frames_temp/frame_0065.png, id=1366, 505.89pt x 433.62pt>
+<img//1ex2dVFUW_frames_temp/frame_0065.png, id=1439, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0065.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0065.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0065.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//1ex2dVFUW_frames_temp/frame_0065.png> <a1,fr65>
-<img//1ex2dVFUW_frames_temp/frame_0066.png, id=1370, 505.89pt x 433.62pt>
+<img//1ex2dVFUW_frames_temp/frame_0066.png, id=1443, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0066.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0066.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0066.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
- <./img//1ex2dVFUW_frames_temp/frame_0066.png>
-<a1,fr66>
-<img//1ex2dVFUW_frames_temp/frame_0067.png, id=1374, 505.89pt x 433.62pt>
+ <./img//1ex2dVFUW_frames_temp/frame_0066.png> <a1,fr66>
+<img//1ex2dVFUW_frames_temp/frame_0067.png, id=1447, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0067.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0067.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0067.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//1ex2dVFUW_frames_temp/frame_0067.png> <a1,fr67>
-<img//1ex2dVFUW_frames_temp/frame_0068.png, id=1378, 505.89pt x 433.62pt>
+<img//1ex2dVFUW_frames_temp/frame_0068.png, id=1451, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0068.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0068.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0068.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//1ex2dVFUW_frames_temp/frame_0068.png> <a1,fr68>
-<img//1ex2dVFUW_frames_temp/frame_0069.png, id=1382, 505.89pt x 433.62pt>
+<img//1ex2dVFUW_frames_temp/frame_0069.png, id=1455, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0069.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0069.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0069.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//1ex2dVFUW_frames_temp/frame_0069.png> <a1,fr69>
-<img//1ex2dVFUW_frames_temp/frame_0070.png, id=1386, 505.89pt x 433.62pt>
+<img//1ex2dVFUW_frames_temp/frame_0070.png, id=1459, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0070.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0070.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0070.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
- <./img//1ex2dVFUW_frames_temp/frame_0070.png> <a1,fr70>
-<img//1ex2dVFUW_frames_temp/frame_0071.png, id=1390, 505.89pt x 433.62pt>
+ <./img//1ex2dVFUW_frames_temp/frame_0070.png>
+<a1,fr70>
+<img//1ex2dVFUW_frames_temp/frame_0071.png, id=1463, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0071.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0071.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0071.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//1ex2dVFUW_frames_temp/frame_0071.png> <a1,fr71>
-<img//1ex2dVFUW_frames_temp/frame_0072.png, id=1394, 505.89pt x 433.62pt>
+<img//1ex2dVFUW_frames_temp/frame_0072.png, id=1467, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0072.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0072.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0072.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//1ex2dVFUW_frames_temp/frame_0072.png> <a1,fr72>
-<img//1ex2dVFUW_frames_temp/frame_0073.png, id=1398, 505.89pt x 433.62pt>
+<img//1ex2dVFUW_frames_temp/frame_0073.png, id=1471, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0073.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0073.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0073.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
- <./img//1ex2dVFUW_frames_temp/frame_0073.png>
-<a1,fr73>
-<img//1ex2dVFUW_frames_temp/frame_0074.png, id=1402, 505.89pt x 433.62pt>
+ <./img//1ex2dVFUW_frames_temp/frame_0073.png> <a1,fr73>
+<img//1ex2dVFUW_frames_temp/frame_0074.png, id=1475, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0074.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0074.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0074.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//1ex2dVFUW_frames_temp/frame_0074.png> <a1,fr74>
-<img//1ex2dVFUW_frames_temp/frame_0075.png, id=1406, 505.89pt x 433.62pt>
+<img//1ex2dVFUW_frames_temp/frame_0075.png, id=1479, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0075.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0075.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0075.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//1ex2dVFUW_frames_temp/frame_0075.png> <a1,fr75>
-<img//1ex2dVFUW_frames_temp/frame_0076.png, id=1410, 505.89pt x 433.62pt>
+<img//1ex2dVFUW_frames_temp/frame_0076.png, id=1483, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0076.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0076.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0076.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//1ex2dVFUW_frames_temp/frame_0076.png> <a1,fr76>
-<img//1ex2dVFUW_frames_temp/frame_0077.png, id=1414, 505.89pt x 433.62pt>
+<img//1ex2dVFUW_frames_temp/frame_0077.png, id=1487, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0077.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0077.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0077.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
- <./img//1ex2dVFUW_frames_temp/frame_0077.png> <a1,fr77>
-<img//1ex2dVFUW_frames_temp/frame_0078.png, id=1418, 505.89pt x 433.62pt>
+ <./img//1ex2dVFUW_frames_temp/frame_0077.png>
+<a1,fr77>
+<img//1ex2dVFUW_frames_temp/frame_0078.png, id=1491, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0078.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0078.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0078.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//1ex2dVFUW_frames_temp/frame_0078.png> <a1,fr78>
-<img//1ex2dVFUW_frames_temp/frame_0079.png, id=1422, 505.89pt x 433.62pt>
+<img//1ex2dVFUW_frames_temp/frame_0079.png, id=1495, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0079.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0079.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0079.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//1ex2dVFUW_frames_temp/frame_0079.png> <a1,fr79>
-<img//1ex2dVFUW_frames_temp/frame_0080.png, id=1426, 505.89pt x 433.62pt>
+<img//1ex2dVFUW_frames_temp/frame_0080.png, id=1499, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0080.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0080.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0080.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
- <./img//1ex2dVFUW_frames_temp/frame_0080.png>
-<a1,fr80>
-<img//1ex2dVFUW_frames_temp/frame_0081.png, id=1430, 505.89pt x 433.62pt>
+ <./img//1ex2dVFUW_frames_temp/frame_0080.png> <a1,fr80>
+<img//1ex2dVFUW_frames_temp/frame_0081.png, id=1503, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0081.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0081.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0081.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//1ex2dVFUW_frames_temp/frame_0081.png> <a1,fr81>
-<img//1ex2dVFUW_frames_temp/frame_0082.png, id=1434, 505.89pt x 433.62pt>
+<img//1ex2dVFUW_frames_temp/frame_0082.png, id=1507, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0082.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0082.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0082.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//1ex2dVFUW_frames_temp/frame_0082.png> <a1,fr82>
-<img//1ex2dVFUW_frames_temp/frame_0083.png, id=1438, 505.89pt x 433.62pt>
+<img//1ex2dVFUW_frames_temp/frame_0083.png, id=1511, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0083.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0083.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0083.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//1ex2dVFUW_frames_temp/frame_0083.png> <a1,fr83>
-<img//1ex2dVFUW_frames_temp/frame_0084.png, id=1442, 505.89pt x 433.62pt>
+<img//1ex2dVFUW_frames_temp/frame_0084.png, id=1515, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0084.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0084.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0084.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
- <./img//1ex2dVFUW_frames_temp/frame_0084.png> <a1,fr84>
-<img//1ex2dVFUW_frames_temp/frame_0085.png, id=1446, 505.89pt x 433.62pt>
+ <./img//1ex2dVFUW_frames_temp/frame_0084.png>
+<a1,fr84>
+<img//1ex2dVFUW_frames_temp/frame_0085.png, id=1519, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0085.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0085.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0085.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//1ex2dVFUW_frames_temp/frame_0085.png> <a1,fr85>
-<img//1ex2dVFUW_frames_temp/frame_0086.png, id=1450, 505.89pt x 433.62pt>
+<img//1ex2dVFUW_frames_temp/frame_0086.png, id=1523, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0086.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0086.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0086.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//1ex2dVFUW_frames_temp/frame_0086.png> <a1,fr86>
-<img//1ex2dVFUW_frames_temp/frame_0087.png, id=1454, 505.89pt x 433.62pt>
+<img//1ex2dVFUW_frames_temp/frame_0087.png, id=1527, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0087.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0087.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0087.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
- <./img//1ex2dVFUW_frames_temp/frame_0087.png>
-<a1,fr87>
-<img//1ex2dVFUW_frames_temp/frame_0088.png, id=1458, 505.89pt x 433.62pt>
+ <./img//1ex2dVFUW_frames_temp/frame_0087.png> <a1,fr87>
+<img//1ex2dVFUW_frames_temp/frame_0088.png, id=1531, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0088.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0088.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0088.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//1ex2dVFUW_frames_temp/frame_0088.png> <a1,fr88>
-<img//1ex2dVFUW_frames_temp/frame_0089.png, id=1462, 505.89pt x 433.62pt>
+<img//1ex2dVFUW_frames_temp/frame_0089.png, id=1535, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0089.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0089.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0089.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//1ex2dVFUW_frames_temp/frame_0089.png> <a1,fr89>
-<img//1ex2dVFUW_frames_temp/frame_0090.png, id=1466, 505.89pt x 433.62pt>
+<img//1ex2dVFUW_frames_temp/frame_0090.png, id=1539, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0090.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0090.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0090.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//1ex2dVFUW_frames_temp/frame_0090.png> <a1,fr90>
-<img//1ex2dVFUW_frames_temp/frame_0091.png, id=1470, 505.89pt x 433.62pt>
+<img//1ex2dVFUW_frames_temp/frame_0091.png, id=1543, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0091.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0091.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0091.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
- <./img//1ex2dVFUW_frames_temp/frame_0091.png> <a1,fr91>
-<img//1ex2dVFUW_frames_temp/frame_0092.png, id=1474, 505.89pt x 433.62pt>
+ <./img//1ex2dVFUW_frames_temp/frame_0091.png>
+<a1,fr91>
+<img//1ex2dVFUW_frames_temp/frame_0092.png, id=1547, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0092.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0092.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0092.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//1ex2dVFUW_frames_temp/frame_0092.png> <a1,fr92>
-<img//1ex2dVFUW_frames_temp/frame_0093.png, id=1478, 505.89pt x 433.62pt>
+<img//1ex2dVFUW_frames_temp/frame_0093.png, id=1551, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0093.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0093.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0093.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//1ex2dVFUW_frames_temp/frame_0093.png> <a1,fr93>
-<img//1ex2dVFUW_frames_temp/frame_0094.png, id=1482, 505.89pt x 433.62pt>
+<img//1ex2dVFUW_frames_temp/frame_0094.png, id=1555, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0094.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0094.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0094.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
- <./img//1ex2dVFUW_frames_temp/frame_0094.png>
-<a1,fr94>
-<img//1ex2dVFUW_frames_temp/frame_0095.png, id=1486, 505.89pt x 433.62pt>
+ <./img//1ex2dVFUW_frames_temp/frame_0094.png> <a1,fr94>
+<img//1ex2dVFUW_frames_temp/frame_0095.png, id=1559, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0095.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0095.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0095.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//1ex2dVFUW_frames_temp/frame_0095.png> <a1,fr95>
-<img//1ex2dVFUW_frames_temp/frame_0096.png, id=1490, 505.89pt x 433.62pt>
+<img//1ex2dVFUW_frames_temp/frame_0096.png, id=1563, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0096.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0096.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0096.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//1ex2dVFUW_frames_temp/frame_0096.png> <a1,fr96>
-<img//1ex2dVFUW_frames_temp/frame_0097.png, id=1494, 505.89pt x 433.62pt>
+<img//1ex2dVFUW_frames_temp/frame_0097.png, id=1567, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0097.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0097.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0097.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//1ex2dVFUW_frames_temp/frame_0097.png> <a1,fr97>
-<img//1ex2dVFUW_frames_temp/frame_0098.png, id=1498, 505.89pt x 433.62pt>
+<img//1ex2dVFUW_frames_temp/frame_0098.png, id=1571, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0098.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0098.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0098.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
- <./img//1ex2dVFUW_frames_temp/frame_0098.png> <a1,fr98>
-<img//1ex2dVFUW_frames_temp/frame_0099.png, id=1502, 505.89pt x 433.62pt>
+ <./img//1ex2dVFUW_frames_temp/frame_0098.png>
+<a1,fr98>
+<img//1ex2dVFUW_frames_temp/frame_0099.png, id=1575, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0099.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0099.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0099.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//1ex2dVFUW_frames_temp/frame_0099.png> <a1,fr99>
-<img//1ex2dVFUW_frames_temp/frame_0100.png, id=1506, 505.89pt x 433.62pt>
+<img//1ex2dVFUW_frames_temp/frame_0100.png, id=1579, 505.89pt x 433.62pt>
 File: img//1ex2dVFUW_frames_temp/frame_0100.png Graphic file (type png)
 <use img//1ex2dVFUW_frames_temp/frame_0100.png>
 Package pdftex.def Info: img//1ex2dVFUW_frames_temp/frame_0100.png  used on inp
-ut line 228.
+ut line 294.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
- <./img//1ex2dVFUW_frames_temp/frame_0100.png> <a1,fr100> [46
+ <./img//1ex2dVFUW_frames_temp/frame_0100.png> <a1,fr100> [49
 
 ]
 pdfTeX warning (ext4): destination with the same identifier (name{ex2CB}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.248 \end{frame}
+l.315 \end{frame}
                  
-<img/ex2_perm_hetero.png, id=1636, 478.9092pt x 425.1885pt>
+<img/ex2_perm_hetero.png, id=1710, 478.9092pt x 425.1885pt>
 File: img/ex2_perm_hetero.png Graphic file (type png)
 <use img/ex2_perm_hetero.png>
-Package pdftex.def Info: img/ex2_perm_hetero.png  used on input line 248.
+Package pdftex.def Info: img/ex2_perm_hetero.png  used on input line 315.
 (pdftex.def)             Requested size: 136.91605pt x 121.55627pt.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 248.
-<img/ex2_pressao_velocidade.png, id=1637, 493.3632pt x 425.6703pt>
+ine 315.
+<img/ex2_pressao_velocidade.png, id=1711, 493.3632pt x 425.6703pt>
 File: img/ex2_pressao_velocidade.png Graphic file (type png)
 <use img/ex2_pressao_velocidade.png>
-Package pdftex.def Info: img/ex2_pressao_velocidade.png  used on input line 248
+Package pdftex.def Info: img/ex2_pressao_velocidade.png  used on input line 315
 .
 (pdftex.def)             Requested size: 136.91605pt x 118.12814pt.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 248.
+ine 315.
 
-Overfull \vbox (3.3684pt too high) detected at line 248
+Overfull \vbox (3.3684pt too high) detected at line 315
  []
 
-[47
+[50
 
  <./img/ex2_perm_hetero.png> <./img/ex2_pressao_velocidade.png>]
-<img//2ex2dVFUW_frames_temp/frame_0000.png, id=1659, 505.89pt x 433.62pt>
+<img/ex2_painel_6_graficos.png, id=1734, 621.522pt x 480.8364pt>
+File: img/ex2_painel_6_graficos.png Graphic file (type png)
+<use img/ex2_painel_6_graficos.png>
+Package pdftex.def Info: img/ex2_painel_6_graficos.png  used on input line 328.
+
+(pdftex.def)             Requested size: 222.48988pt x 172.12515pt.
+
+Overfull \vbox (0.76668pt too high) detected at line 328
+ []
+
+[51
+
+ <./img/ex2_painel_6_graficos.png>]
+<img//2ex2dVFUW_frames_temp/frame_0000.png, id=1752, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0000.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0000.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0000.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//2ex2dVFUW_frames_temp/frame_0000.png> <a2,fr0>
-<img//2ex2dVFUW_frames_temp/frame_0001.png, id=1663, 505.89pt x 433.62pt>
+<img//2ex2dVFUW_frames_temp/frame_0001.png, id=1756, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0001.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0001.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0001.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//2ex2dVFUW_frames_temp/frame_0001.png> <a2,fr1>
-<img//2ex2dVFUW_frames_temp/frame_0002.png, id=1667, 505.89pt x 433.62pt>
+<img//2ex2dVFUW_frames_temp/frame_0002.png, id=1760, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0002.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0002.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0002.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//2ex2dVFUW_frames_temp/frame_0002.png> <a2,fr2>
-<img//2ex2dVFUW_frames_temp/frame_0003.png, id=1671, 505.89pt x 433.62pt>
+<img//2ex2dVFUW_frames_temp/frame_0003.png, id=1764, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0003.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0003.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0003.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//2ex2dVFUW_frames_temp/frame_0003.png> <a2,fr3>
-<img//2ex2dVFUW_frames_temp/frame_0004.png, id=1675, 505.89pt x 433.62pt>
+<img//2ex2dVFUW_frames_temp/frame_0004.png, id=1768, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0004.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0004.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0004.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//2ex2dVFUW_frames_temp/frame_0004.png> <a2,fr4>
-<img//2ex2dVFUW_frames_temp/frame_0005.png, id=1679, 505.89pt x 433.62pt>
+<img//2ex2dVFUW_frames_temp/frame_0005.png, id=1772, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0005.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0005.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0005.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
- <./img//2ex2dVFUW_frames_temp/frame_0005.png>
-<a2,fr5>
-<img//2ex2dVFUW_frames_temp/frame_0006.png, id=1683, 505.89pt x 433.62pt>
+ <./img//2ex2dVFUW_frames_temp/frame_0005.png> <a2,fr5>
+<img//2ex2dVFUW_frames_temp/frame_0006.png, id=1776, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0006.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0006.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0006.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//2ex2dVFUW_frames_temp/frame_0006.png> <a2,fr6>
-<img//2ex2dVFUW_frames_temp/frame_0007.png, id=1687, 505.89pt x 433.62pt>
+<img//2ex2dVFUW_frames_temp/frame_0007.png, id=1780, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0007.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0007.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0007.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
- <./img//2ex2dVFUW_frames_temp/frame_0007.png> <a2,fr7>
-<img//2ex2dVFUW_frames_temp/frame_0008.png, id=1691, 505.89pt x 433.62pt>
+ <./img//2ex2dVFUW_frames_temp/frame_0007.png>
+<a2,fr7>
+<img//2ex2dVFUW_frames_temp/frame_0008.png, id=1784, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0008.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0008.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0008.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//2ex2dVFUW_frames_temp/frame_0008.png> <a2,fr8>
-<img//2ex2dVFUW_frames_temp/frame_0009.png, id=1695, 505.89pt x 433.62pt>
+<img//2ex2dVFUW_frames_temp/frame_0009.png, id=1788, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0009.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0009.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0009.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//2ex2dVFUW_frames_temp/frame_0009.png> <a2,fr9>
-<img//2ex2dVFUW_frames_temp/frame_0010.png, id=1699, 505.89pt x 433.62pt>
+<img//2ex2dVFUW_frames_temp/frame_0010.png, id=1792, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0010.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0010.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0010.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//2ex2dVFUW_frames_temp/frame_0010.png> <a2,fr10>
-<img//2ex2dVFUW_frames_temp/frame_0011.png, id=1703, 505.89pt x 433.62pt>
+<img//2ex2dVFUW_frames_temp/frame_0011.png, id=1796, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0011.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0011.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0011.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//2ex2dVFUW_frames_temp/frame_0011.png> <a2,fr11>
-<img//2ex2dVFUW_frames_temp/frame_0012.png, id=1707, 505.89pt x 433.62pt>
+<img//2ex2dVFUW_frames_temp/frame_0012.png, id=1800, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0012.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0012.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0012.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
- <./img//2ex2dVFUW_frames_temp/frame_0012.png>
-<a2,fr12>
-<img//2ex2dVFUW_frames_temp/frame_0013.png, id=1711, 505.89pt x 433.62pt>
+ <./img//2ex2dVFUW_frames_temp/frame_0012.png> <a2,fr12>
+<img//2ex2dVFUW_frames_temp/frame_0013.png, id=1804, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0013.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0013.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0013.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//2ex2dVFUW_frames_temp/frame_0013.png> <a2,fr13>
-<img//2ex2dVFUW_frames_temp/frame_0014.png, id=1715, 505.89pt x 433.62pt>
+<img//2ex2dVFUW_frames_temp/frame_0014.png, id=1808, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0014.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0014.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0014.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
- <./img//2ex2dVFUW_frames_temp/frame_0014.png> <a2,fr14>
-<img//2ex2dVFUW_frames_temp/frame_0015.png, id=1719, 505.89pt x 433.62pt>
+ <./img//2ex2dVFUW_frames_temp/frame_0014.png>
+<a2,fr14>
+<img//2ex2dVFUW_frames_temp/frame_0015.png, id=1812, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0015.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0015.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0015.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//2ex2dVFUW_frames_temp/frame_0015.png> <a2,fr15>
-<img//2ex2dVFUW_frames_temp/frame_0016.png, id=1723, 505.89pt x 433.62pt>
+<img//2ex2dVFUW_frames_temp/frame_0016.png, id=1816, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0016.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0016.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0016.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//2ex2dVFUW_frames_temp/frame_0016.png> <a2,fr16>
-<img//2ex2dVFUW_frames_temp/frame_0017.png, id=1727, 505.89pt x 433.62pt>
+<img//2ex2dVFUW_frames_temp/frame_0017.png, id=1820, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0017.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0017.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0017.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//2ex2dVFUW_frames_temp/frame_0017.png> <a2,fr17>
-<img//2ex2dVFUW_frames_temp/frame_0018.png, id=1731, 505.89pt x 433.62pt>
+<img//2ex2dVFUW_frames_temp/frame_0018.png, id=1824, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0018.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0018.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0018.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//2ex2dVFUW_frames_temp/frame_0018.png> <a2,fr18>
-<img//2ex2dVFUW_frames_temp/frame_0019.png, id=1735, 505.89pt x 433.62pt>
+<img//2ex2dVFUW_frames_temp/frame_0019.png, id=1828, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0019.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0019.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0019.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
- <./img//2ex2dVFUW_frames_temp/frame_0019.png>
-<a2,fr19>
-<img//2ex2dVFUW_frames_temp/frame_0020.png, id=1739, 505.89pt x 433.62pt>
+ <./img//2ex2dVFUW_frames_temp/frame_0019.png> <a2,fr19>
+<img//2ex2dVFUW_frames_temp/frame_0020.png, id=1832, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0020.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0020.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0020.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//2ex2dVFUW_frames_temp/frame_0020.png> <a2,fr20>
-<img//2ex2dVFUW_frames_temp/frame_0021.png, id=1743, 505.89pt x 433.62pt>
+<img//2ex2dVFUW_frames_temp/frame_0021.png, id=1836, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0021.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0021.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0021.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
- <./img//2ex2dVFUW_frames_temp/frame_0021.png> <a2,fr21>
-<img//2ex2dVFUW_frames_temp/frame_0022.png, id=1747, 505.89pt x 433.62pt>
+ <./img//2ex2dVFUW_frames_temp/frame_0021.png>
+<a2,fr21>
+<img//2ex2dVFUW_frames_temp/frame_0022.png, id=1840, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0022.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0022.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0022.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//2ex2dVFUW_frames_temp/frame_0022.png> <a2,fr22>
-<img//2ex2dVFUW_frames_temp/frame_0023.png, id=1751, 505.89pt x 433.62pt>
+<img//2ex2dVFUW_frames_temp/frame_0023.png, id=1844, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0023.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0023.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0023.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//2ex2dVFUW_frames_temp/frame_0023.png> <a2,fr23>
-<img//2ex2dVFUW_frames_temp/frame_0024.png, id=1755, 505.89pt x 433.62pt>
+<img//2ex2dVFUW_frames_temp/frame_0024.png, id=1848, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0024.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0024.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0024.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//2ex2dVFUW_frames_temp/frame_0024.png> <a2,fr24>
-<img//2ex2dVFUW_frames_temp/frame_0025.png, id=1759, 505.89pt x 433.62pt>
+<img//2ex2dVFUW_frames_temp/frame_0025.png, id=1852, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0025.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0025.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0025.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//2ex2dVFUW_frames_temp/frame_0025.png> <a2,fr25>
-<img//2ex2dVFUW_frames_temp/frame_0026.png, id=1763, 505.89pt x 433.62pt>
+<img//2ex2dVFUW_frames_temp/frame_0026.png, id=1856, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0026.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0026.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0026.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
- <./img//2ex2dVFUW_frames_temp/frame_0026.png>
-<a2,fr26>
-<img//2ex2dVFUW_frames_temp/frame_0027.png, id=1767, 505.89pt x 433.62pt>
+ <./img//2ex2dVFUW_frames_temp/frame_0026.png> <a2,fr26>
+<img//2ex2dVFUW_frames_temp/frame_0027.png, id=1860, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0027.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0027.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0027.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//2ex2dVFUW_frames_temp/frame_0027.png> <a2,fr27>
-<img//2ex2dVFUW_frames_temp/frame_0028.png, id=1771, 505.89pt x 433.62pt>
+<img//2ex2dVFUW_frames_temp/frame_0028.png, id=1864, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0028.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0028.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0028.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
- <./img//2ex2dVFUW_frames_temp/frame_0028.png> <a2,fr28>
-<img//2ex2dVFUW_frames_temp/frame_0029.png, id=1775, 505.89pt x 433.62pt>
+ <./img//2ex2dVFUW_frames_temp/frame_0028.png>
+<a2,fr28>
+<img//2ex2dVFUW_frames_temp/frame_0029.png, id=1868, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0029.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0029.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0029.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//2ex2dVFUW_frames_temp/frame_0029.png> <a2,fr29>
-<img//2ex2dVFUW_frames_temp/frame_0030.png, id=1779, 505.89pt x 433.62pt>
+<img//2ex2dVFUW_frames_temp/frame_0030.png, id=1872, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0030.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0030.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0030.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//2ex2dVFUW_frames_temp/frame_0030.png> <a2,fr30>
-<img//2ex2dVFUW_frames_temp/frame_0031.png, id=1783, 505.89pt x 433.62pt>
+<img//2ex2dVFUW_frames_temp/frame_0031.png, id=1876, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0031.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0031.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0031.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//2ex2dVFUW_frames_temp/frame_0031.png> <a2,fr31>
-<img//2ex2dVFUW_frames_temp/frame_0032.png, id=1787, 505.89pt x 433.62pt>
+<img//2ex2dVFUW_frames_temp/frame_0032.png, id=1880, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0032.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0032.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0032.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//2ex2dVFUW_frames_temp/frame_0032.png> <a2,fr32>
-<img//2ex2dVFUW_frames_temp/frame_0033.png, id=1791, 505.89pt x 433.62pt>
+<img//2ex2dVFUW_frames_temp/frame_0033.png, id=1884, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0033.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0033.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0033.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
- <./img//2ex2dVFUW_frames_temp/frame_0033.png>
-<a2,fr33>
-<img//2ex2dVFUW_frames_temp/frame_0034.png, id=1795, 505.89pt x 433.62pt>
+ <./img//2ex2dVFUW_frames_temp/frame_0033.png> <a2,fr33>
+<img//2ex2dVFUW_frames_temp/frame_0034.png, id=1888, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0034.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0034.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0034.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//2ex2dVFUW_frames_temp/frame_0034.png> <a2,fr34>
-<img//2ex2dVFUW_frames_temp/frame_0035.png, id=1800, 505.89pt x 433.62pt>
+<img//2ex2dVFUW_frames_temp/frame_0035.png, id=1892, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0035.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0035.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0035.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
- <./img//2ex2dVFUW_frames_temp/frame_0035.png> <a2,fr35>
-<img//2ex2dVFUW_frames_temp/frame_0036.png, id=1804, 505.89pt x 433.62pt>
+ <./img//2ex2dVFUW_frames_temp/frame_0035.png>
+<a2,fr35>
+<img//2ex2dVFUW_frames_temp/frame_0036.png, id=1896, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0036.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0036.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0036.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//2ex2dVFUW_frames_temp/frame_0036.png> <a2,fr36>
-<img//2ex2dVFUW_frames_temp/frame_0037.png, id=1808, 505.89pt x 433.62pt>
+<img//2ex2dVFUW_frames_temp/frame_0037.png, id=1900, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0037.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0037.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0037.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//2ex2dVFUW_frames_temp/frame_0037.png> <a2,fr37>
-<img//2ex2dVFUW_frames_temp/frame_0038.png, id=1812, 505.89pt x 433.62pt>
+<img//2ex2dVFUW_frames_temp/frame_0038.png, id=1904, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0038.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0038.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0038.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//2ex2dVFUW_frames_temp/frame_0038.png> <a2,fr38>
-<img//2ex2dVFUW_frames_temp/frame_0039.png, id=1816, 505.89pt x 433.62pt>
+<img//2ex2dVFUW_frames_temp/frame_0039.png, id=1908, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0039.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0039.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0039.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//2ex2dVFUW_frames_temp/frame_0039.png> <a2,fr39>
-<img//2ex2dVFUW_frames_temp/frame_0040.png, id=1820, 505.89pt x 433.62pt>
+<img//2ex2dVFUW_frames_temp/frame_0040.png, id=1912, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0040.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0040.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0040.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
- <./img//2ex2dVFUW_frames_temp/frame_0040.png>
-<a2,fr40>
-<img//2ex2dVFUW_frames_temp/frame_0041.png, id=1824, 505.89pt x 433.62pt>
+ <./img//2ex2dVFUW_frames_temp/frame_0040.png> <a2,fr40>
+<img//2ex2dVFUW_frames_temp/frame_0041.png, id=1916, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0041.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0041.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0041.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//2ex2dVFUW_frames_temp/frame_0041.png> <a2,fr41>
-<img//2ex2dVFUW_frames_temp/frame_0042.png, id=1828, 505.89pt x 433.62pt>
+<img//2ex2dVFUW_frames_temp/frame_0042.png, id=1920, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0042.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0042.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0042.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
- <./img//2ex2dVFUW_frames_temp/frame_0042.png> <a2,fr42>
-<img//2ex2dVFUW_frames_temp/frame_0043.png, id=1832, 505.89pt x 433.62pt>
+ <./img//2ex2dVFUW_frames_temp/frame_0042.png>
+<a2,fr42>
+<img//2ex2dVFUW_frames_temp/frame_0043.png, id=1924, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0043.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0043.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0043.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//2ex2dVFUW_frames_temp/frame_0043.png> <a2,fr43>
-<img//2ex2dVFUW_frames_temp/frame_0044.png, id=1836, 505.89pt x 433.62pt>
+<img//2ex2dVFUW_frames_temp/frame_0044.png, id=1928, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0044.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0044.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0044.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//2ex2dVFUW_frames_temp/frame_0044.png> <a2,fr44>
-<img//2ex2dVFUW_frames_temp/frame_0045.png, id=1840, 505.89pt x 433.62pt>
+<img//2ex2dVFUW_frames_temp/frame_0045.png, id=1932, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0045.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0045.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0045.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//2ex2dVFUW_frames_temp/frame_0045.png> <a2,fr45>
-<img//2ex2dVFUW_frames_temp/frame_0046.png, id=1844, 505.89pt x 433.62pt>
+<img//2ex2dVFUW_frames_temp/frame_0046.png, id=1936, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0046.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0046.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0046.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//2ex2dVFUW_frames_temp/frame_0046.png> <a2,fr46>
-<img//2ex2dVFUW_frames_temp/frame_0047.png, id=1848, 505.89pt x 433.62pt>
+<img//2ex2dVFUW_frames_temp/frame_0047.png, id=1940, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0047.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0047.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0047.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
- <./img//2ex2dVFUW_frames_temp/frame_0047.png>
-<a2,fr47>
-<img//2ex2dVFUW_frames_temp/frame_0048.png, id=1852, 505.89pt x 433.62pt>
+ <./img//2ex2dVFUW_frames_temp/frame_0047.png> <a2,fr47>
+<img//2ex2dVFUW_frames_temp/frame_0048.png, id=1944, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0048.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0048.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0048.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//2ex2dVFUW_frames_temp/frame_0048.png> <a2,fr48>
-<img//2ex2dVFUW_frames_temp/frame_0049.png, id=1856, 505.89pt x 433.62pt>
+<img//2ex2dVFUW_frames_temp/frame_0049.png, id=1948, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0049.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0049.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0049.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
- <./img//2ex2dVFUW_frames_temp/frame_0049.png> <a2,fr49>
-<img//2ex2dVFUW_frames_temp/frame_0050.png, id=1860, 505.89pt x 433.62pt>
+ <./img//2ex2dVFUW_frames_temp/frame_0049.png>
+<a2,fr49>
+<img//2ex2dVFUW_frames_temp/frame_0050.png, id=1952, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0050.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0050.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0050.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//2ex2dVFUW_frames_temp/frame_0050.png> <a2,fr50>
-<img//2ex2dVFUW_frames_temp/frame_0051.png, id=1864, 505.89pt x 433.62pt>
+<img//2ex2dVFUW_frames_temp/frame_0051.png, id=1956, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0051.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0051.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0051.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//2ex2dVFUW_frames_temp/frame_0051.png> <a2,fr51>
-<img//2ex2dVFUW_frames_temp/frame_0052.png, id=1868, 505.89pt x 433.62pt>
+<img//2ex2dVFUW_frames_temp/frame_0052.png, id=1960, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0052.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0052.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0052.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//2ex2dVFUW_frames_temp/frame_0052.png> <a2,fr52>
-<img//2ex2dVFUW_frames_temp/frame_0053.png, id=1872, 505.89pt x 433.62pt>
+<img//2ex2dVFUW_frames_temp/frame_0053.png, id=1964, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0053.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0053.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0053.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//2ex2dVFUW_frames_temp/frame_0053.png> <a2,fr53>
-<img//2ex2dVFUW_frames_temp/frame_0054.png, id=1876, 505.89pt x 433.62pt>
+<img//2ex2dVFUW_frames_temp/frame_0054.png, id=1968, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0054.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0054.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0054.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
- <./img//2ex2dVFUW_frames_temp/frame_0054.png>
-<a2,fr54>
-<img//2ex2dVFUW_frames_temp/frame_0055.png, id=1880, 505.89pt x 433.62pt>
+ <./img//2ex2dVFUW_frames_temp/frame_0054.png> <a2,fr54>
+<img//2ex2dVFUW_frames_temp/frame_0055.png, id=1972, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0055.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0055.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0055.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//2ex2dVFUW_frames_temp/frame_0055.png> <a2,fr55>
-<img//2ex2dVFUW_frames_temp/frame_0056.png, id=1884, 505.89pt x 433.62pt>
+<img//2ex2dVFUW_frames_temp/frame_0056.png, id=1976, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0056.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0056.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0056.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
- <./img//2ex2dVFUW_frames_temp/frame_0056.png> <a2,fr56>
-<img//2ex2dVFUW_frames_temp/frame_0057.png, id=1888, 505.89pt x 433.62pt>
+ <./img//2ex2dVFUW_frames_temp/frame_0056.png>
+<a2,fr56>
+<img//2ex2dVFUW_frames_temp/frame_0057.png, id=1980, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0057.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0057.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0057.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//2ex2dVFUW_frames_temp/frame_0057.png> <a2,fr57>
-<img//2ex2dVFUW_frames_temp/frame_0058.png, id=1892, 505.89pt x 433.62pt>
+<img//2ex2dVFUW_frames_temp/frame_0058.png, id=1984, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0058.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0058.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0058.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//2ex2dVFUW_frames_temp/frame_0058.png> <a2,fr58>
-<img//2ex2dVFUW_frames_temp/frame_0059.png, id=1896, 505.89pt x 433.62pt>
+<img//2ex2dVFUW_frames_temp/frame_0059.png, id=1988, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0059.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0059.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0059.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//2ex2dVFUW_frames_temp/frame_0059.png> <a2,fr59>
-<img//2ex2dVFUW_frames_temp/frame_0060.png, id=1900, 505.89pt x 433.62pt>
+<img//2ex2dVFUW_frames_temp/frame_0060.png, id=1992, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0060.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0060.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0060.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//2ex2dVFUW_frames_temp/frame_0060.png> <a2,fr60>
-<img//2ex2dVFUW_frames_temp/frame_0061.png, id=1904, 505.89pt x 433.62pt>
+<img//2ex2dVFUW_frames_temp/frame_0061.png, id=1996, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0061.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0061.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0061.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
- <./img//2ex2dVFUW_frames_temp/frame_0061.png>
-<a2,fr61>
-<img//2ex2dVFUW_frames_temp/frame_0062.png, id=1908, 505.89pt x 433.62pt>
+ <./img//2ex2dVFUW_frames_temp/frame_0061.png> <a2,fr61>
+<img//2ex2dVFUW_frames_temp/frame_0062.png, id=2000, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0062.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0062.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0062.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//2ex2dVFUW_frames_temp/frame_0062.png> <a2,fr62>
-<img//2ex2dVFUW_frames_temp/frame_0063.png, id=1912, 505.89pt x 433.62pt>
+<img//2ex2dVFUW_frames_temp/frame_0063.png, id=2004, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0063.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0063.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0063.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
- <./img//2ex2dVFUW_frames_temp/frame_0063.png> <a2,fr63>
-<img//2ex2dVFUW_frames_temp/frame_0064.png, id=1916, 505.89pt x 433.62pt>
+ <./img//2ex2dVFUW_frames_temp/frame_0063.png>
+<a2,fr63>
+<img//2ex2dVFUW_frames_temp/frame_0064.png, id=2008, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0064.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0064.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0064.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//2ex2dVFUW_frames_temp/frame_0064.png> <a2,fr64>
-<img//2ex2dVFUW_frames_temp/frame_0065.png, id=1920, 505.89pt x 433.62pt>
+<img//2ex2dVFUW_frames_temp/frame_0065.png, id=2012, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0065.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0065.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0065.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//2ex2dVFUW_frames_temp/frame_0065.png> <a2,fr65>
-<img//2ex2dVFUW_frames_temp/frame_0066.png, id=1924, 505.89pt x 433.62pt>
+<img//2ex2dVFUW_frames_temp/frame_0066.png, id=2016, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0066.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0066.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0066.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//2ex2dVFUW_frames_temp/frame_0066.png> <a2,fr66>
-<img//2ex2dVFUW_frames_temp/frame_0067.png, id=1928, 505.89pt x 433.62pt>
+<img//2ex2dVFUW_frames_temp/frame_0067.png, id=2020, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0067.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0067.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0067.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//2ex2dVFUW_frames_temp/frame_0067.png> <a2,fr67>
-<img//2ex2dVFUW_frames_temp/frame_0068.png, id=1932, 505.89pt x 433.62pt>
+<img//2ex2dVFUW_frames_temp/frame_0068.png, id=2024, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0068.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0068.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0068.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
- <./img//2ex2dVFUW_frames_temp/frame_0068.png>
-<a2,fr68>
-<img//2ex2dVFUW_frames_temp/frame_0069.png, id=1936, 505.89pt x 433.62pt>
+ <./img//2ex2dVFUW_frames_temp/frame_0068.png> <a2,fr68>
+<img//2ex2dVFUW_frames_temp/frame_0069.png, id=2028, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0069.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0069.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0069.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//2ex2dVFUW_frames_temp/frame_0069.png> <a2,fr69>
-<img//2ex2dVFUW_frames_temp/frame_0070.png, id=1940, 505.89pt x 433.62pt>
+<img//2ex2dVFUW_frames_temp/frame_0070.png, id=2032, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0070.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0070.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0070.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
- <./img//2ex2dVFUW_frames_temp/frame_0070.png> <a2,fr70>
-<img//2ex2dVFUW_frames_temp/frame_0071.png, id=1944, 505.89pt x 433.62pt>
+ <./img//2ex2dVFUW_frames_temp/frame_0070.png>
+<a2,fr70>
+<img//2ex2dVFUW_frames_temp/frame_0071.png, id=2036, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0071.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0071.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0071.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//2ex2dVFUW_frames_temp/frame_0071.png> <a2,fr71>
-<img//2ex2dVFUW_frames_temp/frame_0072.png, id=1948, 505.89pt x 433.62pt>
+<img//2ex2dVFUW_frames_temp/frame_0072.png, id=2040, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0072.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0072.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0072.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//2ex2dVFUW_frames_temp/frame_0072.png> <a2,fr72>
-<img//2ex2dVFUW_frames_temp/frame_0073.png, id=1952, 505.89pt x 433.62pt>
+<img//2ex2dVFUW_frames_temp/frame_0073.png, id=2044, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0073.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0073.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0073.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//2ex2dVFUW_frames_temp/frame_0073.png> <a2,fr73>
-<img//2ex2dVFUW_frames_temp/frame_0074.png, id=1956, 505.89pt x 433.62pt>
+<img//2ex2dVFUW_frames_temp/frame_0074.png, id=2048, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0074.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0074.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0074.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//2ex2dVFUW_frames_temp/frame_0074.png> <a2,fr74>
-<img//2ex2dVFUW_frames_temp/frame_0075.png, id=1960, 505.89pt x 433.62pt>
+<img//2ex2dVFUW_frames_temp/frame_0075.png, id=2052, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0075.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0075.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0075.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
- <./img//2ex2dVFUW_frames_temp/frame_0075.png>
-<a2,fr75>
-<img//2ex2dVFUW_frames_temp/frame_0076.png, id=1964, 505.89pt x 433.62pt>
+ <./img//2ex2dVFUW_frames_temp/frame_0075.png> <a2,fr75>
+<img//2ex2dVFUW_frames_temp/frame_0076.png, id=2056, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0076.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0076.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0076.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//2ex2dVFUW_frames_temp/frame_0076.png> <a2,fr76>
-<img//2ex2dVFUW_frames_temp/frame_0077.png, id=1968, 505.89pt x 433.62pt>
+<img//2ex2dVFUW_frames_temp/frame_0077.png, id=2060, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0077.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0077.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0077.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
- <./img//2ex2dVFUW_frames_temp/frame_0077.png> <a2,fr77>
-<img//2ex2dVFUW_frames_temp/frame_0078.png, id=1972, 505.89pt x 433.62pt>
+ <./img//2ex2dVFUW_frames_temp/frame_0077.png>
+<a2,fr77>
+<img//2ex2dVFUW_frames_temp/frame_0078.png, id=2064, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0078.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0078.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0078.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//2ex2dVFUW_frames_temp/frame_0078.png> <a2,fr78>
-<img//2ex2dVFUW_frames_temp/frame_0079.png, id=1976, 505.89pt x 433.62pt>
+<img//2ex2dVFUW_frames_temp/frame_0079.png, id=2068, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0079.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0079.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0079.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//2ex2dVFUW_frames_temp/frame_0079.png> <a2,fr79>
-<img//2ex2dVFUW_frames_temp/frame_0080.png, id=1980, 505.89pt x 433.62pt>
+<img//2ex2dVFUW_frames_temp/frame_0080.png, id=2072, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0080.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0080.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0080.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//2ex2dVFUW_frames_temp/frame_0080.png> <a2,fr80>
-<img//2ex2dVFUW_frames_temp/frame_0081.png, id=1984, 505.89pt x 433.62pt>
+<img//2ex2dVFUW_frames_temp/frame_0081.png, id=2076, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0081.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0081.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0081.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//2ex2dVFUW_frames_temp/frame_0081.png> <a2,fr81>
-<img//2ex2dVFUW_frames_temp/frame_0082.png, id=1988, 505.89pt x 433.62pt>
+<img//2ex2dVFUW_frames_temp/frame_0082.png, id=2080, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0082.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0082.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0082.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
- <./img//2ex2dVFUW_frames_temp/frame_0082.png>
-<a2,fr82>
-<img//2ex2dVFUW_frames_temp/frame_0083.png, id=1992, 505.89pt x 433.62pt>
+ <./img//2ex2dVFUW_frames_temp/frame_0082.png> <a2,fr82>
+<img//2ex2dVFUW_frames_temp/frame_0083.png, id=2084, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0083.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0083.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0083.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//2ex2dVFUW_frames_temp/frame_0083.png> <a2,fr83>
-<img//2ex2dVFUW_frames_temp/frame_0084.png, id=1996, 505.89pt x 433.62pt>
+<img//2ex2dVFUW_frames_temp/frame_0084.png, id=2088, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0084.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0084.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0084.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
- <./img//2ex2dVFUW_frames_temp/frame_0084.png> <a2,fr84>
-<img//2ex2dVFUW_frames_temp/frame_0085.png, id=2000, 505.89pt x 433.62pt>
+ <./img//2ex2dVFUW_frames_temp/frame_0084.png>
+<a2,fr84>
+<img//2ex2dVFUW_frames_temp/frame_0085.png, id=2092, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0085.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0085.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0085.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//2ex2dVFUW_frames_temp/frame_0085.png> <a2,fr85>
-<img//2ex2dVFUW_frames_temp/frame_0086.png, id=2004, 505.89pt x 433.62pt>
+<img//2ex2dVFUW_frames_temp/frame_0086.png, id=2096, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0086.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0086.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0086.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//2ex2dVFUW_frames_temp/frame_0086.png> <a2,fr86>
-<img//2ex2dVFUW_frames_temp/frame_0087.png, id=2008, 505.89pt x 433.62pt>
+<img//2ex2dVFUW_frames_temp/frame_0087.png, id=2100, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0087.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0087.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0087.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//2ex2dVFUW_frames_temp/frame_0087.png> <a2,fr87>
-<img//2ex2dVFUW_frames_temp/frame_0088.png, id=2012, 505.89pt x 433.62pt>
+<img//2ex2dVFUW_frames_temp/frame_0088.png, id=2104, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0088.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0088.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0088.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//2ex2dVFUW_frames_temp/frame_0088.png> <a2,fr88>
-<img//2ex2dVFUW_frames_temp/frame_0089.png, id=2016, 505.89pt x 433.62pt>
+<img//2ex2dVFUW_frames_temp/frame_0089.png, id=2109, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0089.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0089.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0089.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
- <./img//2ex2dVFUW_frames_temp/frame_0089.png>
-<a2,fr89>
-<img//2ex2dVFUW_frames_temp/frame_0090.png, id=2020, 505.89pt x 433.62pt>
+ <./img//2ex2dVFUW_frames_temp/frame_0089.png> <a2,fr89>
+<img//2ex2dVFUW_frames_temp/frame_0090.png, id=2113, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0090.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0090.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0090.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//2ex2dVFUW_frames_temp/frame_0090.png> <a2,fr90>
-<img//2ex2dVFUW_frames_temp/frame_0091.png, id=2024, 505.89pt x 433.62pt>
+<img//2ex2dVFUW_frames_temp/frame_0091.png, id=2117, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0091.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0091.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0091.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
- <./img//2ex2dVFUW_frames_temp/frame_0091.png> <a2,fr91>
-<img//2ex2dVFUW_frames_temp/frame_0092.png, id=2028, 505.89pt x 433.62pt>
+ <./img//2ex2dVFUW_frames_temp/frame_0091.png>
+<a2,fr91>
+<img//2ex2dVFUW_frames_temp/frame_0092.png, id=2121, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0092.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0092.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0092.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//2ex2dVFUW_frames_temp/frame_0092.png> <a2,fr92>
-<img//2ex2dVFUW_frames_temp/frame_0093.png, id=2032, 505.89pt x 433.62pt>
+<img//2ex2dVFUW_frames_temp/frame_0093.png, id=2125, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0093.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0093.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0093.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//2ex2dVFUW_frames_temp/frame_0093.png> <a2,fr93>
-<img//2ex2dVFUW_frames_temp/frame_0094.png, id=2036, 505.89pt x 433.62pt>
+<img//2ex2dVFUW_frames_temp/frame_0094.png, id=2129, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0094.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0094.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0094.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//2ex2dVFUW_frames_temp/frame_0094.png> <a2,fr94>
-<img//2ex2dVFUW_frames_temp/frame_0095.png, id=2040, 505.89pt x 433.62pt>
+<img//2ex2dVFUW_frames_temp/frame_0095.png, id=2133, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0095.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0095.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0095.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//2ex2dVFUW_frames_temp/frame_0095.png> <a2,fr95>
-<img//2ex2dVFUW_frames_temp/frame_0096.png, id=2044, 505.89pt x 433.62pt>
+<img//2ex2dVFUW_frames_temp/frame_0096.png, id=2137, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0096.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0096.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0096.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
- <./img//2ex2dVFUW_frames_temp/frame_0096.png>
-<a2,fr96>
-<img//2ex2dVFUW_frames_temp/frame_0097.png, id=2048, 505.89pt x 433.62pt>
+ <./img//2ex2dVFUW_frames_temp/frame_0096.png> <a2,fr96>
+<img//2ex2dVFUW_frames_temp/frame_0097.png, id=2141, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0097.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0097.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0097.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//2ex2dVFUW_frames_temp/frame_0097.png> <a2,fr97>
-<img//2ex2dVFUW_frames_temp/frame_0098.png, id=2052, 505.89pt x 433.62pt>
+<img//2ex2dVFUW_frames_temp/frame_0098.png, id=2145, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0098.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0098.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0098.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
- <./img//2ex2dVFUW_frames_temp/frame_0098.png> <a2,fr98>
-<img//2ex2dVFUW_frames_temp/frame_0099.png, id=2056, 505.89pt x 433.62pt>
+ <./img//2ex2dVFUW_frames_temp/frame_0098.png>
+<a2,fr98>
+<img//2ex2dVFUW_frames_temp/frame_0099.png, id=2149, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0099.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0099.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0099.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
  <./img//2ex2dVFUW_frames_temp/frame_0099.png> <a2,fr99>
-<img//2ex2dVFUW_frames_temp/frame_0100.png, id=2060, 505.89pt x 433.62pt>
+<img//2ex2dVFUW_frames_temp/frame_0100.png, id=2153, 505.89pt x 433.62pt>
 File: img//2ex2dVFUW_frames_temp/frame_0100.png Graphic file (type png)
 <use img//2ex2dVFUW_frames_temp/frame_0100.png>
 Package pdftex.def Info: img//2ex2dVFUW_frames_temp/frame_0100.png  used on inp
-ut line 257.
+ut line 337.
 (pdftex.def)             Requested size: 505.88875pt x 433.61894pt.
- <./img//2ex2dVFUW_frames_temp/frame_0100.png> <a2,fr100>
-[48
+ <./img//2ex2dVFUW_frames_temp/frame_0100.png> <a2,fr100> [52
 
 ])
 \openout2 = `sections/6_referencias.aux'.
 
- (./sections/6_referencias.tex (./main.toc) [49
+ (./sections/6_referencias.tex (./main.toc) [53
 
 
 
@@ -5867,8 +5953,7 @@ ut line 257.
 ]
 LaTeX Font Info:    Trying to load font information for T1+pcr on input line 7.
 
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
 Package microtype Info: Loading generic protrusion settings for font family
@@ -5881,12 +5966,14 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 7.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 7.
- [50
 
- </usr/share/texlive/texmf-dist/tex/latex/beamer/beamericonarticle.pdf>] [51
+[54
+
+ </usr/share/texlive/texmf-dist/tex/latex/beamer/beamericonarticle.pdf>]
+[55
 
 
-]) [52
+]) [56
 
 
 
@@ -5900,8 +5987,7 @@ ine 7.
 \tf@snm=\write9
 \openout9 = `main.snm'.
 
-
-
+ 
 AED: lastpage setting LastPage
 (./main.aux (./sections/1_definicoesGerais.aux)
 (./sections/2_modelagemEscoamento.aux) (./sections/3_elipticas.aux)
@@ -5917,11 +6003,11 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 54338 strings out of 476091
- 1166577 string characters out of 5794082
- 1892741 words of memory out of 5000000
- 72673 multiletter control sequences out of 15000+600000
- 739899 words of font info for 714 fonts, out of 8000000 for 9000
+ 54433 strings out of 476091
+ 1169773 string characters out of 5794082
+ 1892824 words of memory out of 5000000
+ 72754 multiletter control sequences out of 15000+600000
+ 740124 words of font info for 716 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,18n,131p,1001b,4445s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texliv
@@ -5938,10 +6024,10 @@ ve/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist
 /urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr
 8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb></usr/s
 hare/texlive/texmf-dist/fonts/type1/public/newtx/ztmr.pfb>
-Output written on main.pdf (52 pages, 8634994 bytes).
+Output written on main.pdf (56 pages, 9228617 bytes).
 PDF statistics:
- 2340 PDF objects out of 2487 (max. 8388607)
- 1229 compressed objects within 13 object streams
- 149 named destinations out of 1000 (max. 500000)
- 215399 words of extra memory for PDF output out of 221844 (max. 10000000)
+ 2434 PDF objects out of 2487 (max. 8388607)
+ 1278 compressed objects within 13 object streams
+ 157 named destinations out of 1000 (max. 500000)
+ 215582 words of extra memory for PDF output out of 221844 (max. 10000000)
 

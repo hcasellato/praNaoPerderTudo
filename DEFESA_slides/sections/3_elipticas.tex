@@ -85,7 +85,7 @@
   \[
     \left.p\right|_{x_{N+1/2}} = p_b.
   \]
-  Portanto, usando uma discretização com meio volume de controlea, última equação do sistema \eqref{forma_matricial_1d} torna-se:
+  Portanto, usando uma discretização com meio volume de controle, a última equação do sistema \eqref{forma_matricial_1d} torna-se:
   \[
     \frac{1}{\Delta x^2}\left(2K_{N}p_N + K_{N-\frac{1}{2}}(p_N-p_{N-1})\right) = q_1 + \frac{2K_{N}p_b}{\Delta x^2}.
   \]
@@ -112,27 +112,6 @@
       q_1 + \frac{u_b}{\Delta x},\ q_2,\ \cdots,\ q_{N-1},\ q_N + \frac{2K_{N}p_b}{\Delta x^2}
     \right).
   \]
-\end{frame}
-
-%----------------------------------------------------------------------------------------
-
-\begin{frame}{Caso unidimensional: Implementação}
-  Foram realizados testes com os três algoritmos de fatoração: $\mathbf{LDL^T}$, de \textbf{Crout} e de \textbf{Cholesky}. Pode-se ver que o método $\mathbf{LDL^T}$ performou melhor que a fatoração de Crout (pensando no problema do exemplo desta seção).
-  \begin{table}[h]
-    \centering
-    \begin{tabular}{|c|c|c|c|}
-      \hline
-      \textbf{Subintervalos} & $\mathbf{LDL^t}$ & \textbf{Crout} & \textbf{Cholesky} \\
-      \hline\hline
-      $10^2$ & $0.18247 \times 10^{-4}\ s$ & $0.18758 \times 10^{-4}\ s$ & $0.20147 \times 10^{-4}\ s$ \\
-      $10^3$ & $0.86234 \times 10^{-4}\ s$ & $0.95469 \times 10^{-4}\ s$ & $0.98242 \times 10^{-4}\ s$ \\
-      $10^4$ & $0.82834 \times 10^{-3}\ s$ & $0.92428 \times 10^{-3}\ s$ & $0.94293 \times 10^{-3}\ s$ \\
-      $10^5$ & $0.72082 \times 10^{-2}\ s$ & $0.79367 \times 10^{-2}\ s$ & $0.83214 \times 10^{-2}\ s$ \\
-      \hline
-    \end{tabular}
-    \caption{\justifying Tempos médios de métodos de fatoração diferentes.}
-  \end{table}
-  Os três algoritmos possuem a mesma ordem de erro de truncamento $O(h^2)$.
 \end{frame}
 
 %----------------------------------------------------------------------------------------
@@ -174,6 +153,27 @@
     \label{comparacaoEx1CFLDL}
   \end{figure}
 \end{exemplo}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+
+\begin{frame}{Caso unidimensional: Análise dos métodos de fatoração}
+  Foram realizados testes com os três algoritmos de fatoração: $\mathbf{LDL^T}$, de \textbf{Crout} e de \textbf{Cholesky}. Pode-se ver que o método $\mathbf{LDL^T}$ performou melhor que a fatoração de Crout (pensando no problema do exemplo desta seção).
+  \begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|c|c|}
+      \hline
+      \textbf{Subintervalos} & $\mathbf{LDL^t}$ & \textbf{Crout} & \textbf{Cholesky} \\
+      \hline\hline
+      $10^2$ & $0.18247 \times 10^{-4}\ s$ & $0.18758 \times 10^{-4}\ s$ & $0.20147 \times 10^{-4}\ s$ \\
+      $10^3$ & $0.86234 \times 10^{-4}\ s$ & $0.95469 \times 10^{-4}\ s$ & $0.98242 \times 10^{-4}\ s$ \\
+      $10^4$ & $0.82834 \times 10^{-3}\ s$ & $0.92428 \times 10^{-3}\ s$ & $0.94293 \times 10^{-3}\ s$ \\
+      $10^5$ & $0.72082 \times 10^{-2}\ s$ & $0.79367 \times 10^{-2}\ s$ & $0.83214 \times 10^{-2}\ s$ \\
+      \hline
+    \end{tabular}
+    \caption{\justifying Tempos médios de métodos de fatoração diferentes.}
+  \end{table}
+  Os três algoritmos possuem a mesma ordem de erro de truncamento $O(h^2)$.
 \end{frame}
 
 %----------------------------------------------------------------------------------------

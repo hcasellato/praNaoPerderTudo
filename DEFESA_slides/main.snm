@@ -1,6 +1,6 @@
 \beamer@slide {leiDeDarcy}{8}
 \beamer@slide {eq246}{10}
-\beamer@slide {escoamento_base}{12}
+\beamer@slide {escoamento_base}{13}
 \beamer@slide {fig:viz_CCG_N}{16}
 \beamer@slide {fig:viz_CCG_D}{17}
 \beamer@slide {fig:viz_CCG_Dh}{17}
@@ -9,11 +9,11 @@
 \beamer@slide {eq_1DfullequationVF}{20}
 \beamer@slide {esquemaNum420}{20}
 \beamer@slide {forma_matricial_1d}{21}
-\beamer@slide {fig:img1}{26}
-\beamer@slide {sub@fig:img1}{26}
-\beamer@slide {fig:img2}{26}
-\beamer@slide {sub@fig:img2}{26}
-\beamer@slide {comparacaoEx1CFLDL}{26}
+\beamer@slide {fig:img1}{25}
+\beamer@slide {sub@fig:img1}{25}
+\beamer@slide {fig:img2}{25}
+\beamer@slide {sub@fig:img2}{25}
+\beamer@slide {comparacaoEx1CFLDL}{25}
 \beamer@slide {eq436}{27}
 \beamer@slide {fig:ord_comp}{28}
 \beamer@slide {qot5}{31}
@@ -26,6 +26,7 @@
 \beamer@slide {eqUWVelConstante}{41}
 \beamer@slide {eqUWVelVariadas}{41}
 \beamer@slide {Elip282}{42}
-\beamer@slide {LC2D}{44}
-\beamer@slide {ex2CB}{45}
+\beamer@slide {}{44}
+\beamer@slide {LC2D}{46}
 \beamer@slide {ex2CB}{47}
+\beamer@slide {ex2CB}{50}
